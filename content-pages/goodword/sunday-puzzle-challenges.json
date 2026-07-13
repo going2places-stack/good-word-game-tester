@@ -1,0 +1,421 @@
+{
+  "$schema_notes": "52 weekly Sunday Puzzle challenges for The Good Word Game. Each entry is one week. 'type' is the puzzle category. 'prompt' is what the subscriber sees. 'answer' is the correct reply. 'reveal' is the paragraph sent in next week's email with the answer and a bit of teaching. 'scripture' is the KJV source, where applicable.",
+  "challenges": [
+    {
+      "week": 1,
+      "type": "Which Book Am I?",
+      "prompt": "I have just one chapter and twenty-one verses. I'm the shortest book in the Old Testament, and my whole message is a warning to one proud nation. Which book am I?",
+      "answer": "Obadiah",
+      "reveal": "The answer is Obadiah — the Old Testament's shortest book at just twenty-one verses, all aimed at the pride of Edom. Small book, sharp teeth.",
+      "scripture": "Obadiah 1:1–21"
+    },
+    {
+      "week": 2,
+      "type": "Who Said It?",
+      "prompt": "In the KJV, who asked God this question: 'Am I my brother's keeper?'",
+      "answer": "Cain",
+      "reveal": "The answer is Cain — Genesis 4:9. After killing Abel, he answered God's question with a question of his own. The answer, of course, was yes.",
+      "scripture": "Genesis 4:9"
+    },
+    {
+      "week": 3,
+      "type": "Shared Word",
+      "prompt": "One word completes both of these phrases from Scripture: '______ of Eden' and '______ of Gethsemane.' What's the word?",
+      "answer": "Garden",
+      "reveal": "The answer is Garden. The story of sin began in the Garden of Eden and the road to the cross passed through the Garden of Gethsemane. Two gardens that bookend the whole Bible's story.",
+      "scripture": "Genesis 2:8; Matthew 26:36"
+    },
+    {
+      "week": 4,
+      "type": "Bible Math",
+      "prompt": "Take the number of days it rained during the flood. Add the number of days Jesus fasted in the wilderness. What do you get?",
+      "answer": "80",
+      "reveal": "The answer is 80. Forty days of rain (Genesis 7:12) plus forty days of fasting (Matthew 4:2). God seems to like the number forty — it shows up over and over when He's doing something important.",
+      "scripture": "Genesis 7:12; Matthew 4:2"
+    },
+    {
+      "week": 5,
+      "type": "Which Book Am I?",
+      "prompt": "I'm the only book in the Bible that never mentions God by name — not once. But His fingerprints are on every page. Which book am I?",
+      "answer": "Esther",
+      "reveal": "The answer is Esther. God's name never appears in the text, yet the whole story turns on His providence — a Jewish queen placed in the right palace at the right time to save her people.",
+      "scripture": "Esther 4:14"
+    },
+    {
+      "week": 6,
+      "type": "What's the Connection?",
+      "prompt": "What do these three things have in common: gold, frankincense, and myrrh?",
+      "answer": "Gifts of the wise men (Magi) to the baby Jesus",
+      "reveal": "They're the three gifts the wise men brought to the infant Jesus in Matthew 2:11. Gold for a king, frankincense for a priest, myrrh for a burial — all wrapped up in one manger visit.",
+      "scripture": "Matthew 2:11"
+    },
+    {
+      "week": 7,
+      "type": "Riddle",
+      "prompt": "Samson found me inside a dead lion. Bees made me. I became part of a riddle that cost thirty men their shirts. What am I?",
+      "answer": "Honey",
+      "reveal": "The answer is honey. Samson found a swarm of bees and honey in the carcass of a lion he'd killed, then turned it into a riddle: 'Out of the eater came forth meat, and out of the strong came forth sweetness' (Judges 14:14). Nobody solved it fair and square.",
+      "scripture": "Judges 14:8–14"
+    },
+    {
+      "week": 8,
+      "type": "Scrambled Book",
+      "prompt": "Unscramble these letters to find a book of the Bible: SHOJAU",
+      "answer": "Joshua",
+      "reveal": "The answer is Joshua — the book that picks up right where Deuteronomy ends. Moses is gone, and Joshua leads Israel across the Jordan into the promised land.",
+      "scripture": "Joshua 1:1–2"
+    },
+    {
+      "week": 9,
+      "type": "Verse Fill-in-the-Blank",
+      "prompt": "Complete this famous KJV verse from Psalm 23:1 — 'The LORD is my ______; I shall not want.'",
+      "answer": "shepherd",
+      "reveal": "The answer is shepherd. Psalm 23:1 — probably the most memorized verse in the Bible, and the word 'shepherd' carries the whole thing. If the LORD is that, then 'I shall not want' makes perfect sense.",
+      "scripture": "Psalm 23:1"
+    },
+    {
+      "week": 10,
+      "type": "Odd One Out",
+      "prompt": "Which one doesn't belong, and why? Ruth, Esther, Deborah, Proverbs.",
+      "answer": "Proverbs — the others are women in the Bible; Proverbs is a book",
+      "reveal": "The answer is Proverbs. Ruth, Esther, and Deborah are all women in Scripture — Proverbs is a book. Though to be fair, Proverbs 31 does end with a pretty unforgettable woman.",
+      "scripture": null
+    },
+    {
+      "week": 11,
+      "type": "First and Last",
+      "prompt": "I'm the first king of Israel — anointed by Samuel, tall enough to stand head and shoulders above everyone. Who am I?",
+      "answer": "Saul",
+      "reveal": "The answer is Saul — Israel's first king, chosen by God, anointed by Samuel, and described in 1 Samuel 9:2 as a head taller than any of his people. His reign started with promise and ended in tragedy.",
+      "scripture": "1 Samuel 9:2; 10:1"
+    },
+    {
+      "week": 12,
+      "type": "Who Said It?",
+      "prompt": "In the KJV, who said: 'How long halt ye between two opinions? if the LORD be God, follow him: but if Baal, then follow him.'",
+      "answer": "Elijah",
+      "reveal": "The answer is Elijah — 1 Kings 18:21. He said it on Mount Carmel, right before calling down fire from heaven and settling the question for good. One of the boldest lines in the Old Testament.",
+      "scripture": "1 Kings 18:21"
+    },
+    {
+      "week": 13,
+      "type": "Shared Word",
+      "prompt": "One word completes both of these Bible phrases: 'Red ______' and 'Dead ______.' What's the word?",
+      "answer": "Sea",
+      "reveal": "The answer is Sea. The Red Sea parted for Israel in Exodus 14. The Dead Sea sits at the lowest point on earth, near where Sodom once stood. Both seas, one word, two very different stories.",
+      "scripture": "Exodus 14:21; Genesis 14:3"
+    },
+    {
+      "week": 14,
+      "type": "Bible Math",
+      "prompt": "Multiply the number of tribes of Israel by the number of apostles Jesus chose. What's the answer?",
+      "answer": "144",
+      "reveal": "The answer is 144. Twelve tribes times twelve apostles. That number shows up again in Revelation — 144,000 sealed servants of God. Not a coincidence.",
+      "scripture": "Genesis 49; Matthew 10:1–4; Revelation 7:4"
+    },
+    {
+      "week": 15,
+      "type": "Riddle",
+      "prompt": "A boy's lunch fed five thousand men, plus women and children. What two items made up his meal?",
+      "answer": "Five loaves and two fishes",
+      "reveal": "The answer is five barley loaves and two small fishes — John 6:9. A boy's lunch became the most famous leftovers in history: twelve baskets full after everyone had eaten.",
+      "scripture": "John 6:9–13"
+    },
+    {
+      "week": 16,
+      "type": "Which Book Am I?",
+      "prompt": "I have 150 chapters — more than any other book in the Bible. Kings wrote me, musicians sang me, and churches still read me every Sunday. Which book am I?",
+      "answer": "Psalms",
+      "reveal": "The answer is Psalms — 150 chapters of prayer, praise, lament, and worship. David wrote the most, but Moses, Solomon, Asaph, and the sons of Korah all contributed. The Bible's own hymnal.",
+      "scripture": "Psalms"
+    },
+    {
+      "week": 17,
+      "type": "What's the Connection?",
+      "prompt": "What do Shadrach, Meshach, and Abednego have in common — besides being friends?",
+      "answer": "They were thrown into a fiery furnace and survived (Daniel 3)",
+      "reveal": "All three were thrown into Nebuchadnezzar's fiery furnace for refusing to bow to a golden image — and walked out without even the smell of smoke on them. Daniel 3. A fourth figure walked in there with them.",
+      "scripture": "Daniel 3:19–27"
+    },
+    {
+      "week": 18,
+      "type": "Scrambled Book",
+      "prompt": "Unscramble these letters to find a book of the Bible: VEROPBRS",
+      "answer": "Proverbs",
+      "reveal": "The answer is Proverbs — thirty-one chapters of wisdom, mostly from Solomon, built for daily reading. One chapter per day of the month. The original daily devotional.",
+      "scripture": "Proverbs 1:1"
+    },
+    {
+      "week": 19,
+      "type": "Verse Fill-in-the-Blank",
+      "prompt": "Complete this KJV verse from John 1:1 — 'In the beginning was the ______, and the ______ was with God, and the ______ was God.'",
+      "answer": "Word",
+      "reveal": "The answer is Word — all three blanks. John opens his gospel with the same three words as Genesis ('In the beginning') and then reveals who was there: the Word, which is Jesus Christ Himself.",
+      "scripture": "John 1:1"
+    },
+    {
+      "week": 20,
+      "type": "First and Last",
+      "prompt": "I'm the last book of the Old Testament. After my final verse, heaven goes quiet for roughly four hundred years. Which book am I?",
+      "answer": "Malachi",
+      "reveal": "The answer is Malachi. The last prophetic voice before the New Testament. After Malachi 4:6, there's silence — no prophet, no Scripture — until an angel appears to a priest named Zacharias in Luke 1.",
+      "scripture": "Malachi 4:5–6"
+    },
+    {
+      "week": 21,
+      "type": "Who Said It?",
+      "prompt": "Who said this to God: 'Here am I; send me'?",
+      "answer": "Isaiah",
+      "reveal": "The answer is Isaiah — chapter 6, verse 8. He'd just seen the Lord high and lifted up, had his lips touched with a coal from the altar, and volunteered before he even knew the assignment.",
+      "scripture": "Isaiah 6:8"
+    },
+    {
+      "week": 22,
+      "type": "Riddle",
+      "prompt": "I'm an animal that spoke to a prophet — and I saw an angel before he did. I wasn't a snake, and I wasn't in Eden. What am I?",
+      "answer": "Balaam's donkey (ass)",
+      "reveal": "The answer is Balaam's donkey — Numbers 22. The LORD opened the donkey's mouth, and she rebuked the prophet for beating her. She'd seen the angel of the LORD standing in the way with a drawn sword. The prophet hadn't.",
+      "scripture": "Numbers 22:28–31"
+    },
+    {
+      "week": 23,
+      "type": "Odd One Out",
+      "prompt": "Which doesn't belong? Faith, Hope, Charity, Patience. Why?",
+      "answer": "Patience — the other three are named together in 1 Corinthians 13:13",
+      "reveal": "The answer is Patience. Faith, Hope, and Charity are the trio Paul names in 1 Corinthians 13:13 — 'And now abideth faith, hope, charity, these three; but the greatest of these is charity.' Patience is a virtue, but it's not in that verse.",
+      "scripture": "1 Corinthians 13:13"
+    },
+    {
+      "week": 24,
+      "type": "Shared Word",
+      "prompt": "One word fits both blanks: 'The ______ of life' (in Genesis and Revelation) and 'The ______ of the knowledge of good and evil.' What's the word?",
+      "answer": "Tree",
+      "reveal": "The answer is Tree. The tree of life appears in the Garden of Eden (Genesis 2:9) and again in the New Jerusalem (Revelation 22:2). The tree of knowledge started the trouble; the tree of life bookends the Bible.",
+      "scripture": "Genesis 2:9; Revelation 22:2"
+    },
+    {
+      "week": 25,
+      "type": "Bible Math",
+      "prompt": "How many books are in the Old Testament plus how many days was Lazarus in the tomb before Jesus raised him? What's the total?",
+      "answer": "43",
+      "reveal": "The answer is 43. Thirty-nine Old Testament books plus four days in the tomb (John 11:17). Martha warned that by then 'he stinketh' — and Jesus called him out anyway.",
+      "scripture": "John 11:17, 39"
+    },
+    {
+      "week": 26,
+      "type": "Which Book Am I?",
+      "prompt": "I'm the longest book in the Bible by chapter count, but I'm not really one book — I'm a collection of 150 songs, prayers, and poems written over centuries. You already know my name if you've been paying attention. Which book?",
+      "answer": "Psalms",
+      "reveal": "If you said Psalms, you're right — and if it felt familiar, we did hint at this one back in Week 16. Some things are worth repeating. David would agree.",
+      "scripture": "Psalms"
+    },
+    {
+      "week": 27,
+      "type": "Who Said It?",
+      "prompt": "Who told the LORD: 'I am not eloquent... I am slow of speech, and of a slow tongue'?",
+      "answer": "Moses",
+      "reveal": "The answer is Moses — Exodus 4:10. Standing at the burning bush, called to confront Pharaoh, and his first instinct was to explain why he wasn't qualified. God gave him Aaron instead of an excuse.",
+      "scripture": "Exodus 4:10"
+    },
+    {
+      "week": 28,
+      "type": "What's the Connection?",
+      "prompt": "What do these have in common: a raven, a dove, and an olive leaf?",
+      "answer": "Noah's flood — he sent out the raven and dove; the dove brought back the olive leaf",
+      "reveal": "All three appear in the story of Noah's flood. Noah sent out a raven first, then a dove. The dove came back with an olive leaf in her mouth — the sign that the waters had gone down (Genesis 8:6–11).",
+      "scripture": "Genesis 8:6–11"
+    },
+    {
+      "week": 29,
+      "type": "Scrambled Book",
+      "prompt": "Unscramble these letters to find a book of the Bible: TIONVEALER",
+      "answer": "Revelation",
+      "reveal": "The answer is Revelation — the Bible's final book. Written by John on the island of Patmos, full of visions, seals, trumpets, and the promise that the Lamb wins in the end.",
+      "scripture": "Revelation 1:1"
+    },
+    {
+      "week": 30,
+      "type": "Verse Fill-in-the-Blank",
+      "prompt": "Complete this KJV verse from Proverbs 3:5 — 'Trust in the LORD with all thine ______; and lean not unto thine own understanding.'",
+      "answer": "heart",
+      "reveal": "The answer is heart. Proverbs 3:5 — one of those verses that sounds simple until you try to live it. Trusting with all your heart means the part of you that wants to figure it out on your own has to sit down.",
+      "scripture": "Proverbs 3:5"
+    },
+    {
+      "week": 31,
+      "type": "Riddle",
+      "prompt": "I was made from a rib, named by my husband, and blamed for a piece of fruit. Who am I?",
+      "answer": "Eve",
+      "reveal": "The answer is Eve — the first woman, formed from Adam's rib (Genesis 2:22), named by Adam (Genesis 3:20), and yes, she took the fruit. But Adam was standing right there with her when she did.",
+      "scripture": "Genesis 2:22; 3:6, 20"
+    },
+    {
+      "week": 32,
+      "type": "First and Last",
+      "prompt": "I'm the first of the twelve disciples that Jesus called. My brother and I were casting a net into the sea when He said, 'Follow me.' Who am I?",
+      "answer": "Andrew (or Simon Peter — they were called together)",
+      "reveal": "The answer is Andrew — or his brother Simon Peter, since Jesus called them together. 'Follow me, and I will make you fishers of men' (Matthew 4:18–19). They dropped their nets immediately.",
+      "scripture": "Matthew 4:18–20; John 1:40–41"
+    },
+    {
+      "week": 33,
+      "type": "Odd One Out",
+      "prompt": "Which one doesn't belong? Matthew, Mark, Luther, John.",
+      "answer": "Luther — the other three are Gospel writers",
+      "reveal": "The answer is Luther. Matthew, Mark, and John each wrote a Gospel — Luther wrote the 95 Theses. He loved those Gospels, but he didn't write any of them.",
+      "scripture": null
+    },
+    {
+      "week": 34,
+      "type": "Shared Word",
+      "prompt": "One word fits both blanks: 'The ______ of God' (describing the Holy Spirit in Genesis 1:2) and 'the ______ bloweth where it listeth' (John 3:8). What's the word?",
+      "answer": "Spirit",
+      "reveal": "The answer is Spirit. In Genesis 1:2, the Spirit of God moved upon the face of the waters. In John 3:8, Jesus tells Nicodemus that the Spirit (or wind — same word) bloweth where it listeth. Present at creation, still moving.",
+      "scripture": "Genesis 1:2; John 3:8"
+    },
+    {
+      "week": 35,
+      "type": "Bible Math",
+      "prompt": "How many plagues did God send on Egypt? Subtract the number of stones David picked up from the brook before fighting Goliath. What's left?",
+      "answer": "5",
+      "reveal": "The answer is 5. Ten plagues (Exodus 7–12) minus five smooth stones (1 Samuel 17:40). David only needed one of those stones, but he came prepared.",
+      "scripture": "Exodus 7–12; 1 Samuel 17:40"
+    },
+    {
+      "week": 36,
+      "type": "Which Book Am I?",
+      "prompt": "I'm the shortest book in the New Testament — just one chapter, twenty-five verses. I'm a personal letter about a runaway slave. Which book am I?",
+      "answer": "Philemon",
+      "reveal": "The answer is Philemon — Paul's personal letter asking Philemon to take back his runaway slave Onesimus, not as property but as a brother. Twenty-five verses that changed how the early church thought about people.",
+      "scripture": "Philemon 1:10–16"
+    },
+    {
+      "week": 37,
+      "type": "Who Said It?",
+      "prompt": "Who said: 'The LORD gave, and the LORD hath taken away; blessed be the name of the LORD'?",
+      "answer": "Job",
+      "reveal": "The answer is Job — chapter 1, verse 21. He'd just lost his livestock, his servants, and all ten of his children in a single day. And that was his response. The most staggering line in the Old Testament.",
+      "scripture": "Job 1:21"
+    },
+    {
+      "week": 38,
+      "type": "Riddle",
+      "prompt": "I went up in a chariot of fire pulled by horses of fire, carried by a whirlwind into heaven — and I never died. Who am I?",
+      "answer": "Elijah",
+      "reveal": "The answer is Elijah — 2 Kings 2:11. He's one of only two people in Scripture who left earth without dying (Enoch is the other, in Genesis 5:24). Elisha watched him go and picked up his mantle.",
+      "scripture": "2 Kings 2:11"
+    },
+    {
+      "week": 39,
+      "type": "What's the Connection?",
+      "prompt": "What do these have in common: a coat of many colours, a silver cup, and a sack of grain?",
+      "answer": "Joseph's story in Genesis",
+      "reveal": "They all belong to Joseph's story in Genesis. His father gave him the coat (Genesis 37:3), he hid his silver cup in Benjamin's sack (Genesis 44:2), and his brothers came to Egypt to buy grain during the famine (Genesis 42:3). One family, a lot of drama.",
+      "scripture": "Genesis 37, 42, 44"
+    },
+    {
+      "week": 40,
+      "type": "Scrambled Book",
+      "prompt": "Unscramble these letters to find a book of the Bible: MALARSSONO FONG",
+      "answer": "Song of Solomon",
+      "reveal": "The answer is Song of Solomon — the Bible's love poem, also called the Song of Songs. Eight chapters of devotion so intense that rabbis debated whether young people should even read it.",
+      "scripture": "Song of Solomon 1:1"
+    },
+    {
+      "week": 41,
+      "type": "Verse Fill-in-the-Blank",
+      "prompt": "Complete this KJV verse from Jeremiah 29:11 — 'For I know the ______ that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.'",
+      "answer": "thoughts",
+      "reveal": "The answer is thoughts. Jeremiah 29:11 — the graduation-card favorite. Worth remembering that God said it to exiles who had seventy years of waiting ahead of them. The promise was real; so was the patience it required.",
+      "scripture": "Jeremiah 29:11"
+    },
+    {
+      "week": 42,
+      "type": "First and Last",
+      "prompt": "I'm the last judge of Israel — and the one who anointed both its first and second kings. Who am I?",
+      "answer": "Samuel",
+      "reveal": "The answer is Samuel. He was the last judge (1 Samuel 7:15), he anointed Saul as the first king (1 Samuel 10:1), and then he anointed David as the second (1 Samuel 16:13). He bridged two entire eras of Israel's history.",
+      "scripture": "1 Samuel 7:15; 10:1; 16:13"
+    },
+    {
+      "week": 43,
+      "type": "Who Said It?",
+      "prompt": "Who said: 'I have fought a good fight, I have finished my course, I have kept the faith'?",
+      "answer": "Paul (the apostle)",
+      "reveal": "The answer is Paul — 2 Timothy 4:7. He wrote it from prison, near the end of his life, to his young protégé Timothy. No regrets, no complaints — just a man who ran his race and finished it.",
+      "scripture": "2 Timothy 4:7"
+    },
+    {
+      "week": 44,
+      "type": "Odd One Out",
+      "prompt": "Which one doesn't belong? Elijah, Elisha, Eli, Ephesians.",
+      "answer": "Ephesians — the others are people; Ephesians is a book (letter)",
+      "reveal": "The answer is Ephesians. Elijah, Elisha, and Eli are all people in the Old Testament. Ephesians is a letter Paul wrote to a church. The names sound alike, but only three of them had a pulse.",
+      "scripture": null
+    },
+    {
+      "week": 45,
+      "type": "Riddle",
+      "prompt": "I'm a wall that fell down flat — not from a battering ram, but from trumpets and a shout. What city am I?",
+      "answer": "Jericho",
+      "reveal": "The answer is Jericho. Joshua 6 — the Israelites marched around the city for seven days. On the seventh day, seven priests blew seven trumpets, the people shouted, and the walls fell down flat. Military strategy by faith.",
+      "scripture": "Joshua 6:20"
+    },
+    {
+      "week": 46,
+      "type": "Shared Word",
+      "prompt": "One word fits both blanks: 'Coat of many ______' and 'the ______ of Joseph's dreamcoat.' What's the word?",
+      "answer": "Colours",
+      "reveal": "The answer is colours. Genesis 37:3 — Jacob made Joseph a coat of many colours, and his brothers hated him for it. The coat that started all the trouble.",
+      "scripture": "Genesis 37:3"
+    },
+    {
+      "week": 47,
+      "type": "Bible Math",
+      "prompt": "How many years did the Israelites wander in the wilderness? Add the number of days between Jesus' resurrection and His ascension. What's the total?",
+      "answer": "80",
+      "reveal": "The answer is 80 again — forty years of wandering (Numbers 14:33) plus forty days between the resurrection and the ascension (Acts 1:3). There's that number forty, right on schedule.",
+      "scripture": "Numbers 14:33; Acts 1:3"
+    },
+    {
+      "week": 48,
+      "type": "Which Book Am I?",
+      "prompt": "I tell the story of a Jewish queen who saved her people from a massacre — and I never mention God by name. You've heard of me before in this series. Which book?",
+      "answer": "Esther",
+      "reveal": "The answer is Esther — yes, she's back. We featured this fact in Week 5, and it's still remarkable. God's name is absent from the text, but His hand is on every page.",
+      "scripture": "Esther"
+    },
+    {
+      "week": 49,
+      "type": "Verse Fill-in-the-Blank",
+      "prompt": "Complete this KJV verse from Philippians 4:13 — 'I can do all things through ______ which strengtheneth me.'",
+      "answer": "Christ",
+      "reveal": "The answer is Christ. Philippians 4:13 — Paul wrote it from prison, talking about being content in any circumstance. The verse isn't about winning games or landing promotions. It's about endurance.",
+      "scripture": "Philippians 4:13"
+    },
+    {
+      "week": 50,
+      "type": "What's the Connection?",
+      "prompt": "What do these have in common: water into wine, feeding five thousand, and walking on water?",
+      "answer": "Miracles of Jesus",
+      "reveal": "They're all miracles Jesus performed. Water to wine at Cana (John 2), feeding the five thousand (John 6:1–14), and walking on the sea (Matthew 14:25). Each one showed the disciples something about who they were following.",
+      "scripture": "John 2:1–11; John 6:1–14; Matthew 14:25"
+    },
+    {
+      "week": 51,
+      "type": "Who Said It?",
+      "prompt": "Who said to the LORD: 'Speak; for thy servant heareth'?",
+      "answer": "Samuel (as a boy)",
+      "reveal": "The answer is the boy Samuel — 1 Samuel 3:10. He was lying in the temple at night when God called his name. Eli finally told him what to say. Three words that changed his life: 'Speak; for thy servant heareth.'",
+      "scripture": "1 Samuel 3:10"
+    },
+    {
+      "week": 52,
+      "type": "First and Last",
+      "prompt": "I'm the very last verse of the entire Bible — Revelation 22:21. Complete it: 'The ______ of our Lord Jesus Christ be with you all. Amen.'",
+      "answer": "grace",
+      "reveal": "The answer is grace. The Bible's final word before 'Amen' is about grace — the whole story, from Genesis to Revelation, 66 books, roughly 1,200 chapters, ends right there. 'The grace of our Lord Jesus Christ be with you all. Amen.' See you next year.",
+      "scripture": "Revelation 22:21"
+    }
+  ]
+}
