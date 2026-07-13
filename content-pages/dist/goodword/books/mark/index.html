@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gospel of Mark — The Good Word Game</title>
+<meta name="description" content="The action gospel — short, urgent, and straightway to the point.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin:0; background:#fbf3e2; font-family:Georgia,'Times New Roman',ui-serif,serif; color:#221a12; -webkit-font-smoothing:antialiased; }
+  a { color:#bf8f2e; text-decoration:none; }
+  a:hover { color:#96701f; text-decoration:underline; }
+  .content-col { max-width:640px; margin:0 auto; }
+  .sans { font-family:ui-sans-serif,system-ui,-apple-system,sans-serif; }
+
+  /* ---------- HERO ---------- */
+  .hero { padding:clamp(56px,9vw,92px) 24px clamp(36px,5vw,56px); text-align:center; }
+  .hero .content-col { display:flex; flex-direction:column; gap:18px; align-items:center; }
+  .hero-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#7a6857; }
+  .hero-divider { width:44px; height:2px; background:#bf8f2e; }
+  .hero h1 { margin:0; font-size:clamp(40px,7vw,64px); font-weight:400; letter-spacing:-0.01em; line-height:1.08; }
+  .hero-subtitle { margin:0; font-size:clamp(16px,2.2vw,18.5px); line-height:1.6; color:#7a6857; max-width:520px; text-wrap:pretty; }
+
+  /* ---------- SNAPSHOT ---------- */
+  .snapshot-wrap { padding:0 24px; }
+  .snapshot { background:#fffcf4; border:1px solid #e8d9b8; border-radius:14px; padding:clamp(20px,4vw,28px); box-shadow:0 2px 10px rgba(34,26,18,0.05); }
+  .snapshot-label { display:block; font-size:11.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#bf8f2e; margin-bottom:16px; }
+  .snapshot-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:18px; }
+  .snapshot-item-label { font-size:12px; color:#7a6857; }
+  .snapshot-item-value { font-size:22px; font-weight:700; }
+  .difficulty-badge { display:inline-flex; align-self:flex-start; padding:5px 12px; border-radius:99px; background:#2f6f55; color:#fbf3e2; font-size:13px; font-weight:700; }
+  .snapshot-theme { margin-top:18px; padding-top:16px; border-top:1px dashed #e8d9b8; }
+  .snapshot-theme-text { font-size:17px; font-style:italic; line-height:1.5; }
+
+  /* ---------- CHALLENGE ---------- */
+  .challenge-wrap { padding:clamp(40px,6vw,64px) 24px; }
+  .challenge { background:#221a12; border-radius:16px; padding:clamp(24px,5vw,36px); color:#fbf3e2; display:flex; flex-direction:column; gap:20px; box-shadow:0 8px 24px rgba(34,26,18,0.18); }
+  .challenge-header { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  .challenge-label { font-size:11.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#bf8f2e; }
+  .challenge-ref { font-size:12px; color:#a4937e; }
+  .challenge-verse { margin:0; font-size:clamp(20px,3.4vw,25px); line-height:1.55; font-style:italic; text-wrap:pretty; }
+  .challenge-blank { display:inline-block; min-width:96px; border-bottom:2px solid #bf8f2e; text-align:center; color:#bf8f2e; }
+  .challenge-answer { color:#bf8f2e; font-weight:700; border-bottom:2px solid #bf8f2e; }
+  .challenge-input-row { display:flex; gap:10px; flex-wrap:wrap; }
+  .challenge-input { flex:1; min-width:180px; background:#fbf3e2; border:1px solid #bf8f2e; border-radius:10px; padding:13px 16px; font-family:Georgia,serif; font-size:17px; color:#221a12; outline:none; }
+  .challenge-submit { background:#bf8f2e; color:#221a12; border:none; border-radius:10px; padding:13px 24px; font-weight:800; font-size:15px; cursor:pointer; }
+  .challenge-submit:hover { background:#d4a43f; }
+  .result-correct { background:rgba(47,111,85,0.25); border:1px solid #2f6f55; border-radius:10px; padding:16px 18px; }
+  .result-correct-title { font-weight:800; font-size:15px; color:#8fd0b4; }
+  .result-wrong { background:rgba(191,143,46,0.15); border:1px solid #bf8f2e; border-radius:10px; padding:16px 18px; }
+  .result-wrong-title { font-weight:800; font-size:15px; color:#d4a43f; }
+  .challenge-disclaimer { font-size:12px; color:#7a6857; }
+  .challenge-retry { align-self:flex-start; background:transparent; color:#a4937e; border:1px solid #4a3c2c; border-radius:99px; padding:8px 18px; font-weight:700; font-size:13px; cursor:pointer; }
+  .challenge-retry:hover { color:#fbf3e2; border-color:#a4937e; }
+
+  /* ---------- DID YOU KNOW ---------- */
+  .dyk-section { padding:0 24px clamp(40px,6vw,64px); }
+  .dyk-section .content-col { display:flex; flex-direction:column; gap:22px; }
+  .dyk-section h2 { margin:0; font-size:clamp(26px,4vw,32px); font-weight:400; }
+  .dyk-list { display:flex; flex-direction:column; gap:18px; }
+  .dyk-item { display:flex; gap:16px; align-items:baseline; }
+  .dyk-bullet { font-size:20px; color:#bf8f2e; font-weight:700; flex-shrink:0; }
+  .dyk-text { margin:0; font-size:17px; line-height:1.65; color:#443729; text-wrap:pretty; }
+
+  /* ---------- CTA ---------- */
+  .cta-section { padding:clamp(48px,7vw,76px) 24px; background:#221a12; color:#fbf3e2; }
+  .cta-section .content-col { display:flex; flex-direction:column; gap:22px; align-items:center; text-align:center; }
+  .cta-section h2 { margin:0; font-size:clamp(28px,4.5vw,38px); font-weight:400; line-height:1.2; }
+  .cta-btn { display:inline-flex; align-items:center; gap:10px; background:#bf8f2e; color:#221a12; font-weight:800; font-size:16.5px; padding:16px 30px; border-radius:12px; }
+  .cta-btn:hover { background:#d4a43f; color:#221a12; text-decoration:none; }
+  .cta-streak { font-size:14px; color:#a4937e; }
+  .sibling-nav { display:flex; flex-direction:column; gap:12px; align-items:center; padding-top:16px; border-top:1px dashed #4a3c2c; width:100%; }
+  .sibling-label { font-size:11.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#7a6857; }
+  .sibling-links { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .sibling-link { padding:8px 18px; border:1px solid #4a3c2c; border-radius:99px; font-size:15px; color:#fbf3e2; }
+  .sibling-link:hover { border-color:#bf8f2e; color:#bf8f2e; text-decoration:none; }
+
+  /* ---------- FOOTER ---------- */
+  .site-footer { background:#1a140d; color:#a4937e; padding:36px 24px; text-align:center; }
+  .site-footer .content-col { display:flex; flex-direction:column; gap:14px; align-items:center; }
+  .footer-title { font-size:20px; font-weight:700; color:#fbf3e2; }
+  .footer-studio { font-size:12.5px; letter-spacing:0.12em; text-transform:uppercase; }
+  .footer-tagline { font-size:15px; font-style:italic; color:#bf8f2e; }
+  .footer-links { display:flex; gap:22px; font-size:13.5px; font-weight:600; }
+  .footer-links a { color:#a4937e; }
+  .footer-links a:hover { color:#fbf3e2; }
+</style>
+</head>
+<body style="background-image:radial-gradient(rgba(191,143,46,0.05) 1px, transparent 1px); background-size:22px 22px;">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="content-col">
+    <span class="hero-eyebrow sans">Groundwork Studios</span>
+    <div class="hero-divider"></div>
+    <h1>The Gospel of Mark</h1>
+    <p class="hero-subtitle sans">The action gospel — short, urgent, and straightway to the point.</p>
+  </div>
+</section>
+
+<!-- 2. BOOK SNAPSHOT -->
+<section class="snapshot-wrap">
+  <div class="content-col">
+    <div class="snapshot">
+      <span class="snapshot-label sans">Book snapshot</span>
+      <div class="snapshot-grid">
+        <div>
+          <div class="snapshot-item-label sans">Chapters</div>
+          <div class="snapshot-item-value">16</div>
+        </div>
+        <div>
+          <div class="snapshot-item-label sans">Testament</div>
+          <div class="snapshot-item-value">New</div>
+        </div>
+        <div>
+          <div class="snapshot-item-label sans">Difficulty</div>
+          <span class="difficulty-badge sans">Warm-Up</span>
+        </div>
+      </div>
+      <div class="snapshot-theme">
+        <div class="snapshot-item-label sans">Theme</div>
+        <div class="snapshot-theme-text">The servant King — not to be ministered unto, but to minister.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SAMPLE VERSE CHALLENGE -->
+<section class="challenge-wrap">
+  <div class="content-col">
+    <div class="challenge" id="challenge">
+      <div class="challenge-header">
+        <span class="challenge-label sans">Try one from Mark</span>
+        <span class="challenge-ref sans">Mark 10:27 · KJV</span>
+      </div>
+      <p class="challenge-verse">
+        "With men it is impossible, but not with God: for with God all things are <span class="challenge-blank" id="blank">______</span><span class="challenge-answer" id="answer-word" style="display:none;">possible</span>."
+      </p>
+      <div class="challenge-input-row" id="input-row">
+        <input class="challenge-input" id="guess-input" placeholder="One word, KJV exact…">
+        <button class="challenge-submit sans" id="submit-btn">Submit</button>
+      </div>
+      <div class="result-correct" id="result-correct" style="display:none;">
+        <div class="result-correct-title sans">Correct.</div>
+        <div style="font-size:16px; font-style:italic; margin-top:6px;">With God — and apparently with you — all things are possible.</div>
+      </div>
+      <div class="result-wrong" id="result-wrong" style="display:none;">
+        <div class="result-wrong-title sans">Not quite.</div>
+        <div style="font-size:16px; font-style:italic; margin-top:6px;">Jesus said it after the rich young ruler walked away. The answer: possible.</div>
+      </div>
+      <button class="challenge-retry sans" id="retry-btn" style="display:none;">Try again</button>
+      <span class="challenge-disclaimer sans">This verse isn't in today's daily — no spoilers here.</span>
+    </div>
+  </div>
+</section>
+
+<script>
+// Minimal challenge interaction — replace possible at build time
+(function() {
+  const ANSWER = 'possible';
+  const blank = document.getElementById('blank');
+  const answerWord = document.getElementById('answer-word');
+  const inputRow = document.getElementById('input-row');
+  const guessInput = document.getElementById('guess-input');
+  const submitBtn = document.getElementById('submit-btn');
+  const correctEl = document.getElementById('result-correct');
+  const wrongEl = document.getElementById('result-wrong');
+  const retryBtn = document.getElementById('retry-btn');
+
+  function submit() {
+    const g = guessInput.value.trim().toLowerCase().replace(/[.,;:!?"']/g, '');
+    if (!g) return;
+    blank.style.display = 'none';
+    answerWord.style.display = '';
+    inputRow.style.display = 'none';
+    retryBtn.style.display = '';
+    if (g === ANSWER) { correctEl.style.display = ''; }
+    else { wrongEl.style.display = ''; }
+  }
+
+  submitBtn.addEventListener('click', submit);
+  guessInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') submit(); });
+
+  retryBtn.addEventListener('click', function() {
+    blank.style.display = '';
+    answerWord.style.display = 'none';
+    inputRow.style.display = '';
+    correctEl.style.display = 'none';
+    wrongEl.style.display = 'none';
+    retryBtn.style.display = 'none';
+    guessInput.value = '';
+  });
+})();
+</script>
+
+<!-- 4. DID YOU KNOW -->
+<section class="dyk-section">
+  <div class="content-col">
+    <h2>Did you know?</h2>
+    <div class="dyk-list">
+      
+      <div class="dyk-item">
+        <span class="dyk-bullet">✦</span>
+        <p class="dyk-text">Mark is the shortest gospel and the fastest — the KJV uses 'straightway' and 'immediately' over forty times. Everything happens now.</p>
+      </div>
+      
+      <div class="dyk-item">
+        <span class="dyk-bullet">✦</span>
+        <p class="dyk-text">Early church tradition says Mark wrote down the preaching of Peter — making this gospel, in effect, Peter's memoirs in someone else's handwriting.</p>
+      </div>
+      
+      <div class="dyk-item">
+        <span class="dyk-bullet">✦</span>
+        <p class="dyk-text">Nearly half of Mark — six of sixteen chapters — covers just the final week of Jesus' life. Mark knew where the story was heading.</p>
+      </div>
+      
+      <div class="dyk-item">
+        <span class="dyk-bullet">✦</span>
+        <p class="dyk-text">A young man flees the arrest scene in Gethsemane leaving his garment behind — found only in Mark 14. Many believe it's the author's unsigned cameo.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 5. CTA FOOTER -->
+<section class="cta-section">
+  <div class="content-col">
+    <h2>Think you know Mark? <em>Prove it.</em></h2>
+    <a href="/play" class="cta-btn sans">Play today's daily — five verses, one chance</a>
+    <span class="cta-streak sans">🔥 Players are on 12-day streaks right now</span>
+    <div class="sibling-nav">
+      <span class="sibling-label sans">Explore more books</span>
+      <div class="sibling-links">
+        
+        <a href="/books/matthew" class="sibling-link">Matthew</a>
+        
+        <a href="/books/luke" class="sibling-link">Luke</a>
+        
+        <a href="/books/jonah" class="sibling-link">Jonah</a>
+        
+        <a href="/books/ruth" class="sibling-link">Ruth</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. SITE FOOTER -->
+<footer class="site-footer">
+  <div class="content-col">
+    <span class="footer-title">The Good Word Game</span>
+    <span class="footer-studio sans">A Groundwork Studios game</span>
+    <span class="footer-tagline">KJV precision. Daily discipline. A little bit of fun.</span>
+    <div class="footer-links sans">
+      <a href="/play">Play the daily</a>
+      <a href="/plus">Good Word Plus</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

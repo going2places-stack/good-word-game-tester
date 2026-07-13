@@ -1,0 +1,421 @@
+{
+  "$schema_notes": "One entry per fundamentals check. 'slug' becomes the URL path segment. 'siblings' auto-generated from all other slugs at build time.",
+  "checks": [
+    {
+      "slug": "pe-ratio",
+      "title": "What Is a P/E Ratio?",
+      "subtitle": "The price tag on a dollar of profit — and why it matters before you invest.",
+      "checkNumber": 4,
+      "checkName": "Fair Price",
+      "checkLabel": "P/E Ratio",
+      "checkQuestion": "Is the price reasonable for the earnings?",
+      "gradingScale": {
+        "strong": "P/E below 15 — a dollar of profit at a friendly price",
+        "solid": "P/E of 15–25 — fairly priced for a healthy business",
+        "weak": "P/E above 25 — priced for perfection; less room for error"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: two coffee shops are for sale on the same street. Both earn $50,000 a year in profit. One is priced at $500,000, the other at $1.5 million. Same profit, very different price tags. Which one is the better deal? That question — how much am I paying for each dollar of profit? — is exactly what the P/E ratio answers.",
+              "P/E stands for price-to-earnings. You take a company's stock price and divide it by its earnings per share. A P/E of 10 means you're paying $10 for every $1 the company earns each year. A P/E of 30 means you're paying $30 for that same dollar."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because a great company can still be a bad deal at the wrong price. The P/E ratio is the fastest way to tell whether a stock is priced like a bargain, priced fairly, or priced for perfection. It's not the whole story — fast-growing companies often deserve higher P/Es — but it's the first question a careful investor asks.",
+              "One friendly warning: a low P/E isn't automatically good. Sometimes a stock is cheap because the business is in trouble. That's why P/E is one of eight checks — never the only one."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each earn $5 per share every year. Company A's stock costs $50. Company B's stock costs $150. Same earnings — three times the price.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$50 price ÷ $5 earnings",
+            "result": "P/E 10",
+            "resultColor": "teal",
+            "description": "You pay $10 for each $1 of yearly profit."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$150 price ÷ $5 earnings",
+            "result": "P/E 30",
+            "resultColor": "coral",
+            "description": "You pay $30 for each $1 of yearly profit."
+          }
+        ],
+        "conclusion": "Is Company B overpriced? Maybe — or maybe investors expect its earnings to grow fast enough to justify it. The P/E tells you what the market is charging. The other seven checks help you decide if it's worth paying."
+      }
+    },
+    {
+      "slug": "revenue-growth",
+      "title": "What Is Revenue Growth?",
+      "subtitle": "Whether a company is making more money each year — and why that momentum matters.",
+      "checkNumber": 1,
+      "checkName": "Growing Revenue",
+      "checkLabel": "Revenue Growth",
+      "checkQuestion": "Is the company's revenue growing year over year?",
+      "gradingScale": {
+        "strong": "Revenue growth above 10% — the business is clearly expanding",
+        "solid": "Revenue growth of 3–10% — steady and respectable",
+        "weak": "Revenue growth below 3% or shrinking — momentum has stalled"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: a food truck that sold $80,000 of tacos last year and $100,000 this year. Nothing else changed — same truck, same corner — but 25% more money came through the window. That's revenue growth: how much more the business sold this year than last year.",
+              "Revenue is every dollar a company brings in from selling its products or services, before a single bill gets paid. It's often called the top line, because it sits at the very top of the income statement. Revenue growth simply compares this year's top line to last year's and asks: bigger or smaller?"
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because growing revenue is the clearest sign that customers want what the company sells. More sales mean more people buying, more often, or at higher prices — and every one of those is good news. A company can dress up almost any number with accounting, but it's very hard to fake customers showing up.",
+              "One friendly warning: growth alone isn't the goal. A company can grow revenue by selling dollar bills for ninety cents — plenty of sales, no profit. That's why revenue growth is the first check of eight, not the whole report card."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each sold $100 million of products last year. This year, Company A rings up $115 million. Company B rings up $101 million. Same starting line — very different momentum.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$115M this year vs $100M last year",
+            "result": "+15%",
+            "resultColor": "teal",
+            "description": "Customers are clearly showing up in bigger numbers."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$101M this year vs $100M last year",
+            "result": "+1%",
+            "resultColor": "coral",
+            "description": "Barely moving — the business is treading water."
+          }
+        ],
+        "conclusion": "Company A has momentum; Company B has a question to answer. Maybe B is a steady giant having a slow year — or maybe customers are drifting away. Revenue growth tells you which direction the business is moving. The other seven checks tell you whether the trip is profitable."
+      }
+    },
+    {
+      "slug": "profit-margins",
+      "title": "What Are Profit Margins?",
+      "subtitle": "How much money a company actually keeps from each sale — and why it separates winners from pretenders.",
+      "checkNumber": 2,
+      "checkName": "Healthy Margins",
+      "checkLabel": "Profit Margins",
+      "checkQuestion": "Does the company keep a healthy share of its revenue?",
+      "gradingScale": {
+        "strong": "Margin above 10% — the company keeps a solid cut",
+        "solid": "Margin of 5–10% — decent but not dominant",
+        "weak": "Margin below 5% — thin profits, little room for error"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: two bakeries each sell a loaf of bread for $5. The first spends $4.50 on flour, labor, rent, and everything else — it keeps 50 cents. The second runs a tighter ship and keeps $1.50 from that same loaf. Both made a sale. One made three times the money. That difference is the profit margin.",
+              "Profit margin is the percentage of revenue a company keeps as profit after paying its bills. Take the profit, divide it by the revenue, and you get the margin. A 10% margin means the company keeps 10 cents of every dollar customers hand it."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because selling a lot means nothing if there's nothing left afterward. Margins tell you how much cushion a company has when times get tough. When costs rise or competitors cut prices, a business keeping 15 cents on the dollar can absorb the hit. A business keeping 2 cents is one bad quarter from losing money.",
+              "Healthy margins also hint at something deeper: pricing power. A company that keeps a fat share of every sale usually has something customers can't easily get elsewhere. Thin margins often mean the company competes on price alone — and that's a hard way to live."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each bring in $100 million of revenue this year. After all the bills are paid, Company A keeps $15 million. Company B keeps $2 million. Same sales — wildly different keep.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$15M profit ÷ $100M revenue",
+            "result": "15%",
+            "resultColor": "teal",
+            "description": "Keeps 15 cents of every dollar customers spend."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$2M profit ÷ $100M revenue",
+            "result": "2%",
+            "resultColor": "coral",
+            "description": "Keeps 2 cents — one bad quarter from breaking even."
+          }
+        ],
+        "conclusion": "From the outside, both companies look the same size. But Company A turns sales into real money, while Company B works just as hard to keep almost nothing. Margins reveal the difference between a business that's busy and a business that's good."
+      }
+    },
+    {
+      "slug": "return-on-equity",
+      "title": "What Is Return on Equity?",
+      "subtitle": "How well a company turns shareholders' money into profit — the efficiency scorecard.",
+      "checkNumber": 3,
+      "checkName": "Smart Capital",
+      "checkLabel": "Return on Equity",
+      "checkQuestion": "Is the company generating strong returns on shareholder equity?",
+      "gradingScale": {
+        "strong": "ROE above 15% — excellent use of capital",
+        "solid": "ROE of 8–15% — competent management",
+        "weak": "ROE below 8% — shareholders' money isn't working hard"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: two friends each open a sandwich shop with $100,000 of their own savings. A year later, the first shop has earned $20,000 in profit. The second earned $4,000. Same investment, same year — but the first friend's money worked five times harder. That's what return on equity measures.",
+              "ROE takes a company's yearly profit and divides it by shareholders' equity — the money investors have put in and left in the business. An ROE of 15% means every $100 of shareholder money produced $15 of profit this year."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because when you buy a stock, your money becomes part of that equity — and ROE tells you how hard management makes it work. A consistently high ROE is one of the best signs of a quality business: it means the company doesn't just earn money, it earns money efficiently, year after year.",
+              "One friendly warning: a company can inflate its ROE by borrowing heavily — less equity on the books makes the return look bigger. That's why ROE and the debt check travel together. A high ROE with low debt is the real thing. A high ROE with a mountain of debt deserves a raised eyebrow."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each hold $100 million of shareholders' equity. This year, Company A earns $18 million in profit. Company B earns $5 million. Same money invested — very different results.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$18M profit ÷ $100M equity",
+            "result": "ROE 18%",
+            "resultColor": "teal",
+            "description": "Every $100 of shareholder money made $18 this year."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$5M profit ÷ $100M equity",
+            "result": "ROE 5%",
+            "resultColor": "coral",
+            "description": "Every $100 made just $5 — barely beating a savings account."
+          }
+        ],
+        "conclusion": "Company A's management is turning investor money into real returns. Company B's shareholders might fairly ask what their capital is doing all day. ROE won't tell you everything — but it tells you who's working harder with the same dollars."
+      }
+    },
+    {
+      "slug": "earnings-growth",
+      "title": "What Is Earnings Growth?",
+      "subtitle": "Whether a company's profits are growing — not just revenue, but the money it actually keeps.",
+      "checkNumber": 5,
+      "checkName": "Growing Profits",
+      "checkLabel": "Earnings Growth",
+      "checkQuestion": "Are the company's earnings growing year over year?",
+      "gradingScale": {
+        "strong": "Earnings growth above 10% — profits are accelerating",
+        "solid": "Earnings growth of 3–10% — steady profit improvement",
+        "weak": "Earnings growth below 3% or declining — profits under pressure"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: your paycheck went up 10% this year — but after rent, groceries, and gas, the amount actually landing in savings went down. Which number tells the real story? The one you keep. Companies work the same way. Revenue is the paycheck; earnings are what's left after every bill is paid. Earnings growth asks whether that leftover number is getting bigger each year.",
+              "Earnings — also called net income or the bottom line — are the profits that belong to shareholders. Earnings growth compares this year's profit to last year's. Growing earnings mean the business isn't just selling more; it's keeping more."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because over the long run, a stock's price tends to follow its earnings. A company that grows profits year after year is building real value you can measure — and eventually, the market notices. Revenue growth gets the headlines; earnings growth pays the bills.",
+              "It's also the perfect partner to the revenue check. Revenue up and earnings up? The business is scaling beautifully. Revenue up but earnings down? Growth is getting expensive — the company is buying its sales. That gap is one of the most useful warning signs in investing."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each earned $2.00 per share last year. This year, Company A earns $2.30 per share. Company B earns $1.90. Same starting point — opposite directions.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$2.30 EPS vs $2.00 last year",
+            "result": "+15%",
+            "resultColor": "teal",
+            "description": "Profits are growing — each share earned more this year."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$1.90 EPS vs $2.00 last year",
+            "result": "−5%",
+            "resultColor": "coral",
+            "description": "Profits are shrinking — each share earned less."
+          }
+        ],
+        "conclusion": "One year doesn't make a trend — even great companies have down years. But a pattern of growing earnings is the closest thing investing has to a tailwind. Company A has it. Company B needs to explain where the profits went."
+      }
+    },
+    {
+      "slug": "dividends",
+      "title": "What Are Dividends?",
+      "subtitle": "Cash payments a company sends to shareholders — your share of the profits, delivered.",
+      "checkNumber": 6,
+      "checkName": "Shareholder Rewards",
+      "checkLabel": "Dividends",
+      "checkQuestion": "Does the company pay and maintain a reliable dividend?",
+      "gradingScale": {
+        "strong": "Consistent dividend with growth history — the company shares its success",
+        "solid": "Dividend paid but flat or recently started — promising but unproven",
+        "weak": "No dividend or recently cut — shareholders aren't being rewarded"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: you own a small stake in a rental property, and every few months a check arrives in the mail — your share of the rent. You didn't sell anything. You still own your stake. The money just showed up because the property earns money and you own a piece of it. That's a dividend.",
+              "When a company earns a profit, it has a choice: reinvest the money in the business, or send some of it to the people who own the shares. A dividend is that payment — usually cash, usually every quarter, for every share you hold."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because a dividend is profit you don't have to take on faith. Reported earnings live on paper; a dividend lands in your account. A company that pays — and raises — its dividend year after year is making a public promise about its health, and cutting that dividend is so painful that management works hard to never do it.",
+              "One friendly warning: not every strong company pays a dividend. Younger, fast-growing businesses often reinvest every dollar instead, and that can be the right call. That's why this is one check of eight — a company can miss it and still earn a good report card."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies whose shares each cost $100. Company A pays $3 per share in dividends each year and has raised that payment ten years running. Company B paid $3 too — until last spring, when it cut the payment to zero.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$3 per share, raised 10 years straight",
+            "result": "3% yield",
+            "resultColor": "teal",
+            "description": "A decade of raises — success, shared on schedule."
+          },
+          {
+            "name": "Company B",
+            "calculation": "Dividend cut from $3 to $0 this year",
+            "result": "Cut",
+            "resultColor": "coral",
+            "description": "The payment stopped — usually a sign of deeper trouble."
+          }
+        ],
+        "conclusion": "Company A's streak says the profits are real and management expects them to continue. Company B's cut says something changed — and rarely for the better. The dividend check reads the message a company sends with its cash, not just its press releases."
+      }
+    },
+    {
+      "slug": "debt-safety",
+      "title": "What Is Debt Safety?",
+      "subtitle": "Whether a company can handle its debt — or whether it's one bad quarter away from trouble.",
+      "checkNumber": 7,
+      "checkName": "Manageable Debt",
+      "checkLabel": "Debt Safety",
+      "checkQuestion": "Can the company comfortably manage its debt load?",
+      "gradingScale": {
+        "strong": "Debt-to-equity below 0.5 — the balance sheet is clean",
+        "solid": "Debt-to-equity of 0.5–1.5 — manageable but worth watching",
+        "weak": "Debt-to-equity above 1.5 — heavy borrowing, higher risk"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: two neighbors earn the same salary. One has a small mortgage and no other loans. The other has a big mortgage, two car payments, and three maxed-out credit cards. Same income — but let one of them lose a job for three months, and you know exactly which household is in trouble. Companies are no different.",
+              "The most common way to size up a company's debt is the debt-to-equity ratio: total debt divided by shareholders' equity. A ratio of 0.5 means 50 cents of debt for every dollar of the owners' money. A ratio of 2.0 means the company owes twice what its owners have put in."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because debt is a magnifier. In good times, borrowed money boosts returns and everyone looks brilliant. In bad times, the interest payments keep coming whether or not the customers do — and a heavily indebted company can go from healthy to desperate in a single downturn. Debt doesn't cause the storm, but it decides who survives it.",
+              "Some debt is perfectly sensible — companies borrow to build factories and fund growth, just like families borrow to buy homes. The question is never whether a company has debt. It's whether the debt is sized to the business, or the business is shackled to the debt."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each hold $100 million of shareholders' equity. Company A carries $30 million in debt. Company B carries $220 million. Same size on the surface — very different balance sheets underneath.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$30M debt ÷ $100M equity",
+            "result": "0.3",
+            "resultColor": "teal",
+            "description": "Light debt load — plenty of room to ride out a rough year."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$220M debt ÷ $100M equity",
+            "result": "2.2",
+            "resultColor": "coral",
+            "description": "Owes more than twice its equity — the lenders come first."
+          }
+        ],
+        "conclusion": "When business is booming, Company B's borrowed money might even make it look like the star. But profits go to shareholders only after lenders get paid — and Company B has a long line of lenders. Debt safety asks the unglamorous question that matters most when things go wrong."
+      }
+    },
+    {
+      "slug": "free-cash-flow",
+      "title": "What Is Free Cash Flow?",
+      "subtitle": "The cash left over after a company pays its bills and invests in itself — the real bottom line.",
+      "checkNumber": 8,
+      "checkName": "Cash Generation",
+      "checkLabel": "Free Cash Flow",
+      "checkQuestion": "Is the company generating positive free cash flow?",
+      "gradingScale": {
+        "strong": "Consistent positive FCF — the business prints real cash",
+        "solid": "Positive FCF but inconsistent — good sign, needs monitoring",
+        "weak": "Negative FCF — the company is burning cash"
+      },
+      "explanation": {
+        "sections": [
+          {
+            "heading": "So what is it, exactly?",
+            "paragraphs": [
+              "Picture this: at the end of the month, you've paid the rent, covered the bills, fixed the car, and set aside what the house needed. Whatever is still sitting in your checking account — truly yours, no strings attached — that's your free cash flow. Companies have the same number.",
+              "Free cash flow is the cash a business generates from operations, minus what it spends to maintain and grow itself — the equipment, buildings, and technology it can't skip. What's left is cash the company can use for anything: paying dividends, paying down debt, or building the future."
+            ]
+          },
+          {
+            "heading": "Why should you care?",
+            "paragraphs": [
+              "Because earnings are an opinion — cash is a fact. Reported profits pass through dozens of accounting judgment calls, and history's ugliest investing surprises came from companies with beautiful earnings and empty bank accounts. Free cash flow is much harder to dress up: the money is either there or it isn't.",
+              "That's why many investors call it the real bottom line, and why it's the final check on the StockSense report card. A company that reliably turns sales into spendable cash can reward shareholders, survive downturns, and fund its own growth — without asking lenders or markets for permission."
+            ]
+          }
+        ]
+      },
+      "example": {
+        "intro": "Imagine two companies that each report solid profits this year. Company A generated $100 million in cash from operations and spent $30 million on equipment and upkeep. Company B generated $50 million but had to spend $80 million just to keep the machines running.",
+        "companies": [
+          {
+            "name": "Company A",
+            "calculation": "$100M from operations − $30M investment",
+            "result": "+$70M",
+            "resultColor": "teal",
+            "description": "Real cash left over — the business funds itself."
+          },
+          {
+            "name": "Company B",
+            "calculation": "$50M from operations − $80M investment",
+            "result": "−$30M",
+            "resultColor": "coral",
+            "description": "Burned $30M — the profits never became cash."
+          }
+        ],
+        "conclusion": "On paper, both companies had a fine year. In the bank, only Company A did. Company B must now borrow or raise money just to stand still — and that's how good stories end badly. Cash generation is where the truth lives."
+      }
+    }
+  ]
+}

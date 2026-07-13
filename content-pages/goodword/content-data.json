@@ -1,0 +1,1626 @@
+{
+  "$schema_notes": "One entry per book. 'slug' becomes the URL path. 'sampleVerse' is for the on-page teaser challenge (never a verse in the active daily rotation). 'siblingBooks' auto-generated at build time.",
+  "books": [
+    {
+      "slug": "genesis",
+      "bookName": "Genesis",
+      "displayTitle": "The Book of Genesis",
+      "subtitle": "The beginning of everything — creation, the fall, and the first families of faith.",
+      "testament": "Old",
+      "chapters": 50,
+      "theme": "Origins — of the world, of sin, of God's covenant with His people.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Genesis 1:1",
+        "textBefore": "In the beginning God created the heaven and the",
+        "textAfter": ".",
+        "answer": "earth",
+        "correctRetort": "That's the very first verse. You came ready.",
+        "wrongRetort": "The very first verse, and it slipped by. The answer: earth."
+      },
+      "didYouKnow": [
+        "Genesis covers more time than the other 65 books combined — from creation to Joseph's death in Egypt, roughly two thousand years of story in fifty chapters.",
+        "The word 'Genesis' means 'origin' or 'beginning' — and the book delivers: the first family, the first city, the first rainbow, and the first coat anyone ever argued over.",
+        "Joseph's story takes up more chapters than Adam, Noah, and Abraham each get — fourteen chapters of dreams, betrayal, and the best plot twist in the Old Testament.",
+        "Genesis 1 verses show up constantly in our Warm-Up dailies. Genesis 36 — the genealogy of Esau — does not. You're welcome."
+      ]
+    },
+    {
+      "slug": "exodus",
+      "bookName": "Exodus",
+      "displayTitle": "The Book of Exodus",
+      "subtitle": "Out of Egypt with a mighty hand — plagues, the Red Sea, and the law at Sinai.",
+      "testament": "Old",
+      "chapters": 40,
+      "theme": "Deliverance — God hears His people, breaks their chains, and makes them His own.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Exodus 14:14",
+        "textBefore": "The LORD shall fight for you, and ye shall hold your",
+        "textAfter": ".",
+        "answer": "peace",
+        "correctRetort": "Spoken like someone who's stood at the edge of a sea. Well done.",
+        "wrongRetort": "A verse worth memorizing before your next hard day. The answer: peace."
+      },
+      "didYouKnow": [
+        "The Ten Commandments appear twice in Scripture — Exodus 20 and Deuteronomy 5 — and the wording isn't quite identical. KJV players, mind which one you're quoting.",
+        "Moses spends the first two chapters of Exodus as a baby in a basket and a fugitive — and the last sixteen chapters supervising construction. The burning bush is just chapter 3.",
+        "The word 'Exodus' is Greek for 'the way out' — the book's Hebrew name, 'Shemoth,' simply means 'names,' after its opening line.",
+        "Nearly a third of Exodus is instructions for building the tabernacle, down to the color of the thread. God, it turns out, sweats the details."
+      ]
+    },
+    {
+      "slug": "leviticus",
+      "bookName": "Leviticus",
+      "displayTitle": "The Book of Leviticus",
+      "subtitle": "The holiness handbook — offerings, priests, and a God who dwells among His people.",
+      "testament": "Old",
+      "chapters": 27,
+      "theme": "Holiness — be ye holy, for the LORD your God is holy.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Leviticus 19:18",
+        "textBefore": "Thou shalt love thy neighbour as",
+        "textAfter": ": I am the LORD.",
+        "answer": "thyself",
+        "correctRetort": "Straight out of the law — and quoted by the Lord Himself. Sharp.",
+        "wrongRetort": "Jesus called this the second great commandment. The answer: thyself."
+      },
+      "didYouKnow": [
+        "'Love thy neighbour as thyself' — the command Jesus ranked second only to loving God — first appears here, tucked into Leviticus 19.",
+        "Leviticus is where many read-the-Bible-in-a-year plans go to die. Push through: it's the book that explains why the whole sacrificial story matters.",
+        "The Day of Atonement in Leviticus 16 gave us the word 'scapegoat' — one goat sacrificed, one sent into the wilderness carrying the people's sins.",
+        "The phrase 'be holy, for I am holy' echoes through the book — and Peter quotes it word for word in the New Testament."
+      ]
+    },
+    {
+      "slug": "numbers",
+      "bookName": "Numbers",
+      "displayTitle": "The Book of Numbers",
+      "subtitle": "Forty years in the wilderness — censuses, complaints, and a faithful God anyway.",
+      "testament": "Old",
+      "chapters": 36,
+      "theme": "Wandering — a generation's unbelief, and God's patience across the wilderness years.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Numbers 6:24",
+        "textBefore": "The LORD bless thee, and",
+        "textAfter": " thee:",
+        "answer": "keep",
+        "correctRetort": "The priestly blessing, word-perfect. Grace upon grace.",
+        "wrongRetort": "It's the blessing spoken over God's people for three thousand years. The answer: keep."
+      },
+      "didYouKnow": [
+        "The beloved blessing 'The LORD bless thee, and keep thee' comes from Numbers 6 — possibly the most-spoken benediction in history, hiding in one of the least-read books.",
+        "Numbers gets its name from two censuses of Israel — one for the generation that left Egypt, one for their children who would actually enter the land.",
+        "This is the book with the talking donkey. Balaam's beast saw the angel before the prophet did — Numbers 22, look it up.",
+        "The bronze serpent Moses lifts up in Numbers 21 is the very image Jesus points to in John 3, one verse before the most famous verse in the Bible."
+      ]
+    },
+    {
+      "slug": "deuteronomy",
+      "bookName": "Deuteronomy",
+      "displayTitle": "The Book of Deuteronomy",
+      "subtitle": "Moses' farewell sermons — the law repeated, the covenant renewed, the land in view.",
+      "testament": "Old",
+      "chapters": 34,
+      "theme": "Remember — hear, O Israel, and love the LORD thy God with all thine heart.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Deuteronomy 6:5",
+        "textBefore": "And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy",
+        "textAfter": ".",
+        "answer": "might",
+        "correctRetort": "The greatest commandment, and you didn't blink.",
+        "wrongRetort": "Jesus called this the first and great commandment. The answer: might."
+      },
+      "didYouKnow": [
+        "When Jesus was tempted in the wilderness, all three of His scripture replies came from Deuteronomy. It pays to know this book.",
+        "'Deuteronomy' means 'second law' — not a new law, but Moses preaching the old one to a new generation on the edge of the Promised Land.",
+        "Moses wrote about his own death — or someone finished the scroll for him. Chapter 34 records it, and no one has ever found his grave.",
+        "Deuteronomy 6:4-5, the Shema, is still prayed daily by observant Jews around the world — 'Hear, O Israel: The LORD our God is one LORD.'"
+      ]
+    },
+    {
+      "slug": "joshua",
+      "bookName": "Joshua",
+      "displayTitle": "The Book of Joshua",
+      "subtitle": "Into the Promised Land — Jericho's walls, divided ground, and courage on command.",
+      "testament": "Old",
+      "chapters": 24,
+      "theme": "Possession — God keeps every promise, and not one word fails.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Joshua 1:9",
+        "textBefore": "Be strong and of a good",
+        "textAfter": "; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+        "answer": "courage",
+        "correctRetort": "Strong and courageous indeed. Jericho never stood a chance.",
+        "wrongRetort": "God says it to Joshua three times in one chapter. The answer: courage."
+      },
+      "didYouKnow": [
+        "God tells Joshua to 'be strong and of a good courage' three times in the first chapter alone. When the Lord repeats Himself, take notes.",
+        "The walls of Jericho fell after seven days of marching and a shout — the battle plan no general would have drawn up, and the only one that worked.",
+        "Joshua and Jesus are the same name — 'Yehoshua,' meaning 'the LORD is salvation.' The book's hero carries the Savior's name.",
+        "The sun stood still over Gibeon in Joshua 10 — the longest day in recorded Scripture, granted so a battle could be finished."
+      ]
+    },
+    {
+      "slug": "judges",
+      "bookName": "Judges",
+      "displayTitle": "The Book of Judges",
+      "subtitle": "Heroes, flaws and all — Deborah, Gideon, Samson, and a nation on repeat.",
+      "testament": "Old",
+      "chapters": 21,
+      "theme": "The cycle — sin, sorrow, supplication, salvation, and back again.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Judges 21:25",
+        "textBefore": "In those days there was no king in Israel: every man did that which was right in his own",
+        "textAfter": ".",
+        "answer": "eyes",
+        "correctRetort": "The saddest summary in Scripture, and you nailed it.",
+        "wrongRetort": "It's the last verse of the book — its whole diagnosis in one line. The answer: eyes."
+      },
+      "didYouKnow": [
+        "Samson's strength was never actually in his hair — it was in his vow to God. The haircut was just the last promise broken.",
+        "Deborah judged Israel from under a palm tree and led it to war when the general wouldn't go without her. Judges 4 and 5 tell it twice — once in prose, once in song.",
+        "Gideon started his story hiding wheat from the Midianites in a winepress. God's greeting? 'The LORD is with thee, thou mighty man of valour.' God saw what Gideon couldn't.",
+        "The book ends with its thesis: 'every man did that which was right in his own eyes.' Spoiler — it went poorly."
+      ]
+    },
+    {
+      "slug": "ruth",
+      "bookName": "Ruth",
+      "displayTitle": "The Book of Ruth",
+      "subtitle": "Loyalty in famine and loss — a Moabite widow who joined the family tree of kings.",
+      "testament": "Old",
+      "chapters": 4,
+      "theme": "Redemption — steadfast love that rewrites a family's story.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Ruth 1:16",
+        "textBefore": "Whither thou goest, I will go; and where thou lodgest, I will lodge: thy people shall be my",
+        "textAfter": ", and thy God my God.",
+        "answer": "people",
+        "correctRetort": "Loyalty, word for word. Naomi would be proud.",
+        "wrongRetort": "The most beautiful pledge in the Old Testament. The answer: people."
+      },
+      "didYouKnow": [
+        "Ruth is one of only two books of the Bible named for a woman — and she wasn't even an Israelite. A Moabite widow becomes the great-grandmother of King David.",
+        "At four chapters, Ruth is a single sitting — famine, loss, loyalty, and a wedding, told in about fifteen minutes of reading.",
+        "Boaz acts as the 'kinsman-redeemer' — a family member who buys back what was lost. It's the Old Testament's clearest picture of what Christ does for His people.",
+        "Ruth's vow — 'whither thou goest, I will go' — was spoken to a mother-in-law, not a husband. It's still read at weddings anyway."
+      ]
+    },
+    {
+      "slug": "1-samuel",
+      "bookName": "1 Samuel",
+      "displayTitle": "The First Book of Samuel",
+      "subtitle": "A prophet, a doomed king, and a shepherd boy — Israel learns what a king costs.",
+      "testament": "Old",
+      "chapters": 31,
+      "theme": "The heart — man looketh on the outward appearance, but the LORD looketh on the heart.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "1 Samuel 16:7",
+        "textBefore": "For man looketh on the outward appearance, but the LORD looketh on the",
+        "textAfter": ".",
+        "answer": "heart",
+        "correctRetort": "Exactly what the LORD told Samuel at Jesse's house. Well read.",
+        "wrongRetort": "It's why David got anointed and his tall brothers didn't. The answer: heart."
+      },
+      "didYouKnow": [
+        "David and Goliath is chapter 17 — but David is anointed king in chapter 16, while Saul still wears the crown. The giant was never the main plot.",
+        "Hannah prayed so fervently for a son that the priest Eli assumed she was drunk. That son was Samuel, the last judge and the maker of kings.",
+        "Goliath stood 'six cubits and a span' — over nine feet in KJV measurement. David brought five smooth stones and needed one.",
+        "Saul was head and shoulders taller than any man in Israel — the people's idea of a king. 1 Samuel spends thirty-one chapters correcting that idea."
+      ]
+    },
+    {
+      "slug": "2-samuel",
+      "bookName": "2 Samuel",
+      "displayTitle": "The Second Book of Samuel",
+      "subtitle": "David on the throne — triumph, tragedy, and a covenant that outlasts them both.",
+      "testament": "Old",
+      "chapters": 24,
+      "theme": "The throne — a king after God's own heart, and the wreckage when that heart wanders.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "2 Samuel 22:2",
+        "textBefore": "The LORD is my rock, and my fortress, and my",
+        "textAfter": ";",
+        "answer": "deliverer",
+        "correctRetort": "David's war song, sung true. You know your king.",
+        "wrongRetort": "David sang it near the end of his battles — you'll find it again in Psalm 18. The answer: deliverer."
+      },
+      "didYouKnow": [
+        "David's song of deliverance in 2 Samuel 22 appears almost word for word as Psalm 18 — the rare verse you can study in two books at once.",
+        "In 2 Samuel 7, David offers to build God a house; God answers that He will build David one instead — the covenant that leads, generations later, to Christ.",
+        "The Bathsheba affair and Nathan's parable of the one little ewe lamb sit in chapters 11 and 12 — four words from the prophet, 'Thou art the man,' and the king crumbles.",
+        "David danced before the ark 'with all his might' as it entered Jerusalem — and was despised for it by his own wife. He kept dancing."
+      ]
+    },
+    {
+      "slug": "1-kings",
+      "bookName": "1 Kings",
+      "displayTitle": "The First Book of the Kings",
+      "subtitle": "Solomon's glory, a kingdom torn in two, and a prophet of fire named Elijah.",
+      "testament": "Old",
+      "chapters": 22,
+      "theme": "Divided hearts, divided kingdom — wisdom squandered and fire from heaven.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "1 Kings 18:21",
+        "textBefore": "How long halt ye between two",
+        "textAfter": "? if the LORD be God, follow him: but if Baal, then follow him.",
+        "answer": "opinions",
+        "correctRetort": "Elijah on Carmel, calling the question. No fence-sitting here.",
+        "wrongRetort": "Elijah asked it before the fire fell on Mount Carmel. The answer: opinions."
+      },
+      "didYouKnow": [
+        "Offered anything he wanted by God, Solomon asked for an understanding heart. The wisdom came — and 1 Kings spends the rest of the book showing how even wisdom can be wasted.",
+        "The showdown on Mount Carmel — one prophet versus four hundred and fifty — ends with fire from heaven consuming a sacrifice soaked three times over in water. Elijah liked a fair fight.",
+        "After the fire and the rain, Elijah found God not in the wind, earthquake, or flame, but in 'a still small voice' — one of the KJV's most beloved phrases.",
+        "Solomon's temple took seven years to build; his own palace took thirteen. The book notices things like that."
+      ]
+    },
+    {
+      "slug": "2-kings",
+      "bookName": "2 Kings",
+      "displayTitle": "The Second Book of the Kings",
+      "subtitle": "Chariots of fire, stubborn kings, and the long slide to exile.",
+      "testament": "Old",
+      "chapters": 25,
+      "theme": "Consequences — prophets warn, kings refuse, and the kingdoms fall.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "2 Kings 2:11",
+        "textBefore": "And Elijah went up by a whirlwind into",
+        "textAfter": ".",
+        "answer": "heaven",
+        "correctRetort": "Chariot of fire, horses of fire — and you, keeping pace.",
+        "wrongRetort": "Elijah is one of two men in Scripture who never died. The answer: heaven."
+      },
+      "didYouKnow": [
+        "Elijah never died — he was carried to heaven by a whirlwind, with chariots of fire in attendance. Only Enoch shares that exit.",
+        "Elisha asked for a double portion of Elijah's spirit — and Scripture records roughly twice as many miracles for him, from healed water to an axe head that floated.",
+        "Naaman the Syrian general nearly missed his healing because the instructions were too simple: wash seven times in the Jordan. Pride almost kept his leprosy.",
+        "2 Kings ends with both kingdoms in ruins — Israel to Assyria, Judah to Babylon. The prophets saw it coming for two hundred pages."
+      ]
+    },
+    {
+      "slug": "1-chronicles",
+      "bookName": "1 Chronicles",
+      "displayTitle": "The First Book of the Chronicles",
+      "subtitle": "The story retold from the archives — genealogies, worship, and David's true legacy.",
+      "testament": "Old",
+      "chapters": 29,
+      "theme": "Heritage — a people reminded who they are, name by name.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "1 Chronicles 16:34",
+        "textBefore": "O give thanks unto the LORD; for he is",
+        "textAfter": "; for his mercy endureth for ever.",
+        "answer": "good",
+        "correctRetort": "David's own psalm of thanksgiving, from the day the ark came home.",
+        "wrongRetort": "It's the refrain Israel never stopped singing. The answer: good."
+      },
+      "didYouKnow": [
+        "The first nine chapters are genealogies — from Adam onward. We could pull daily blanks from them. We are not that cruel. Mostly.",
+        "Chronicles retells the story of Samuel and Kings, but through a priest's eyes: more temple, more worship, and David's sins largely left in the archive.",
+        "1 Chronicles 16 preserves the psalm David handed the choir the day the ark entered Jerusalem — pieces of it appear in Psalms 96, 105, and 106.",
+        "In Hebrew Bibles, Chronicles is the final book — meaning the Old Testament ends not with a prophet's warning but with a call to go up and build."
+      ]
+    },
+    {
+      "slug": "2-chronicles",
+      "bookName": "2 Chronicles",
+      "displayTitle": "The Second Book of the Chronicles",
+      "subtitle": "From Solomon's temple to Babylon's fires — Judah's kings, graded honestly.",
+      "testament": "Old",
+      "chapters": 36,
+      "theme": "If my people — humble prayer, and the God who hears from heaven.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "2 Chronicles 7:14",
+        "textBefore": "If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their",
+        "textAfter": ".",
+        "answer": "land",
+        "correctRetort": "God's midnight answer to Solomon, remembered in full.",
+        "wrongRetort": "God spoke it to Solomon the night after the temple was dedicated. The answer: land."
+      },
+      "didYouKnow": [
+        "2 Chronicles 7:14 — 'if my people, which are called by my name' — may be the most-quoted verse from either book of Chronicles, spoken by God to Solomon at night.",
+        "The book ignores the northern kingdom almost entirely. Chronicles is Judah's story: the line of David, king by king, graded against their fathers.",
+        "When the queen of Sheba saw Solomon's court, 'there was no more spirit in her' — the KJV's way of saying it took her breath away.",
+        "The book ends mid-sentence with Cyrus's decree to rebuild the temple — a cliffhanger that Ezra picks up word for word."
+      ]
+    },
+    {
+      "slug": "ezra",
+      "bookName": "Ezra",
+      "displayTitle": "The Book of Ezra",
+      "subtitle": "Home from exile — a temple rebuilt, and a people rebuilt to match.",
+      "testament": "Old",
+      "chapters": 10,
+      "theme": "Restoration — first the altar, then the walls of the heart.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Ezra 3:11",
+        "textBefore": "And they sang together by course in praising and giving thanks unto the LORD; because he is good, for his mercy endureth for",
+        "textAfter": " toward Israel.",
+        "answer": "ever",
+        "correctRetort": "Sung over a foundation stone, and you carried the tune.",
+        "wrongRetort": "They sang it when the temple foundation was laid. The answer: ever."
+      },
+      "didYouKnow": [
+        "Ezra doesn't appear in the book of Ezra until chapter 7 — the first six chapters belong to Zerubbabel and the first wave home from Babylon.",
+        "When the temple foundation was laid, the young men shouted for joy and the old men — who remembered Solomon's temple — wept aloud. Scripture says you couldn't tell the sounds apart.",
+        "Ezra was 'a ready scribe in the law of Moses' who had 'prepared his heart' to study, do, and teach — in that order. Teachers, take the hint.",
+        "Two chapters of Ezra were written in Aramaic, not Hebrew — official imperial correspondence, filed straight into Scripture."
+      ]
+    },
+    {
+      "slug": "nehemiah",
+      "bookName": "Nehemiah",
+      "displayTitle": "The Book of Nehemiah",
+      "subtitle": "A cupbearer with a burden — Jerusalem's walls rebuilt in fifty-two days.",
+      "testament": "Old",
+      "chapters": 13,
+      "theme": "The work — praying with one hand and building with the other.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Nehemiah 8:10",
+        "textBefore": "For the joy of the LORD is your",
+        "textAfter": ".",
+        "answer": "strength",
+        "correctRetort": "Spoken at the great reading of the law — and you were listening.",
+        "wrongRetort": "Nehemiah said it to a weeping crowd on a holy day. The answer: strength."
+      },
+      "didYouKnow": [
+        "Nehemiah was the king of Persia's cupbearer — a trusted taster of royal wine — who talked his way into a leave of absence, a lumber grant, and a governorship.",
+        "The wall of Jerusalem went up in fifty-two days, with builders holding a tool in one hand and a weapon in the other. Even their enemies concluded the work 'was wrought of our God.'",
+        "'The joy of the LORD is your strength' comes from a day when the whole city stood listening to the law from morning until midday — and had to be told to stop weeping and go feast.",
+        "Nehemiah's memoir keeps breaking into prayer mid-paragraph — 'Remember me, O my God' — the journal of a man who never clocked out of either job."
+      ]
+    },
+    {
+      "slug": "esther",
+      "bookName": "Esther",
+      "displayTitle": "The Book of Esther",
+      "subtitle": "An orphan queen, a wicked decree, and deliverance with perfect timing.",
+      "testament": "Old",
+      "chapters": 10,
+      "theme": "Providence — God unnamed, but never absent.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Esther 4:14",
+        "textBefore": "And who knoweth whether thou art come to the kingdom for such a",
+        "textAfter": " as this?",
+        "answer": "time",
+        "correctRetort": "For such a time as this — Mordecai couldn't have said it better.",
+        "wrongRetort": "Mordecai's question changed a queen's mind and a nation's fate. The answer: time."
+      },
+      "didYouKnow": [
+        "God is never mentioned by name in Esther — not once — yet His providence steers every chapter. It's the Bible's masterclass in working behind the scenes.",
+        "Haman built a gallows fifty cubits high — about seventy-five feet — for Mordecai. He was hanged on it himself. The book does not lack for poetic justice.",
+        "The feast of Purim, still celebrated by Jews every year, comes straight from this story — named for the 'pur,' the lot Haman cast to pick his date of destruction.",
+        "Esther risked death just by approaching the king uninvited. 'If I perish, I perish' — four words of the coolest courage in Scripture."
+      ]
+    },
+    {
+      "slug": "job",
+      "bookName": "Job",
+      "displayTitle": "The Book of Job",
+      "subtitle": "Suffering without answers — and a faith that holds on anyway.",
+      "testament": "Old",
+      "chapters": 42,
+      "theme": "Trust in the whirlwind — when God answers questions with bigger questions.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Job 19:25",
+        "textBefore": "For I know that my redeemer",
+        "textAfter": ", and that he shall stand at the latter day upon the earth.",
+        "answer": "liveth",
+        "correctRetort": "Job's defiant hope, from the ash heap. Well held.",
+        "wrongRetort": "Job said it with his whole world in ruins. The answer: liveth."
+      },
+      "didYouKnow": [
+        "Job may be the oldest story in the Bible — many scholars place it in the age of the patriarchs, before Moses ever wrote a word.",
+        "Job's friends sat with him in silence for seven days before anyone spoke. It was the best counseling they gave; the next thirty chapters, less so.",
+        "When God finally answers, He asks Job over sixty questions — about stars, storms, ostriches, and sea monsters — and never explains the suffering once.",
+        "The KJV gave English the phrase 'the skin of my teeth' and 'miserable comforters' — both straight from Job's complaints."
+      ]
+    },
+    {
+      "slug": "psalms",
+      "bookName": "Psalms",
+      "displayTitle": "The Book of Psalms",
+      "subtitle": "150 songs of praise, lament, and wonder — the Bible's poetry collection.",
+      "testament": "Old",
+      "chapters": 150,
+      "theme": "Worship in every weather — joy, grief, gratitude, and everything between.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Psalm 23:1",
+        "textBefore": "The LORD is my shepherd; I shall not",
+        "textAfter": ".",
+        "answer": "want",
+        "correctRetort": "Sharp as a two-edged sword. The daily has five of these waiting.",
+        "wrongRetort": "Close, but the Word is precise. The answer: want. You'd have loved our Warm-Up days."
+      },
+      "didYouKnow": [
+        "Psalm 119 is the longest chapter in the entire Bible — 176 verses, each section organized by a letter of the Hebrew alphabet. We've got blanks from it. Fair warning.",
+        "Two chapters over, Psalm 117 is the shortest chapter in the Bible — two verses — and sits almost exactly at the Bible's center. Short doesn't mean easy.",
+        "David is credited with 73 of the 150 psalms — shepherd, king, and the most-quoted songwriter in history.",
+        "The New Testament quotes Psalms more than any other Old Testament book. If a verse sounds familiar, there's a good chance it started here."
+      ]
+    },
+    {
+      "slug": "proverbs",
+      "bookName": "Proverbs",
+      "displayTitle": "The Book of Proverbs",
+      "subtitle": "Ancient wisdom for everyday decisions — Solomon's playbook for living well.",
+      "testament": "Old",
+      "chapters": 31,
+      "theme": "Practical wisdom — from money to relationships to the fear of the Lord.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Proverbs 3:5",
+        "textBefore": "Trust in the LORD with all thine",
+        "textAfter": "; and lean not unto thine own understanding.",
+        "answer": "heart",
+        "correctRetort": "Trusted with the whole heart, answered with the whole word.",
+        "wrongRetort": "Lean not unto thine own understanding — check the Book. The answer: heart."
+      },
+      "didYouKnow": [
+        "Proverbs has 31 chapters — one for every day of the month. It's the original daily reading plan, and yes, our dailies borrow from it liberally.",
+        "Solomon spoke three thousand proverbs, according to 1 Kings. The book keeps the best of them — plus contributions from Agur and King Lemuel, two of the Bible's most mysterious authors.",
+        "The famous 'virtuous woman' chapter, Proverbs 31, is an acrostic — twenty-two verses, one for each letter of the Hebrew alphabet, A to Z.",
+        "Wisdom is personified as a woman calling in the streets in chapter 1 — Proverbs opens not with advice but with an invitation."
+      ]
+    },
+    {
+      "slug": "ecclesiastes",
+      "bookName": "Ecclesiastes",
+      "displayTitle": "The Book of Ecclesiastes",
+      "subtitle": "Life under the sun — the Preacher weighs it all and finds where meaning lives.",
+      "testament": "Old",
+      "chapters": 12,
+      "theme": "Vanity and reverence — everything is fleeting; fear God anyway.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Ecclesiastes 3:1",
+        "textBefore": "To every thing there is a",
+        "textAfter": ", and a time to every purpose under the heaven.",
+        "answer": "season",
+        "correctRetort": "A time to guess, and a time to guess correctly. This was the latter.",
+        "wrongRetort": "There's a time for everything — including a second look at chapter 3. The answer: season."
+      },
+      "didYouKnow": [
+        "'To every thing there is a season' became a number-one hit in 1965 — The Byrds' 'Turn! Turn! Turn!' is nearly word-for-word Ecclesiastes 3, making it the oldest lyric ever to top the charts.",
+        "The word translated 'vanity' — hevel — literally means vapor or breath. The Preacher isn't saying life is worthless; he's saying you can't hold it.",
+        "Ecclesiastes gave English 'nothing new under the sun,' 'eat, drink, and be merry,' and 'cast thy bread upon the waters' — three idioms from one short book.",
+        "After twelve chapters of searching, the conclusion lands in two lines: 'Fear God, and keep his commandments: for this is the whole duty of man.'"
+      ]
+    },
+    {
+      "slug": "song-of-solomon",
+      "bookName": "Song of Solomon",
+      "displayTitle": "The Song of Solomon",
+      "subtitle": "The Bible's love song — poetry of devotion, delight, and belonging.",
+      "testament": "Old",
+      "chapters": 8,
+      "theme": "Love — fierce as death, and many waters cannot quench it.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Song of Solomon 2:1",
+        "textBefore": "I am the rose of Sharon, and the lily of the",
+        "textAfter": ".",
+        "answer": "valleys",
+        "correctRetort": "Poetry answered with precision. The Song suits you.",
+        "wrongRetort": "One of the loveliest lines in the Book. The answer: valleys."
+      },
+      "didYouKnow": [
+        "The Song of Solomon never mentions God directly — it and Esther are the only two books that don't — yet believers have read it for centuries as a picture of divine love.",
+        "'The Song of Songs' is Hebrew's way of saying 'the greatest song' — the same construction as 'King of kings' and 'Holy of holies.'",
+        "Jewish tradition held that a man should not read this book until age thirty. Our Deep Water rating suddenly feels lenient.",
+        "Its most famous declaration: 'love is strong as death... many waters cannot quench love.' Wedding readers have never let it go."
+      ]
+    },
+    {
+      "slug": "isaiah",
+      "bookName": "Isaiah",
+      "displayTitle": "The Book of Isaiah",
+      "subtitle": "The prophet of the coming King — judgment, comfort, and a suffering servant.",
+      "testament": "Old",
+      "chapters": 66,
+      "theme": "Salvation — holiness that judges, and mercy that carries our griefs.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Isaiah 40:31",
+        "textBefore": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as",
+        "textAfter": "; they shall run, and not be weary; and they shall walk, and not faint.",
+        "answer": "eagles",
+        "correctRetort": "Mounted up and did not faint. That's how it's done.",
+        "wrongRetort": "The verse every runner has on a t-shirt. The answer: eagles."
+      },
+      "didYouKnow": [
+        "Isaiah has 66 chapters and the Bible has 66 books — and the book's two halves even echo the two Testaments: judgment in the first 39, comfort in the last 27. Coincidence, but a handy one.",
+        "The New Testament quotes Isaiah more than any prophet — 'a virgin shall conceive,' 'unto us a child is born,' 'wonderful, counsellor, the mighty God.'",
+        "Isaiah 53 describes a servant 'wounded for our transgressions, bruised for our iniquities' — written some seven centuries before the crucifixion.",
+        "When Isaiah saw the Lord high and lifted up, his response set the prophet's job description: 'Here am I; send me.'"
+      ]
+    },
+    {
+      "slug": "jeremiah",
+      "bookName": "Jeremiah",
+      "displayTitle": "The Book of Jeremiah",
+      "subtitle": "The weeping prophet — forty years of warnings, and a promise of a new covenant.",
+      "testament": "Old",
+      "chapters": 52,
+      "theme": "Fire in the bones — truth that costs everything to tell.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Jeremiah 29:11",
+        "textBefore": "For I know the thoughts that I think toward you, saith the LORD, thoughts of",
+        "textAfter": ", and not of evil, to give you an expected end.",
+        "answer": "peace",
+        "correctRetort": "A promise made to exiles, and you carried it exactly.",
+        "wrongRetort": "It was written in a letter to captives in Babylon. The answer: peace."
+      },
+      "didYouKnow": [
+        "Jeremiah 29:11 — the graduation-card favorite — was written to exiles being told to settle in Babylon for seventy years. The promise was real; so was the wait.",
+        "Jeremiah tried to quit preaching, but found the word 'as a burning fire shut up in my bones' — he was, in his own telling, unable to stay silent.",
+        "By word count, Jeremiah is the longest book in the Bible — longer than Psalms, despite Psalms having nearly three times the chapters.",
+        "The king burned Jeremiah's scroll column by column as it was read to him. Jeremiah dictated it again — and added to it. You cannot edit a prophet with a fire."
+      ]
+    },
+    {
+      "slug": "lamentations",
+      "bookName": "Lamentations",
+      "displayTitle": "The Lamentations of Jeremiah",
+      "subtitle": "Five funeral songs for a fallen city — grief poured out, hope kept alive.",
+      "testament": "Old",
+      "chapters": 5,
+      "theme": "Sorrow with a center — great is thy faithfulness, even in the ruins.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Lamentations 3:23",
+        "textBefore": "They are new every",
+        "textAfter": ": great is thy faithfulness.",
+        "answer": "morning",
+        "correctRetort": "New mercies, rightly remembered.",
+        "wrongRetort": "The hymn 'Great Is Thy Faithfulness' was born from this line. The answer: morning."
+      },
+      "didYouKnow": [
+        "The beloved hymn 'Great Is Thy Faithfulness' comes from the exact center of Lamentations — a shaft of light in the Bible's darkest book.",
+        "Four of the five chapters are acrostics, marching through the Hebrew alphabet letter by letter — grief given structure, sorrow from A to Z.",
+        "Lamentations was written in the smoking ruins of Jerusalem, and is still read aloud by Jews every year on Tisha B'Av, the anniversary of the temple's destruction.",
+        "Chapter 3 breaks the pattern with sixty-six verses — a triple acrostic — and hides the book's turn: 'It is of the LORD's mercies that we are not consumed.'"
+      ]
+    },
+    {
+      "slug": "ezekiel",
+      "bookName": "Ezekiel",
+      "displayTitle": "The Book of Ezekiel",
+      "subtitle": "Visions by the river of Babylon — wheels within wheels, and dry bones that live.",
+      "testament": "Old",
+      "chapters": 48,
+      "theme": "Glory — departed, mourned, and promised to return.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Ezekiel 36:26",
+        "textBefore": "A new heart also will I give you, and a new",
+        "textAfter": " will I put within you.",
+        "answer": "spirit",
+        "correctRetort": "A heart of flesh for a heart of stone — and a right answer for the board.",
+        "wrongRetort": "God promises to swap stone for flesh in this one. The answer: spirit."
+      },
+      "didYouKnow": [
+        "The valley of dry bones in Ezekiel 37 — 'can these bones live?' — inspired the spiritual 'Dem Bones.' The theology of the vision: a dead nation, breathed back to life.",
+        "Ezekiel saw 'wheels within wheels' full of eyes by the river Chebar — the most puzzled-over vision in the Old Testament, and he was a priest describing the indescribable glory of God.",
+        "God made Ezekiel a watchman and a performance artist: he lay on his side for months, cooked over dung fires, and shaved his head with a sword — every act a sermon.",
+        "Ezekiel and Daniel were contemporaries in Babylon — Daniel served in the palace while Ezekiel preached to exiles by the canal."
+      ]
+    },
+    {
+      "slug": "daniel",
+      "bookName": "Daniel",
+      "displayTitle": "The Book of Daniel",
+      "subtitle": "Faithful in Babylon — lions' dens, fiery furnaces, and kingdoms yet to come.",
+      "testament": "Old",
+      "chapters": 12,
+      "theme": "Sovereignty — the Most High ruleth in the kingdom of men.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Daniel 5:27",
+        "textBefore": "Thou art weighed in the balances, and art found",
+        "textAfter": ".",
+        "answer": "wanting",
+        "correctRetort": "The writing was on the wall, and you read it.",
+        "wrongRetort": "It's where 'the writing on the wall' comes from. The answer: wanting."
+      },
+      "didYouKnow": [
+        "The phrase 'the writing on the wall' comes from Daniel 5 — a disembodied hand interrupting a royal feast to spell out a kingdom's last night.",
+        "Daniel was likely a teenager when taken to Babylon — and served under at least four kings across two empires without once compromising his diet, his prayers, or his nerve.",
+        "The fiery furnace was heated seven times hotter than usual, and the men who threw Shadrach, Meshach, and Abednego in died of the heat. The three inside walked out without the smell of smoke.",
+        "Daniel prayed three times a day with his windows open toward Jerusalem — knowing full well the law against it had his name on it. The lions went hungry."
+      ]
+    },
+    {
+      "slug": "hosea",
+      "bookName": "Hosea",
+      "displayTitle": "The Book of Hosea",
+      "subtitle": "A prophet's broken marriage — and the God who buys His beloved back.",
+      "testament": "Old",
+      "chapters": 14,
+      "theme": "Faithful love — pursued, betrayed, and pursuing still.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Hosea 6:6",
+        "textBefore": "For I desired",
+        "textAfter": ", and not sacrifice; and the knowledge of God more than burnt offerings.",
+        "answer": "mercy",
+        "correctRetort": "Jesus quoted this one twice. You're in good company.",
+        "wrongRetort": "Jesus told the Pharisees to go learn what this means. The answer: mercy."
+      },
+      "didYouKnow": [
+        "God told Hosea to marry a woman who would break his heart — and then to buy her back from the auction block. The prophet's marriage was the sermon.",
+        "Jesus quoted Hosea 6:6 — 'I will have mercy, and not sacrifice' — twice in Matthew's gospel, both times to religious professionals.",
+        "Hosea's children carried sermon titles for names, including Lo-ammi: 'not my people.' The book ends with the names reversed — 'thou art my people.'",
+        "Hosea preached to the northern kingdom in its final decades — the last voice of mercy before Assyria arrived."
+      ]
+    },
+    {
+      "slug": "joel",
+      "bookName": "Joel",
+      "displayTitle": "The Book of Joel",
+      "subtitle": "Locusts, warning, and promise — the day of the LORD and the outpoured Spirit.",
+      "testament": "Old",
+      "chapters": 3,
+      "theme": "The day of the LORD — devastation turned to restoration.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Joel 2:28",
+        "textBefore": "I will pour out my spirit upon all",
+        "textAfter": "; and your sons and your daughters shall prophesy.",
+        "answer": "flesh",
+        "correctRetort": "Peter preached this very verse at Pentecost. Well matched.",
+        "wrongRetort": "Peter opened his Pentecost sermon with it. The answer: flesh."
+      },
+      "didYouKnow": [
+        "When the Spirit fell at Pentecost, Peter's explanation was simply 'this is that which was spoken by the prophet Joel' — and he quoted this book at length.",
+        "Joel begins with an actual locust plague — swarm after swarm stripping the land — and reads it as a rehearsal for the day of the LORD.",
+        "'Rend your heart, and not your garments' comes from Joel 2 — torn clothes were the ancient sign of grief; God asked for the tearing to happen deeper.",
+        "Joel promises that God will 'restore the years that the locust hath eaten' — one of Scripture's tenderest lines about wasted time."
+      ]
+    },
+    {
+      "slug": "amos",
+      "bookName": "Amos",
+      "displayTitle": "The Book of Amos",
+      "subtitle": "A shepherd with a message — justice for the poor, judgment for the comfortable.",
+      "testament": "Old",
+      "chapters": 9,
+      "theme": "Justice — rolling down like waters, sparing no one's comfort.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Amos 5:24",
+        "textBefore": "But let judgment run down as",
+        "textAfter": ", and righteousness as a mighty stream.",
+        "answer": "waters",
+        "correctRetort": "Let it roll. Amos would nod approvingly.",
+        "wrongRetort": "Dr. King quoted it from memory; now you can too. The answer: waters."
+      },
+      "didYouKnow": [
+        "Martin Luther King Jr. quoted Amos 5:24 in his 'I Have a Dream' speech — 'until justice rolls down like waters' — putting an eighth-century-BC shepherd on the Washington Mall.",
+        "Amos insisted he was 'no prophet, neither a prophet's son' — just a herdman and a gatherer of sycomore fruit whom God pulled from the flock.",
+        "Amos preached famine — 'not a famine of bread... but of hearing the words of the LORD.' The scariest shortage in Scripture.",
+        "He aimed his hardest words at the comfortable — 'woe to them that are at ease in Zion' — proof that the prophets read bank statements too."
+      ]
+    },
+    {
+      "slug": "obadiah",
+      "bookName": "Obadiah",
+      "displayTitle": "The Book of Obadiah",
+      "subtitle": "One chapter, one verdict — pride comes down from the high places.",
+      "testament": "Old",
+      "chapters": 1,
+      "theme": "Pride's fall — as thou hast done, it shall be done unto thee.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Obadiah 1:15",
+        "textBefore": "As thou hast done, it shall be done unto thee: thy reward shall return upon thine own",
+        "textAfter": ".",
+        "answer": "head",
+        "correctRetort": "The shortest book in the Old Testament, and it didn't shake you.",
+        "wrongRetort": "Twenty-one verses, and this one got away. The answer: head."
+      },
+      "didYouKnow": [
+        "Obadiah is the shortest book in the Old Testament — twenty-one verses, one chapter, no mercy for Edom.",
+        "The whole book is aimed at Edom — the nation descended from Esau — for standing by, and then joining in, when Jerusalem fell. A family grudge a thousand years old.",
+        "Edom's capital was carved into cliffs — 'thou that dwellest in the clefts of the rock.' Many identify it with Petra, the stone city you've seen in photographs.",
+        "At least a dozen men in the Old Testament are named Obadiah — 'servant of the LORD' — and we know almost nothing about which one wrote this. Perfect for our hardest tier."
+      ]
+    },
+    {
+      "slug": "jonah",
+      "bookName": "Jonah",
+      "displayTitle": "The Book of Jonah",
+      "subtitle": "The prophet who ran — a storm, a great fish, and mercy for an enemy city.",
+      "testament": "Old",
+      "chapters": 4,
+      "theme": "Mercy that offends — God's compassion is wider than His prophet's.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Jonah 1:17",
+        "textBefore": "Now the LORD had prepared a great",
+        "textAfter": " to swallow up Jonah.",
+        "answer": "fish",
+        "correctRetort": "Swallowed it whole. Unlike Jonah, you didn't hesitate.",
+        "wrongRetort": "Note: the Book says fish, not whale. The answer: fish."
+      },
+      "didYouKnow": [
+        "The KJV never says 'whale' in Jonah — it says 'great fish,' one that God 'prepared.' The whale swam in from popular retellings.",
+        "Jonah is the only prophet Jesus directly compared Himself to — 'as Jonas was three days and three nights in the whale's belly; so shall the Son of man be in the heart of the earth.'",
+        "Nineveh repented at five words of Hebrew preaching — history's shortest, most reluctant, most successful revival sermon.",
+        "The book ends on a cliffhanger question from God about mercy — and no answer from Jonah. The reader is left holding the reply."
+      ]
+    },
+    {
+      "slug": "micah",
+      "bookName": "Micah",
+      "displayTitle": "The Book of Micah",
+      "subtitle": "Courtroom prophecy — what the LORD requires, and where the Ruler will be born.",
+      "testament": "Old",
+      "chapters": 7,
+      "theme": "Requirement — do justly, love mercy, walk humbly.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Micah 6:8",
+        "textBefore": "And what doth the LORD require of thee, but to do justly, and to love mercy, and to walk",
+        "textAfter": " with thy God?",
+        "answer": "humbly",
+        "correctRetort": "Justly done. Mercifully quick. Humbly received, we hope.",
+        "wrongRetort": "Three requirements, one missing word. The answer: humbly."
+      },
+      "didYouKnow": [
+        "Micah 5:2 names Bethlehem as the birthplace of Israel's ruler seven centuries early — it's the verse the scribes quoted when the wise men asked Herod where the King was born.",
+        "Micah 6:8 — 'do justly, love mercy, walk humbly' — may be the most complete job description ever written in seventeen words.",
+        "Micah preached at the same time as Isaiah — a country prophet and a court prophet delivering the same warning from opposite ends of society.",
+        "A century later, Micah's preaching was cited in court to save Jeremiah's life — proof that a faithful sermon can outlive its preacher."
+      ]
+    },
+    {
+      "slug": "nahum",
+      "bookName": "Nahum",
+      "displayTitle": "The Book of Nahum",
+      "subtitle": "Nineveh's second notice — the city Jonah spared runs out of chances.",
+      "testament": "Old",
+      "chapters": 3,
+      "theme": "Reckoning — slow to anger is not the same as never.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Nahum 1:7",
+        "textBefore": "The LORD is good, a strong hold in the day of",
+        "textAfter": "; and he knoweth them that trust in him.",
+        "answer": "trouble",
+        "correctRetort": "A stronghold found. Nahum's one gentle verse, and you knew it.",
+        "wrongRetort": "The book's single verse of comfort — worth keeping. The answer: trouble."
+      },
+      "didYouKnow": [
+        "Nahum is Jonah's sequel, a century and a half later: Nineveh repented under Jonah, drifted back, and this time no one is getting off the boat to warn them.",
+        "The name Nahum means 'comfort' — an ironic byline for three chapters of judgment. The comfort was for Nineveh's victims, not Nineveh.",
+        "Nineveh fell in 612 BC, so thoroughly that its ruins were lost for well over two thousand years — until archaeologists found it across the river from modern Mosul.",
+        "Tucked into the storm is one of Scripture's calmest promises: 'The LORD is good, a strong hold in the day of trouble.'"
+      ]
+    },
+    {
+      "slug": "habakkuk",
+      "bookName": "Habakkuk",
+      "displayTitle": "The Book of Habakkuk",
+      "subtitle": "The prophet who questioned God — and learned to live by faith.",
+      "testament": "Old",
+      "chapters": 3,
+      "theme": "Faith in the waiting — the just shall live by his faith.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Habakkuk 2:4",
+        "textBefore": "But the just shall live by his",
+        "textAfter": ".",
+        "answer": "faith",
+        "correctRetort": "Five words that lit the Reformation, and you had them cold.",
+        "wrongRetort": "Paul built Romans on this line, and Luther rebuilt Europe on Romans. The answer: faith."
+      },
+      "didYouKnow": [
+        "'The just shall live by his faith' is quoted three times in the New Testament — Romans, Galatians, Hebrews — and it was the verse that turned Martin Luther's world upside down.",
+        "Habakkuk is the prophet who argues with God — the book opens with 'O LORD, how long shall I cry, and thou wilt not hear?' God takes the question seriously.",
+        "The book ends with one of Scripture's greatest 'even if' statements: though the fig tree fails and the stalls stand empty, 'yet I will rejoice in the LORD.'",
+        "Chapter 3 is a psalm with musical directions attached — Habakkuk signed off his prophecy like a worship leader: 'to the chief singer on my stringed instruments.'"
+      ]
+    },
+    {
+      "slug": "zephaniah",
+      "bookName": "Zephaniah",
+      "displayTitle": "The Book of Zephaniah",
+      "subtitle": "The great day of the LORD — a sweeping search, and singing on the other side.",
+      "testament": "Old",
+      "chapters": 3,
+      "theme": "The remnant — judgment that ends in rejoicing.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Zephaniah 3:17",
+        "textBefore": "The LORD thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with",
+        "textAfter": ".",
+        "answer": "singing",
+        "correctRetort": "God sings over His people — and you found the note.",
+        "wrongRetort": "The tenderest verse in the fiercest book. The answer: singing."
+      },
+      "didYouKnow": [
+        "Zephaniah 3:17 says God rejoices over His people 'with singing' — the only verse in the Bible that describes God Himself breaking into song.",
+        "Zephaniah traces his family tree back four generations to Hizkiah — likely King Hezekiah — making him the rare prophet with royal blood and no fear of the palace.",
+        "He preached during young King Josiah's reign, and many believe his thunder helped spark the greatest revival Judah ever saw.",
+        "The medieval hymn 'Dies Irae' — 'Day of Wrath' — takes its opening straight from Zephaniah 1:15, 'that day is a day of wrath.'"
+      ]
+    },
+    {
+      "slug": "haggai",
+      "bookName": "Haggai",
+      "displayTitle": "The Book of Haggai",
+      "subtitle": "Four sermons, one message — stop building your own houses and build God's.",
+      "testament": "Old",
+      "chapters": 2,
+      "theme": "Priorities — consider your ways, and put first things first.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Haggai 1:5",
+        "textBefore": "Now therefore thus saith the LORD of hosts; Consider your",
+        "textAfter": ".",
+        "answer": "ways",
+        "correctRetort": "Considered, and answered. Haggai's whole sermon in two words.",
+        "wrongRetort": "He says it twice in one chapter — it's the book's refrain. The answer: ways."
+      },
+      "didYouKnow": [
+        "Haggai is one of only two prophets whose preaching visibly worked within his own book — twenty-three days after sermon one, the whole nation was back on the job site.",
+        "Every sermon in Haggai is date-stamped to the day — four messages across fifteen weeks in 520 BC. It's the most precisely dated book in the Bible.",
+        "His audience had paneled their own houses while God's temple lay in ruins — 'ye have sown much, and bring in little... and he that earneth wages earneth wages to put it into a bag with holes.'",
+        "At two chapters, Haggai is the second-shortest book in the Old Testament — only Obadiah is shorter. Small book, big broom."
+      ]
+    },
+    {
+      "slug": "zechariah",
+      "bookName": "Zechariah",
+      "displayTitle": "The Book of Zechariah",
+      "subtitle": "Visions in the night — a rebuilt temple, and a King riding on a colt.",
+      "testament": "Old",
+      "chapters": 14,
+      "theme": "Not by might — the Spirit finishes what armies cannot.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Zechariah 4:6",
+        "textBefore": "Not by might, nor by power, but by my",
+        "textAfter": ", saith the LORD of hosts.",
+        "answer": "spirit",
+        "correctRetort": "Not by might, not by luck — by knowing the Book.",
+        "wrongRetort": "Spoken to a governor staring at an unfinished temple. The answer: spirit."
+      },
+      "didYouKnow": [
+        "Zechariah foresaw a king coming 'lowly, and riding upon an ass, upon a colt' — quoted directly on Palm Sunday, five centuries after he wrote it.",
+        "Zechariah also wrote of thirty pieces of silver and a potter's field — details the Gospels record precisely in the betrayal of Jesus.",
+        "The book opens with eight visions in a single night — horsemen, lampstands, flying scrolls, and a woman in a basket. Deep Water was named for chapters like these.",
+        "Zechariah preached alongside Haggai, the encourager to Haggai's foreman — same building project, very different sermon styles."
+      ]
+    },
+    {
+      "slug": "malachi",
+      "bookName": "Malachi",
+      "displayTitle": "The Book of Malachi",
+      "subtitle": "The Old Testament's last word — hard questions, open windows, and a coming messenger.",
+      "testament": "Old",
+      "chapters": 4,
+      "theme": "Unchanging — I am the LORD, I change not.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Malachi 3:6",
+        "textBefore": "For I am the LORD, I",
+        "textAfter": " not; therefore ye sons of Jacob are not consumed.",
+        "answer": "change",
+        "correctRetort": "Unchanging Word, unchanged answer. Well done.",
+        "wrongRetort": "The verse is about constancy — fittingly, it hasn't changed. The answer: change."
+      },
+      "didYouKnow": [
+        "Malachi is the last voice of the Old Testament — after his final verse, heaven goes quiet for roughly four hundred years, until an angel startles a priest named Zacharias.",
+        "The book is built as a dispute — God makes a statement, the people fire back 'Wherein?', and God answers. Eight rounds of holy cross-examination.",
+        "Malachi 3:10 contains the Bible's only invitation to test God — 'prove me now herewith' — with windows of heaven promised to the faithful giver.",
+        "The Old Testament ends promising Elijah's return; Jesus said John the Baptist, camel hair and all, was that promise keeping its appointment."
+      ]
+    },
+    {
+      "slug": "matthew",
+      "bookName": "Matthew",
+      "displayTitle": "The Gospel of Matthew",
+      "subtitle": "The King has come — a tax collector's account of the promised Messiah.",
+      "testament": "New",
+      "chapters": 28,
+      "theme": "Fulfillment — that it might be fulfilled which was spoken by the prophets.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Matthew 5:14",
+        "textBefore": "Ye are the light of the",
+        "textAfter": ". A city that is set on an hill cannot be hid.",
+        "answer": "world",
+        "correctRetort": "Straight from the Sermon on the Mount. Let it shine.",
+        "wrongRetort": "It's from the most famous sermon ever preached. The answer: world."
+      },
+      "didYouKnow": [
+        "Matthew was a tax collector — the first-century career least likely to produce a beloved author — until Jesus said two words: 'Follow me.'",
+        "Matthew quotes the Old Testament more than any other gospel — over sixty times — because his whole case is 'that it might be fulfilled.'",
+        "The Sermon on the Mount runs three full chapters and gave the world the Beatitudes, the Lord's Prayer, and the golden rule in one sitting.",
+        "The wise men, the star, and the flight to Egypt appear only in Matthew — no other gospel records them."
+      ]
+    },
+    {
+      "slug": "mark",
+      "bookName": "Mark",
+      "displayTitle": "The Gospel of Mark",
+      "subtitle": "The action gospel — short, urgent, and straightway to the point.",
+      "testament": "New",
+      "chapters": 16,
+      "theme": "The servant King — not to be ministered unto, but to minister.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Mark 10:27",
+        "textBefore": "With men it is impossible, but not with God: for with God all things are",
+        "textAfter": ".",
+        "answer": "possible",
+        "correctRetort": "With God — and apparently with you — all things are possible.",
+        "wrongRetort": "Jesus said it after the rich young ruler walked away. The answer: possible."
+      },
+      "didYouKnow": [
+        "Mark is the shortest gospel and the fastest — the KJV uses 'straightway' and 'immediately' over forty times. Everything happens now.",
+        "Early church tradition says Mark wrote down the preaching of Peter — making this gospel, in effect, Peter's memoirs in someone else's handwriting.",
+        "Nearly half of Mark — six of sixteen chapters — covers just the final week of Jesus' life. Mark knew where the story was heading.",
+        "A young man flees the arrest scene in Gethsemane leaving his garment behind — found only in Mark 14. Many believe it's the author's unsigned cameo."
+      ]
+    },
+    {
+      "slug": "luke",
+      "bookName": "Luke",
+      "displayTitle": "The Gospel of Luke",
+      "subtitle": "The careful historian's gospel — outsiders welcomed, and joy on every page.",
+      "testament": "New",
+      "chapters": 24,
+      "theme": "Seeking the lost — the Son of man is come to seek and to save.",
+      "difficulty": "Warm-Up",
+      "sampleVerse": {
+        "reference": "Luke 2:10",
+        "textBefore": "Fear not: for, behold, I bring you good tidings of great",
+        "textAfter": ", which shall be to all people.",
+        "answer": "joy",
+        "correctRetort": "Good tidings indeed. The shepherds would approve.",
+        "wrongRetort": "The angel said it to shepherds keeping watch by night. The answer: joy."
+      },
+      "didYouKnow": [
+        "Luke was a physician and the only Gentile author in the Bible — and between his gospel and Acts, he wrote more of the New Testament by volume than anyone, Paul included.",
+        "The Christmas story you hear every December — the manger, the shepherds, the heavenly host — is Luke chapter 2, nearly word for word.",
+        "The prodigal son, the good Samaritan, and the lost sheep all live only in Luke — the gospel of the lost and found.",
+        "Luke opens like a historian: he interviewed 'eyewitnesses,' traced 'all things from the very first,' and addressed it all to one curious reader named Theophilus."
+      ]
+    },
+    {
+      "slug": "john",
+      "bookName": "John",
+      "displayTitle": "The Gospel of John",
+      "subtitle": "The beloved disciple's account of Jesus — the one that starts with the Word.",
+      "testament": "New",
+      "chapters": 21,
+      "theme": "Belief — that Jesus is the Christ, the Son of God, and that believing you may have life.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "John 3:16",
+        "textBefore": "For God so loved the",
+        "textAfter": ", that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+        "answer": "world",
+        "correctRetort": "The gospel in one verse, and you didn't miss it.",
+        "wrongRetort": "The most famous verse in the Bible, no less. The answer: world."
+      },
+      "didYouKnow": [
+        "John never names himself in his gospel — he's simply 'the disciple whom Jesus loved,' appearing five times, always at the important moments.",
+        "'Jesus wept' — John 11:35 — is the shortest verse in the English Bible. Yes, it shows up in our dailies. No, people still don't get it right under pressure.",
+        "John skips the parables entirely and builds his gospel around seven 'I am' statements — the bread, the light, the door, the shepherd, the resurrection, the way, the vine.",
+        "John states his purpose outright: 'these are written, that ye might believe.' It's the only gospel with a mission statement attached."
+      ]
+    },
+    {
+      "slug": "acts",
+      "bookName": "Acts",
+      "displayTitle": "The Acts of the Apostles",
+      "subtitle": "The church ignites — Pentecost, persecution, and the gospel gone global.",
+      "testament": "New",
+      "chapters": 28,
+      "theme": "Witness — in Jerusalem, in Judaea, in Samaria, and to the uttermost part of the earth.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Acts 1:8",
+        "textBefore": "But ye shall receive",
+        "textAfter": ", after that the Holy Ghost is come upon you.",
+        "answer": "power",
+        "correctRetort": "The whole book of Acts in one word. Well received.",
+        "wrongRetort": "It's the promise the entire book runs on. The answer: power."
+      },
+      "didYouKnow": [
+        "Acts is Luke's sequel — same author, same reader (Theophilus), and a story that picks up exactly where his gospel signs off.",
+        "Three thousand people believed after Peter's first sermon — this from the man who, weeks earlier, denied Jesus to a servant girl by a fire.",
+        "Saul of Tarsus enters the book holding coats at a stoning and exits it preaching in Rome — history's most consequential change of heart happens in chapter 9.",
+        "Acts ends mid-story, with Paul under house arrest and still preaching — no closing scene. Many readers think that's the point: the book of Acts is still being written."
+      ]
+    },
+    {
+      "slug": "romans",
+      "bookName": "Romans",
+      "displayTitle": "The Epistle to the Romans",
+      "subtitle": "Paul's masterwork — the gospel argued, step by step, from guilt to glory.",
+      "testament": "New",
+      "chapters": 16,
+      "theme": "Righteousness — the just shall live by faith, and nothing shall separate us.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Romans 8:28",
+        "textBefore": "And we know that all things work together for",
+        "textAfter": " to them that love God, to them who are the called according to his purpose.",
+        "answer": "good",
+        "correctRetort": "All things worked together on that answer. Nicely done.",
+        "wrongRetort": "One of the most-claimed promises in the Book. The answer: good."
+      },
+      "didYouKnow": [
+        "Augustine was converted reading Romans 13; Luther, wrestling with Romans 1; Wesley, hearing Luther's preface to Romans read aloud. This letter has a track record.",
+        "Paul wrote Romans to a church he had never visited — which is why it reads less like a letter and more like the gospel laid out in full, brick by brick.",
+        "The 'Romans Road' — 3:23, 6:23, 5:8, 10:9 — has walked more people through the gospel than perhaps any other set of verses in Scripture.",
+        "Romans 8 opens with 'no condemnation' and closes with 'no separation' — many believers call it the greatest chapter in the Bible."
+      ]
+    },
+    {
+      "slug": "1-corinthians",
+      "bookName": "1 Corinthians",
+      "displayTitle": "The First Epistle to the Corinthians",
+      "subtitle": "A messy church, a patient apostle — and the greatest chapter on love ever written.",
+      "testament": "New",
+      "chapters": 16,
+      "theme": "Charity — the greatest of these, without which all else is noise.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "1 Corinthians 13:13",
+        "textBefore": "And now abideth faith, hope, charity, these three; but the greatest of these is",
+        "textAfter": ".",
+        "answer": "charity",
+        "correctRetort": "The KJV says charity, and so did you. Precision and love.",
+        "wrongRetort": "Modern translations say love — the KJV is pickier. The answer: charity."
+      },
+      "didYouKnow": [
+        "The 'love chapter' read at countless weddings was written to a church in open conflict — 1 Corinthians 13 is a rebuke wearing a boutonnière.",
+        "Where modern Bibles say 'love,' the KJV says 'charity' — from the Latin caritas. Guess which word our players type wrong most often.",
+        "Corinth was a port city with a reputation so bad that 'to Corinthianize' meant to live scandalously. Paul planted a church there anyway and stayed eighteen months.",
+        "This letter contains the earliest written account of the resurrection appearances — Paul lists over five hundred witnesses, 'of whom the greater part remain unto this present.'"
+      ]
+    },
+    {
+      "slug": "2-corinthians",
+      "bookName": "2 Corinthians",
+      "displayTitle": "The Second Epistle to the Corinthians",
+      "subtitle": "Paul's most personal letter — treasure in earthen vessels, strength in weakness.",
+      "testament": "New",
+      "chapters": 13,
+      "theme": "Weakness — my grace is sufficient for thee: for my strength is made perfect in weakness.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "2 Corinthians 5:7",
+        "textBefore": "For we walk by faith, not by",
+        "textAfter": ".",
+        "answer": "sight",
+        "correctRetort": "Walked right to it, eyes closed. That's the idea.",
+        "wrongRetort": "Seven words, and one of them slipped. The answer: sight."
+      },
+      "didYouKnow": [
+        "Paul's 'thorn in the flesh' appears here — he asked three times for its removal and got a better answer instead: 'My grace is sufficient for thee.'",
+        "This is Paul's most autobiographical letter: shipwrecked three times, beaten with rods, stoned, adrift a night and a day in the deep — the résumé nobody wants.",
+        "2 Corinthians contains the Bible's clearest one-line gospel swap: 'he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
+        "'God loveth a cheerful giver' comes from chapter 9 — the original Greek for 'cheerful' is hilaron. Yes, as in hilarious."
+      ]
+    },
+    {
+      "slug": "galatians",
+      "bookName": "Galatians",
+      "displayTitle": "The Epistle to the Galatians",
+      "subtitle": "No other gospel — grace defended with fire, and freedom worth keeping.",
+      "testament": "New",
+      "chapters": 6,
+      "theme": "Liberty — stand fast therefore in the liberty wherewith Christ hath made us free.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Galatians 6:9",
+        "textBefore": "And let us not be weary in well doing: for in due season we shall",
+        "textAfter": ", if we faint not.",
+        "answer": "reap",
+        "correctRetort": "Sown, and reaped, in due season. Keep going.",
+        "wrongRetort": "A farmer's promise for tired saints. The answer: reap."
+      },
+      "didYouKnow": [
+        "Galatians is Paul at full temperature — no opening thanksgiving, straight to 'I marvel that ye are so soon removed.' Every other letter to a church starts kinder.",
+        "The fruit of the Spirit — love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance — is one fruit with nine flavors, listed in chapter 5.",
+        "Martin Luther loved this letter so much he called it 'my Katharina von Bora' — the name of his wife.",
+        "Paul takes the pen himself at the end: 'Ye see how large a letter I have written unto you with mine own hand' — the first-century equivalent of writing in all caps."
+      ]
+    },
+    {
+      "slug": "ephesians",
+      "bookName": "Ephesians",
+      "displayTitle": "The Epistle to the Ephesians",
+      "subtitle": "Seated in heavenly places — the church as God's masterpiece, armed and united.",
+      "testament": "New",
+      "chapters": 6,
+      "theme": "Grace — by grace are ye saved through faith; and that not of yourselves.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Ephesians 2:8",
+        "textBefore": "For by grace are ye saved through",
+        "textAfter": "; and that not of yourselves: it is the gift of God.",
+        "answer": "faith",
+        "correctRetort": "Saved by grace, solved by memory. Both gifts.",
+        "wrongRetort": "The verse the Reformation ran on. The answer: faith."
+      },
+      "didYouKnow": [
+        "The whole armor of God — belt, breastplate, shoes, shield, helmet, sword — comes from Ephesians 6, likely written while Paul was chained to a Roman soldier wearing exactly that kit.",
+        "Ephesians splits neatly in half: three chapters of what God has done, three chapters of how to live because of it. Doctrine first, duty second — Paul's favorite floor plan.",
+        "Paul spent about three years in Ephesus, longer than almost anywhere — this letter went to a church he knew house by house.",
+        "The word 'walk' shows up again and again in the back half — walk in love, walk as children of light, walk circumspectly. Grace has a gait."
+      ]
+    },
+    {
+      "slug": "philippians",
+      "bookName": "Philippians",
+      "displayTitle": "The Epistle to the Philippians",
+      "subtitle": "Joy from a prison cell — contentment, humility, and rejoicing on repeat.",
+      "testament": "New",
+      "chapters": 4,
+      "theme": "Rejoice — and again I say, rejoice.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Philippians 4:13",
+        "textBefore": "I can do all",
+        "textAfter": " through Christ which strengtheneth me.",
+        "answer": "things",
+        "correctRetort": "All things — including that one. Well done.",
+        "wrongRetort": "The locker-room favorite, quoted exactly. The answer: things."
+      },
+      "didYouKnow": [
+        "Paul wrote the Bible's most joyful letter from prison — 'rejoice' and 'joy' appear over a dozen times in four short chapters, between references to his chains.",
+        "Philippians 2 contains what many scholars believe is one of the church's earliest hymns — Christ humbling Himself to the cross, then exalted so every knee shall bow.",
+        "The church at Philippi began with a businesswoman, a jailer, and a delivered slave girl — Acts 16 tells the story, and it started with a prayer meeting by a river.",
+        "'I have learned, in whatsoever state I am, therewith to be content' — Paul's secret of contentment, written by a man who had tried both abundance and hunger."
+      ]
+    },
+    {
+      "slug": "colossians",
+      "bookName": "Colossians",
+      "displayTitle": "The Epistle to the Colossians",
+      "subtitle": "Christ above all — the image of the invisible God, and enough all by Himself.",
+      "testament": "New",
+      "chapters": 4,
+      "theme": "Preeminence — that in all things he might have the preeminence.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Colossians 3:2",
+        "textBefore": "Set your affection on things",
+        "textAfter": ", not on things on the earth.",
+        "answer": "above",
+        "correctRetort": "Affection set, answer found. Heavenly minded and some earthly good.",
+        "wrongRetort": "The compass points up in this letter. The answer: above."
+      },
+      "didYouKnow": [
+        "Paul never visited Colosse — the church was planted by Epaphras, a local who heard Paul in Ephesus and carried the gospel a hundred miles home.",
+        "Colossians 1 contains the New Testament's highest view of Christ: 'the image of the invisible God... by him all things consist.' Every heresy since has had to argue with this chapter.",
+        "Colossians and Ephesians are twin letters — written around the same time, carried by the same messenger, overlapping in dozens of phrases. Players who know one have a head start on the other.",
+        "The letter ends with a note to 'remember my bonds' — Paul signed off from prison, again, and still called the gospel 'the hope which is laid up for you in heaven.'"
+      ]
+    },
+    {
+      "slug": "1-thessalonians",
+      "bookName": "1 Thessalonians",
+      "displayTitle": "The First Epistle to the Thessalonians",
+      "subtitle": "A young church encouraged — holy living, hope for the dead, and the Lord's return.",
+      "testament": "New",
+      "chapters": 5,
+      "theme": "His coming — comfort one another with these words.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "1 Thessalonians 5:17",
+        "textBefore": "Pray without",
+        "textAfter": ".",
+        "answer": "ceasing",
+        "correctRetort": "Two words, no hesitation. Somebody's been praying without it.",
+        "wrongRetort": "The shortest command you'll ever struggle to keep. The answer: ceasing."
+      },
+      "didYouKnow": [
+        "This may be the earliest book of the New Testament — written around AD 50, likely before any of the four gospels were set down.",
+        "Every one of its five chapters ends with a reference to the return of Christ — the letter's heartbeat from start to finish.",
+        "Paul was in Thessalonica only about three weeks before a mob ran him out — this letter is him finishing the discipleship course by mail.",
+        "'Pray without ceasing' sits in a rapid-fire list of one-line commands in chapter 5 — rejoice evermore, quench not the Spirit, prove all things. Memorize the run; we pull from it."
+      ]
+    },
+    {
+      "slug": "2-thessalonians",
+      "bookName": "2 Thessalonians",
+      "displayTitle": "The Second Epistle to the Thessalonians",
+      "subtitle": "Standing firm until He comes — patience, work, and the day of the Lord clarified.",
+      "testament": "New",
+      "chapters": 3,
+      "theme": "Steadfastness — be not weary in well doing while you wait.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "2 Thessalonians 3:3",
+        "textBefore": "But the Lord is",
+        "textAfter": ", who shall stablish you, and keep you from evil.",
+        "answer": "faithful",
+        "correctRetort": "Stablished, kept, and correct. The Lord is faithful indeed.",
+        "wrongRetort": "The anchor verse of a stormy little letter. The answer: faithful."
+      },
+      "didYouKnow": [
+        "Someone had apparently forged a letter in Paul's name claiming the day of Christ had already come — 2 Thessalonians exists partly to shut that down, and Paul signs it with an anti-forgery token: 'so I write.'",
+        "Some Thessalonians had quit their jobs to wait for the Lord's return. Paul's correction became proverbial: 'if any would not work, neither should he eat.'",
+        "The KJV's 'stablish' isn't a typo for 'establish' — it's the same word, older spelling. We accept only the KJV's version. Naturally.",
+        "At three chapters, it's one of Paul's shortest letters to a church — a follow-up memo to a congregation he'd already taught face to face."
+      ]
+    },
+    {
+      "slug": "1-timothy",
+      "bookName": "1 Timothy",
+      "displayTitle": "The First Epistle to Timothy",
+      "subtitle": "A field manual for a young pastor — sound doctrine, godly order, good fights.",
+      "testament": "New",
+      "chapters": 6,
+      "theme": "Godliness — great gain, with contentment included.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "1 Timothy 6:10",
+        "textBefore": "For the love of",
+        "textAfter": " is the root of all evil.",
+        "answer": "money",
+        "correctRetort": "Note the fine print: the love of it, not the money itself. You read carefully.",
+        "wrongRetort": "The most misquoted verse in the Book — it's the love of it. The answer: money."
+      },
+      "didYouKnow": [
+        "The verse everyone misquotes: money is not the root of all evil — 'the love of money' is. One word of hedging that changes everything.",
+        "Timothy was Paul's protégé from Lystra, raised on Scripture by his mother Eunice and grandmother Lois — both mentioned by name in these letters.",
+        "Timothy was young enough that Paul had to tell him: 'Let no man despise thy youth.' Pastors have been underlining that verse ever since.",
+        "This letter contains the famous charge to fight 'the good fight of faith' — Paul's favorite metaphor, borrowed from the boxing ring."
+      ]
+    },
+    {
+      "slug": "2-timothy",
+      "bookName": "2 Timothy",
+      "displayTitle": "The Second Epistle to Timothy",
+      "subtitle": "Paul's final letter — a torch passed, a course finished, a crown ahead.",
+      "testament": "New",
+      "chapters": 4,
+      "theme": "Endurance — I have fought a good fight, I have finished my course.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "2 Timothy 1:7",
+        "textBefore": "For God hath not given us the spirit of",
+        "textAfter": "; but of power, and of love, and of a sound mind.",
+        "answer": "fear",
+        "correctRetort": "Power, love, a sound mind — and a correct answer. Fear had no chance.",
+        "wrongRetort": "The verse for every anxious moment. The answer: fear."
+      },
+      "didYouKnow": [
+        "This is almost certainly Paul's last surviving letter — written from a Roman dungeon awaiting execution, asking Timothy to come before winter and to bring the cloak and the parchments.",
+        "'All scripture is given by inspiration of God' — the Bible's own statement about itself — comes from chapter 3 of this letter.",
+        "Paul's farewell reads like a finish line: 'I have fought a good fight, I have finished my course, I have kept the faith.' Athletes and saints have borrowed it ever since.",
+        "Even at the end, Paul was a reader — the 'parchments' he requested were likely his copies of the Scriptures. The man wrote half the New Testament and still wanted his Bible."
+      ]
+    },
+    {
+      "slug": "titus",
+      "bookName": "Titus",
+      "displayTitle": "The Epistle to Titus",
+      "subtitle": "Order out of chaos on Crete — sound doctrine adorned with good works.",
+      "testament": "New",
+      "chapters": 3,
+      "theme": "Good works — a peculiar people, zealous of good works.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Titus 3:5",
+        "textBefore": "Not by works of righteousness which we have done, but according to his",
+        "textAfter": " he saved us.",
+        "answer": "mercy",
+        "correctRetort": "Not by works — but that answer took some. Well done.",
+        "wrongRetort": "Grace does the saving in this letter. The answer: mercy."
+      },
+      "didYouKnow": [
+        "Titus was Paul's fixer — dispatched to Corinth to calm a crisis, then to Crete to 'set in order the things that are wanting.' The hard assignments had his name on them.",
+        "Paul quotes a Cretan poet calling Cretans 'alway liars' — and adds, 'This witness is true.' Scripture contains exactly one certified philosophical burn from Epimenides.",
+        "Titus never appears in Acts — everything we know about him comes from Paul's letters, where he's called 'mine own son after the common faith.'",
+        "For a letter about good works, its center is pure grace: 'the kindness and love of God our Saviour toward man appeared... not by works of righteousness which we have done.'"
+      ]
+    },
+    {
+      "slug": "philemon",
+      "bookName": "Philemon",
+      "displayTitle": "The Epistle to Philemon",
+      "subtitle": "One page that undoes a chain — a runaway received as a brother.",
+      "testament": "New",
+      "chapters": 1,
+      "theme": "Reconciliation — receive him, not now as a servant, but a brother beloved.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Philemon 1:4",
+        "textBefore": "I thank my God, making mention of thee always in my",
+        "textAfter": ".",
+        "answer": "prayers",
+        "correctRetort": "The Bible's shortest letter, and you still found the word.",
+        "wrongRetort": "Twenty-five verses total, and this one hid well. The answer: prayers."
+      },
+      "didYouKnow": [
+        "Philemon is Paul's shortest letter — twenty-five verses asking one man to forgive one runaway slave, Onesimus, and receive him 'a brother beloved.'",
+        "Onesimus means 'profitable' — and Paul can't resist the pun: he 'in time past was to thee unprofitable, but now profitable to thee and to me.'",
+        "Paul offers to pay Onesimus's debts personally — 'put that on mine account' — then reminds Philemon he owes Paul his very soul. Holy negotiating at its finest.",
+        "Decades later, a bishop of Ephesus named Onesimus appears in early church letters. Many love to believe it's the same man — the runaway who came home."
+      ]
+    },
+    {
+      "slug": "hebrews",
+      "bookName": "Hebrews",
+      "displayTitle": "The Epistle to the Hebrews",
+      "subtitle": "Better in every way — a greater priest, a better covenant, and faith's hall of fame.",
+      "testament": "New",
+      "chapters": 13,
+      "theme": "Better things — Christ, the same yesterday, and to day, and for ever.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "Hebrews 11:1",
+        "textBefore": "Now faith is the",
+        "textAfter": " of things hoped for, the evidence of things not seen.",
+        "answer": "substance",
+        "correctRetort": "Faith defined, word for word. The hall of fame awaits.",
+        "wrongRetort": "It's the Bible's own definition of faith. The answer: substance."
+      },
+      "didYouKnow": [
+        "Nobody knows who wrote Hebrews — Paul, Apollos, Barnabas, and Priscilla have all been nominated. As one early scholar put it: 'God only knows.'",
+        "Hebrews 11 is faith's hall of fame — Abel, Enoch, Noah, Abraham, Sarah, Moses, Rahab — each introduced with the drumbeat 'by faith.' We quiz from that chapter often.",
+        "The word 'better' is the book's spine — a better covenant, better promises, better sacrifices, a better country. Fifteen chapters of holy comparison shopping.",
+        "The 'cloud of witnesses' and 'the race that is set before us' come from chapter 12 — right after the hall of fame, the starting gun."
+      ]
+    },
+    {
+      "slug": "james",
+      "bookName": "James",
+      "displayTitle": "The General Epistle of James",
+      "subtitle": "Faith that works — plain talk on trials, tongues, and doing the Word.",
+      "testament": "New",
+      "chapters": 5,
+      "theme": "Doing — be ye doers of the word, and not hearers only.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "James 1:22",
+        "textBefore": "But be ye",
+        "textAfter": " of the word, and not hearers only, deceiving your own selves.",
+        "answer": "doers",
+        "correctRetort": "A doer of the word — and of the daily, apparently.",
+        "wrongRetort": "Hearing isn't enough, says James. The answer: doers."
+      },
+      "didYouKnow": [
+        "James was most likely the half-brother of Jesus — who didn't believe during Jesus' ministry, saw the risen Lord, and became the anchor of the Jerusalem church.",
+        "James is the Proverbs of the New Testament — over fifty commands in five chapters, on everything from bragging about tomorrow to paying your workers.",
+        "Tradition nicknamed James 'Old Camel Knees' — his knees allegedly calloused like a camel's from constant kneeling in prayer.",
+        "His verdict on the tongue still stings: 'a little member' that 'boasteth great things' — a fire, a world of iniquity, and untameable by man."
+      ]
+    },
+    {
+      "slug": "1-peter",
+      "bookName": "1 Peter",
+      "displayTitle": "The First Epistle of Peter",
+      "subtitle": "Hope for exiles — standing graceful and unshaken in the fire.",
+      "testament": "New",
+      "chapters": 5,
+      "theme": "Hope in suffering — a lively hope, kept by the power of God.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "1 Peter 5:7",
+        "textBefore": "Casting all your",
+        "textAfter": " upon him; for he careth for you.",
+        "answer": "care",
+        "correctRetort": "Cast, caught, and correct. He careth — and you answereth.",
+        "wrongRetort": "The fisherman's verb: cast it like a net. The answer: care."
+      },
+      "didYouKnow": [
+        "Peter — the disciple who denied Jesus three times — wrote the New Testament's warmest letter about standing firm under fire. Restoration is the whole point.",
+        "'Casting all your care upon him' uses a fishing word — fitting from a man who dropped his nets on the shore of Galilee to follow.",
+        "Peter wrote from 'Babylon' — almost certainly code for Rome, where tradition says he was later crucified upside down, at his own request.",
+        "The letter calls believers 'strangers and pilgrims' — written to scattered exiles across five Roman provinces, and adopted by wanderers ever since."
+      ]
+    },
+    {
+      "slug": "2-peter",
+      "bookName": "2 Peter",
+      "displayTitle": "The Second Epistle of Peter",
+      "subtitle": "A fisherman's farewell — remember the truth, beware the scoffers, await the day.",
+      "testament": "New",
+      "chapters": 3,
+      "theme": "Remembrance — stirring you up by putting you in remembrance.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "2 Peter 3:8",
+        "textBefore": "One day is with the Lord as a",
+        "textAfter": " years, and a thousand years as one day.",
+        "answer": "thousand",
+        "correctRetort": "Timed perfectly — however you count the days.",
+        "wrongRetort": "God's clock runs differently, says Peter. The answer: thousand."
+      },
+      "didYouKnow": [
+        "2 Peter is the apostle's deathbed letter — 'shortly I must put off this my tabernacle' — written to keep the truth alive after he was gone.",
+        "Peter refers to the transfiguration as an eyewitness: 'we were with him in the holy mount' — one of the few places an author cites his own gospel scene.",
+        "In chapter 3, Peter calls Paul's letters 'scripture' — and admits some of them contain 'things hard to be understood.' Even apostles found Romans heavy going.",
+        "The famous patience verse — a day as a thousand years — answers scoffers asking 'Where is the promise of his coming?' The delay, Peter says, is mercy."
+      ]
+    },
+    {
+      "slug": "1-john",
+      "bookName": "1 John",
+      "displayTitle": "The First Epistle of John",
+      "subtitle": "Light, love, and assurance — how to know that you know Him.",
+      "testament": "New",
+      "chapters": 5,
+      "theme": "Love — we love him, because he first loved us.",
+      "difficulty": "Sunday School",
+      "sampleVerse": {
+        "reference": "1 John 4:8",
+        "textBefore": "He that loveth not knoweth not God; for God is",
+        "textAfter": ".",
+        "answer": "love",
+        "correctRetort": "Three letters, infinite depth. Correct.",
+        "wrongRetort": "The Bible's shortest definition of God. The answer: love."
+      },
+      "didYouKnow": [
+        "'God is love' appears exactly twice in the Bible — both times in 1 John 4. One book holds the whole phrase.",
+        "John wrote this letter so believers could 'know that ye have eternal life' — the word 'know' appears over thirty times in five chapters. Assurance is the theme.",
+        "The aged apostle calls his readers 'little children' again and again — tradition says in his final years his whole sermon had become 'Little children, love one another.'",
+        "1 John opens with an eyewitness claim: 'that which we have seen with our eyes... and our hands have handled.' The man had leaned on Jesus at supper — and never got over it."
+      ]
+    },
+    {
+      "slug": "2-john",
+      "bookName": "2 John",
+      "displayTitle": "The Second Epistle of John",
+      "subtitle": "A postcard from the elder — walk in truth, and guard the doctrine of Christ.",
+      "testament": "New",
+      "chapters": 1,
+      "theme": "Truth and love — walking in both, refusing to trade either.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "2 John 1:6",
+        "textBefore": "And this is love, that we walk after his",
+        "textAfter": ".",
+        "answer": "commandments",
+        "correctRetort": "Thirteen verses in the whole book, and you knew the one that counts.",
+        "wrongRetort": "Love, defined as obedience — classic John. The answer: commandments."
+      },
+      "didYouKnow": [
+        "2 John is one of the shortest books in the Bible — thirteen verses, short enough to have fit on a single sheet of papyrus. A true first-century postcard.",
+        "It's addressed to 'the elect lady and her children' — a real woman, or a church described as one? Scholars have debated the mystery lady for centuries.",
+        "John writes that he has 'many things to write' but would rather come and speak 'face to face, that our joy may be full' — the apostle preferred visits to letters.",
+        "Short as it is, the letter draws a hard line: anyone denying Christ's coming in the flesh was not to be received. Truth and hospitality, in that order."
+      ]
+    },
+    {
+      "slug": "3-john",
+      "bookName": "3 John",
+      "displayTitle": "The Third Epistle of John",
+      "subtitle": "Three men and a test — hospitality honored, ambition exposed.",
+      "testament": "New",
+      "chapters": 1,
+      "theme": "Walking in truth — no greater joy than to hear it of your children.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "3 John 1:4",
+        "textBefore": "I have no greater joy than to hear that my children walk in",
+        "textAfter": ".",
+        "answer": "truth",
+        "correctRetort": "No greater joy — well, maybe a perfect daily. Correct.",
+        "wrongRetort": "The elder's favorite word, and the book's. The answer: truth."
+      },
+      "didYouKnow": [
+        "By word count, 3 John is the shortest book in the entire Bible — even shorter than 2 John, though both are a single chapter.",
+        "The letter is a tale of three men: Gaius the generous host, Diotrephes 'who loveth to have the preeminence,' and Demetrius with a good report. Choose your character wisely.",
+        "3 John never uses the name 'Jesus' or 'Christ' — unique in the New Testament — yet every line is about faithfulness to His truth.",
+        "John coins one of Scripture's kindest phrases here, praying Gaius may 'prosper and be in health, even as thy soul prospereth.'"
+      ]
+    },
+    {
+      "slug": "jude",
+      "bookName": "Jude",
+      "displayTitle": "The General Epistle of Jude",
+      "subtitle": "Contend for the faith — one urgent page, and the Bible's most soaring benediction.",
+      "testament": "New",
+      "chapters": 1,
+      "theme": "Kept — preserved in Jesus Christ, and able to keep you from falling.",
+      "difficulty": "Don't Play With Me",
+      "sampleVerse": {
+        "reference": "Jude 1:21",
+        "textBefore": "Keep yourselves in the",
+        "textAfter": " of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
+        "answer": "love",
+        "correctRetort": "Kept, looked, and answered. Jude would approve.",
+        "wrongRetort": "One chapter, twenty-five verses, one missing word. The answer: love."
+      },
+      "didYouKnow": [
+        "Jude, like James, was most likely a half-brother of Jesus — yet he introduces himself only as 'the servant of Jesus Christ, and brother of James.' Humility runs in the family.",
+        "Jude meant to write a friendly letter about salvation — and tells us he changed plans mid-thought, because the faith needed defending. The Bible's most famous pivot.",
+        "Verses 24 and 25 — 'now unto him that is able to keep you from falling' — form perhaps the most beloved benediction in Scripture, still closing services every Sunday.",
+        "Nearly every verse in Jude has a twin in 2 Peter 2 — two apostles, one warning, delivered in stereo."
+      ]
+    },
+    {
+      "slug": "revelation",
+      "bookName": "Revelation",
+      "displayTitle": "The Book of Revelation",
+      "subtitle": "The final vision — prophecy, judgment, and the promise of a new heaven and earth.",
+      "testament": "New",
+      "chapters": 22,
+      "theme": "The end and the beginning — Christ's return, final judgment, and the new creation.",
+      "difficulty": "Deep Water",
+      "sampleVerse": {
+        "reference": "Revelation 21:4",
+        "textBefore": "And God shall wipe away all",
+        "textAfter": " from their eyes; and there shall be no more death, neither sorrow, nor crying.",
+        "answer": "tears",
+        "correctRetort": "The end of the story, and you know it well.",
+        "wrongRetort": "It's the promise the whole Book has been heading toward. The answer: tears."
+      },
+      "didYouKnow": [
+        "It's Revelation — singular, no 's.' The full title: 'The Revelation of St. John the Divine.' Misspell it in front of a pastor at your own risk.",
+        "It's the only book of the Bible that opens with a blessing on whoever reads it aloud — and closes with a warning to anyone who adds or subtracts a word. We take that second part seriously around here.",
+        "John received the vision exiled on Patmos, a small Aegean island — 'for the word of God, and for the testimony of Jesus Christ.'",
+        "The number seven structures the whole book: seven churches, seals, trumpets, and vials — and the Lamb appears more than two dozen times."
+      ]
+    }
+  ],
+  "categoryPages": [
+    {
+      "slug": "difficulty/warm-up",
+      "title": "Start Here",
+      "subtitle": "Familiar verses for those just beginning their daily discipline.",
+      "filter": "difficulty",
+      "value": "Warm-Up"
+    },
+    {
+      "slug": "difficulty/deep-water",
+      "title": "For the Devoted",
+      "subtitle": "Verses that test even lifelong readers of the Word.",
+      "filter": "difficulty",
+      "value": "Deep Water"
+    },
+    {
+      "slug": "difficulty/dont-play-with-me",
+      "title": "KJV Scholars Only",
+      "subtitle": "The rarest phrasings. The deepest books. No hints.",
+      "filter": "difficulty",
+      "value": "Don't Play With Me"
+    },
+    {
+      "slug": "testament/old",
+      "title": "Old Testament Verses",
+      "subtitle": "From Genesis to Malachi — the foundation of it all.",
+      "filter": "testament",
+      "value": "Old"
+    },
+    {
+      "slug": "testament/new",
+      "title": "New Testament Verses",
+      "subtitle": "From Matthew to Revelation — the gospel and its fruit.",
+      "filter": "testament",
+      "value": "New"
+    }
+  ]
+}

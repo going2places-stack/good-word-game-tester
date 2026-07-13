@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Are Profit Margins? — StockSense Learn</title>
+<meta name="description" content="How much money a company actually keeps from each sale — and why it separates winners from pretenders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin:0; background:#FDF9F6; font-family:'Albert Sans',sans-serif; color:#1C1C1E; -webkit-font-smoothing:antialiased; }
+  a { color:#FF6B47; text-decoration:none; }
+  a:hover { color:#e4552f; text-decoration:underline; }
+  .content-col { max-width:720px; margin:0 auto; }
+
+  /* ---------- HEADER ---------- */
+  .site-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px clamp(20px,5vw,48px); border-bottom:1px solid #F0E6E1; background:#FDF9F6; position:sticky; top:0; z-index:10; }
+  .logo-group { display:flex; align-items:center; gap:10px; }
+  .logo-mark { width:32px; height:32px; border-radius:9px; background:#FF6B47; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:17px; }
+  .logo-wordmark { font-weight:800; font-size:17px; letter-spacing:-0.01em; }
+  .logo-label { font-weight:600; font-size:13px; color:#4ECDC4; letter-spacing:0.08em; text-transform:uppercase; }
+  .header-cta { font-weight:700; font-size:14px; color:#1C1C1E; padding:9px 16px; border:1.5px solid #1C1C1E; border-radius:99px; }
+  .header-cta:hover { background:#1C1C1E; color:#fff; text-decoration:none; }
+
+  /* ---------- 1. HERO ---------- */
+  .hero { padding:clamp(56px,9vw,96px) 24px clamp(40px,6vw,64px); text-align:center; }
+  .hero .content-col { display:flex; flex-direction:column; gap:20px; align-items:center; }
+  .hero-eyebrow { font-size:13px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#7A7A80; }
+  .hero h1 { margin:0; font-size:clamp(38px,6vw,60px); font-weight:800; letter-spacing:-0.03em; line-height:1.05; }
+  .hero-subtitle { margin:0; font-size:clamp(18px,2.4vw,21px); line-height:1.5; color:#55555C; max-width:560px; text-wrap:pretty; }
+
+  /* ---------- 2. EXPLANATION ---------- */
+  .explanation { padding:0 24px; }
+  .explanation .content-col { display:flex; flex-direction:column; gap:8px; font-size:17.5px; line-height:1.7; color:#33333A; }
+  .explanation h2 { margin:12px 0 4px; font-size:24px; font-weight:800; letter-spacing:-0.02em; color:#1C1C1E; }
+  .explanation h2 + p { margin:0; }
+  .explanation p { margin:0; text-wrap:pretty; }
+
+  /* ---------- 3. STOCKSENSE CARD ---------- */
+  .grade-card-wrap { padding:clamp(40px,6vw,64px) 24px; }
+  .grade-card { background:#fff; border:1px solid #F0E6E1; border-radius:20px; padding:clamp(24px,4vw,36px); display:flex; flex-direction:column; gap:20px; box-shadow:0 2px 12px rgba(28,28,30,0.04); }
+  .grade-card-header { display:flex; align-items:center; gap:10px; }
+  .grade-card-icon { width:26px; height:26px; border-radius:7px; background:#4ECDC4; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:14px; }
+  .grade-card h2 { margin:0; font-size:20px; font-weight:800; letter-spacing:-0.01em; }
+  .grade-card-desc { margin:0; font-size:16px; line-height:1.6; color:#55555C; text-wrap:pretty; }
+
+  .report-row { display:flex; align-items:center; gap:14px; padding:14px 18px; background:#FDF9F6; border:1px solid #F0E6E1; border-radius:14px; }
+  .report-row-num { font-size:13px; font-weight:700; color:#B9AFA8; }
+  .report-row-info { display:flex; flex-direction:column; gap:2px; flex:1; min-width:0; }
+  .report-row-name { font-weight:700; font-size:15.5px; }
+  .report-row-q { font-size:13px; color:#7A7A80; }
+  .badge { padding:6px 14px; border-radius:99px; font-weight:800; font-size:13px; }
+  .badge-strong { background:#4ECDC4; color:#0E4F4A; }
+  .badge-solid { background:#1C1C1E; color:#fff; }
+  .badge-weak { background:#FF6B47; color:#fff; }
+
+  .scale-label { font-size:13px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#7A7A80; }
+  .scale-list { display:flex; flex-direction:column; gap:8px; font-size:15px; }
+  .scale-item { display:flex; align-items:center; gap:10px; }
+  .scale-dot { width:10px; height:10px; border-radius:99px; flex-shrink:0; }
+  .scale-dot-strong { background:#4ECDC4; }
+  .scale-dot-solid { background:#1C1C1E; }
+  .scale-dot-weak { background:#FF6B47; }
+  .scale-item strong { width:56px; }
+  .scale-item span:last-child { color:#55555C; }
+
+  /* ---------- 4. EXAMPLE ---------- */
+  .example-section { padding:0 24px clamp(40px,6vw,64px); }
+  .example-section .content-col { display:flex; flex-direction:column; gap:20px; }
+  .example-section h2 { margin:0; font-size:24px; font-weight:800; letter-spacing:-0.02em; }
+  .example-cards { display:flex; gap:16px; flex-wrap:wrap; }
+  .example-card { flex:1; min-width:240px; background:#fff; border:1px solid #F0E6E1; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:8px; }
+  .example-card-name { font-weight:800; font-size:16px; }
+  .example-card-calc { font-size:14px; color:#7A7A80; }
+  .example-card-result { font-size:36px; font-weight:800; }
+  .example-card-result.teal { color:#4ECDC4; }
+  .example-card-result.coral { color:#FF6B47; }
+  .example-card-desc { font-size:14px; color:#55555C; }
+
+  /* ---------- 5. CTA ---------- */
+  .cta-section { padding:clamp(48px,7vw,80px) 24px; background:#fff; border-top:1px solid #F0E6E1; }
+  .cta-section .content-col { display:flex; flex-direction:column; gap:24px; align-items:center; text-align:center; }
+  .cta-section h2 { margin:0; font-size:clamp(26px,4vw,34px); font-weight:800; letter-spacing:-0.02em; }
+  .cta-btn { display:inline-flex; align-items:center; gap:8px; background:#FF6B47; color:#fff; font-weight:800; font-size:17px; padding:16px 32px; border-radius:99px; box-shadow:0 4px 14px rgba(255,107,71,0.35); }
+  .cta-btn:hover { background:#e4552f; color:#fff; text-decoration:none; transform:translateY(-1px); }
+  .cta-disclaimer { margin:0; font-size:13px; color:#7A7A80; max-width:440px; }
+  .sibling-nav { display:flex; flex-direction:column; gap:12px; align-items:center; padding-top:12px; border-top:1px dashed #F0E6E1; width:100%; }
+  .sibling-label { font-size:13px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#7A7A80; }
+  .sibling-links { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .sibling-link { padding:9px 18px; border:1.5px solid #F0E6E1; border-radius:99px; font-weight:700; font-size:14px; color:#1C1C1E; background:#FDF9F6; }
+  .sibling-link:hover { border-color:#FF6B47; color:#FF6B47; text-decoration:none; }
+
+  /* ---------- 6. FOOTER ---------- */
+  .site-footer { background:#1C1C1E; color:#B9B9BF; padding:40px 24px; }
+  .site-footer .content-col { display:flex; flex-direction:column; gap:18px; }
+  .footer-top { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .footer-logo { display:flex; align-items:center; gap:9px; }
+  .footer-logo-mark { width:26px; height:26px; border-radius:7px; background:#FF6B47; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:14px; }
+  .footer-logo-text { font-weight:800; font-size:15px; color:#fff; }
+  .footer-links { display:flex; gap:20px; font-size:14px; font-weight:600; }
+  .footer-links a { color:#B9B9BF; }
+  .footer-links a:hover { color:#fff; }
+  .footer-legal { margin:0; font-size:12.5px; line-height:1.6; color:#7A7A80; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo-group">
+    <div class="logo-mark">S</div>
+    <div style="display:flex; align-items:baseline; gap:7px;">
+      <span class="logo-wordmark">StockSense</span>
+      <span class="logo-label">Learn</span>
+    </div>
+  </div>
+  <a href="/" class="header-cta">Open the app</a>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="content-col">
+    <span class="hero-eyebrow">Fundamentals, explained</span>
+    <h1>What Are Profit Margins?</h1>
+    <p class="hero-subtitle">How much money a company actually keeps from each sale — and why it separates winners from pretenders.</p>
+  </div>
+</section>
+
+<!-- 2. PLAIN-ENGLISH EXPLANATION -->
+<section class="explanation">
+  <div class="content-col">
+    <!-- Repeat for each section in explanation.sections[] -->
+    
+    <h2>So what is it, exactly?</h2>
+    
+    <p>Picture this: two bakeries each sell a loaf of bread for $5. The first spends $4.50 on flour, labor, rent, and everything else — it keeps 50 cents. The second runs a tighter ship and keeps $1.50 from that same loaf. Both made a sale. One made three times the money. That difference is the profit margin.</p>
+    
+    <p>Profit margin is the percentage of revenue a company keeps as profit after paying its bills. Take the profit, divide it by the revenue, and you get the margin. A 10% margin means the company keeps 10 cents of every dollar customers hand it.</p>
+    
+    
+    <h2>Why should you care?</h2>
+    
+    <p>Because selling a lot means nothing if there's nothing left afterward. Margins tell you how much cushion a company has when times get tough. When costs rise or competitors cut prices, a business keeping 15 cents on the dollar can absorb the hit. A business keeping 2 cents is one bad quarter from losing money.</p>
+    
+    <p>Healthy margins also hint at something deeper: pricing power. A company that keeps a fat share of every sale usually has something customers can't easily get elsewhere. Thin margins often mean the company competes on price alone — and that's a hard way to live.</p>
+    
+    
+  </div>
+</section>
+
+<!-- 3. HOW STOCKSENSE GRADES THIS -->
+<section class="grade-card-wrap">
+  <div class="content-col">
+    <div class="grade-card">
+      <div class="grade-card-header">
+        <div class="grade-card-icon">✓</div>
+        <h2>How StockSense grades this</h2>
+      </div>
+      <p class="grade-card-desc">Profit Margins is check 2 of 8 on every StockSense report card — the <strong>Healthy Margins</strong> check. Here's what the row looks like in the app:</p>
+      <div class="report-row">
+        <span class="report-row-num">2</span>
+        <div class="report-row-info">
+          <span class="report-row-name">Healthy Margins (Profit Margins)</span>
+          <span class="report-row-q">Does the company keep a healthy share of its revenue?</span>
+        </div>
+        <span class="badge badge-solid">Solid</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <span class="scale-label">The grading scale</span>
+        <div class="scale-list">
+          <div class="scale-item"><span class="scale-dot scale-dot-strong"></span><strong>Strong</strong><span>Margin above 10% — the company keeps a solid cut</span></div>
+          <div class="scale-item"><span class="scale-dot scale-dot-solid"></span><strong>Solid</strong><span>Margin of 5–10% — decent but not dominant</span></div>
+          <div class="scale-item"><span class="scale-dot scale-dot-weak"></span><strong>Weak</strong><span>Margin below 5% — thin profits, little room for error</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. REAL EXAMPLE -->
+<section class="example-section">
+  <div class="content-col">
+    <h2>Let's make it real</h2>
+    <p style="margin:0; font-size:17.5px; line-height:1.7; color:#33333A; text-wrap:pretty;">Imagine two companies that each bring in $100 million of revenue this year. After all the bills are paid, Company A keeps $15 million. Company B keeps $2 million. Same sales — wildly different keep.</p>
+    <div class="example-cards">
+      
+      <div class="example-card">
+        <span class="example-card-name">Company A</span>
+        <span class="example-card-calc">$15M profit ÷ $100M revenue</span>
+        <div class="example-card-result teal">15%</div>
+        <span class="example-card-desc">Keeps 15 cents of every dollar customers spend.</span>
+      </div>
+      
+      <div class="example-card">
+        <span class="example-card-name">Company B</span>
+        <span class="example-card-calc">$2M profit ÷ $100M revenue</span>
+        <div class="example-card-result coral">2%</div>
+        <span class="example-card-desc">Keeps 2 cents — one bad quarter from breaking even.</span>
+      </div>
+      
+    </div>
+    <p style="margin:0; font-size:17.5px; line-height:1.7; color:#33333A; text-wrap:pretty;">From the outside, both companies look the same size. But Company A turns sales into real money, while Company B works just as hard to keep almost nothing. Margins reveal the difference between a business that's busy and a business that's good.</p>
+  </div>
+</section>
+
+<!-- 5. CTA FOOTER -->
+<section class="cta-section">
+  <div class="content-col">
+    <h2>Grade any stock's fundamentals in 30&nbsp;seconds</h2>
+    <a href="/" class="cta-btn">Try StockSense — it's free</a>
+    <p class="cta-disclaimer">StockSense grades fundamentals for educational purposes. It is not investment advice.</p>
+    <div class="sibling-nav">
+      <span class="sibling-label">Also explore</span>
+      <div class="sibling-links">
+        
+        <a href="/learn/revenue-growth" class="sibling-link">Revenue Growth</a>
+        
+        <a href="/learn/return-on-equity" class="sibling-link">Return on Equity</a>
+        
+        <a href="/learn/pe-ratio" class="sibling-link">P/E Ratio</a>
+        
+        <a href="/learn/earnings-growth" class="sibling-link">Earnings Growth</a>
+        
+        <a href="/learn/dividends" class="sibling-link">Dividends</a>
+        
+        <a href="/learn/debt-safety" class="sibling-link">Debt Safety</a>
+        
+        <a href="/learn/free-cash-flow" class="sibling-link">Free Cash Flow</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. SITE FOOTER -->
+<footer class="site-footer">
+  <div class="content-col">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="footer-logo-mark">S</div>
+        <span class="footer-logo-text">StockSense</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Open the app</a>
+        <a href="/learn">All Learn topics</a>
+      </div>
+    </div>
+    <p class="footer-legal">© 2026 StockSense. StockSense grades stock fundamentals for educational purposes only and does not provide investment advice. Do your own research or consult a licensed advisor before investing.</p>
+  </div>
+</footer>
+
+</body>
+</html>
