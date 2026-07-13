@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn the Fundamentals — StockSense Learn</title>
+<meta name="description" content="All eight StockSense fundamentals checks, explained in plain English — from P/E ratios to free cash flow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin:0; background:#FDF9F6; font-family:'Albert Sans',sans-serif; color:#1C1C1E; -webkit-font-smoothing:antialiased; }
+  a { color:#FF6B47; text-decoration:none; }
+  a:hover { color:#e4552f; text-decoration:underline; }
+  .content-col { max-width:720px; margin:0 auto; }
+
+  /* ---------- HEADER ---------- */
+  .site-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px clamp(20px,5vw,48px); border-bottom:1px solid #F0E6E1; background:#FDF9F6; position:sticky; top:0; z-index:10; }
+  .logo-group { display:flex; align-items:center; gap:10px; }
+  .logo-mark { width:32px; height:32px; border-radius:9px; background:#FF6B47; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:17px; }
+  .logo-wordmark { font-weight:800; font-size:17px; letter-spacing:-0.01em; }
+  .logo-label { font-weight:600; font-size:13px; color:#4ECDC4; letter-spacing:0.08em; text-transform:uppercase; }
+  .header-cta { font-weight:700; font-size:14px; color:#1C1C1E; padding:9px 16px; border:1.5px solid #1C1C1E; border-radius:99px; }
+  .header-cta:hover { background:#1C1C1E; color:#fff; text-decoration:none; }
+
+  /* ---------- HERO ---------- */
+  .hero { padding:clamp(56px,9vw,96px) 24px clamp(40px,6vw,64px); text-align:center; }
+  .hero .content-col { display:flex; flex-direction:column; gap:20px; align-items:center; }
+  .hero-eyebrow { font-size:13px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#7A7A80; }
+  .hero h1 { margin:0; font-size:clamp(38px,6vw,60px); font-weight:800; letter-spacing:-0.03em; line-height:1.05; }
+  .hero-subtitle { margin:0; font-size:clamp(18px,2.4vw,21px); line-height:1.5; color:#55555C; max-width:560px; text-wrap:pretty; }
+
+  /* ---------- CHECK LIST ---------- */
+  .check-list-wrap { padding:0 24px clamp(48px,7vw,80px); }
+  .check-list { display:flex; flex-direction:column; gap:14px; }
+  .check-row { display:flex; align-items:center; gap:16px; padding:20px 24px; background:#fff; border:1px solid #F0E6E1; border-radius:16px; color:#1C1C1E; box-shadow:0 2px 12px rgba(28,28,30,0.04); }
+  .check-row:hover { border-color:#FF6B47; text-decoration:none; color:#1C1C1E; box-shadow:0 4px 16px rgba(28,28,30,0.08); }
+  .check-row-num { flex-shrink:0; width:34px; height:34px; border-radius:10px; background:#FDF9F6; border:1px solid #F0E6E1; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; color:#B9AFA8; }
+  .check-row-info { display:flex; flex-direction:column; gap:3px; flex:1; min-width:0; }
+  .check-row-name { font-weight:800; font-size:16.5px; }
+  .check-row-sub { font-size:14px; line-height:1.5; color:#7A7A80; }
+  .check-row-arrow { flex-shrink:0; color:#FF6B47; font-weight:800; font-size:18px; }
+
+  /* ---------- CTA ---------- */
+  .cta-section { padding:clamp(48px,7vw,80px) 24px; background:#fff; border-top:1px solid #F0E6E1; }
+  .cta-section .content-col { display:flex; flex-direction:column; gap:24px; align-items:center; text-align:center; }
+  .cta-section h2 { margin:0; font-size:clamp(26px,4vw,34px); font-weight:800; letter-spacing:-0.02em; }
+  .cta-btn { display:inline-flex; align-items:center; gap:8px; background:#FF6B47; color:#fff; font-weight:800; font-size:17px; padding:16px 32px; border-radius:99px; box-shadow:0 4px 14px rgba(255,107,71,0.35); }
+  .cta-btn:hover { background:#e4552f; color:#fff; text-decoration:none; transform:translateY(-1px); }
+  .cta-disclaimer { margin:0; font-size:13px; color:#7A7A80; max-width:440px; }
+
+  /* ---------- FOOTER ---------- */
+  .site-footer { background:#1C1C1E; color:#B9B9BF; padding:40px 24px; }
+  .site-footer .content-col { display:flex; flex-direction:column; gap:18px; }
+  .footer-top { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .footer-logo { display:flex; align-items:center; gap:9px; }
+  .footer-logo-mark { width:26px; height:26px; border-radius:7px; background:#FF6B47; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:14px; }
+  .footer-logo-text { font-weight:800; font-size:15px; color:#fff; }
+  .footer-links { display:flex; gap:20px; font-size:14px; font-weight:600; }
+  .footer-links a { color:#B9B9BF; }
+  .footer-links a:hover { color:#fff; }
+  .footer-legal { margin:0; font-size:12.5px; line-height:1.6; color:#7A7A80; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo-group">
+    <div class="logo-mark">S</div>
+    <div style="display:flex; align-items:baseline; gap:7px;">
+      <span class="logo-wordmark">StockSense</span>
+      <span class="logo-label">Learn</span>
+    </div>
+  </div>
+  <a href="/" class="header-cta">Open the app</a>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="content-col">
+    <span class="hero-eyebrow">Fundamentals, explained</span>
+    <h1>The eight checks, in plain English</h1>
+    <p class="hero-subtitle">Every StockSense report card grades the same eight fundamentals. Here's what each one means — no jargon, no lectures.</p>
+  </div>
+</section>
+
+<!-- 2. CHECK LIST -->
+<section class="check-list-wrap">
+  <div class="content-col">
+    <div class="check-list">
+      
+      <a class="check-row" href="/learn/revenue-growth">
+        <span class="check-row-num">1</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Growing Revenue (Revenue Growth)</span>
+          <span class="check-row-sub">Is the company's revenue growing year over year?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/profit-margins">
+        <span class="check-row-num">2</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Healthy Margins (Profit Margins)</span>
+          <span class="check-row-sub">Does the company keep a healthy share of its revenue?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/return-on-equity">
+        <span class="check-row-num">3</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Smart Capital (Return on Equity)</span>
+          <span class="check-row-sub">Is the company generating strong returns on shareholder equity?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/pe-ratio">
+        <span class="check-row-num">4</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Fair Price (P/E Ratio)</span>
+          <span class="check-row-sub">Is the price reasonable for the earnings?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/earnings-growth">
+        <span class="check-row-num">5</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Growing Profits (Earnings Growth)</span>
+          <span class="check-row-sub">Are the company's earnings growing year over year?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/dividends">
+        <span class="check-row-num">6</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Shareholder Rewards (Dividends)</span>
+          <span class="check-row-sub">Does the company pay and maintain a reliable dividend?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/debt-safety">
+        <span class="check-row-num">7</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Manageable Debt (Debt Safety)</span>
+          <span class="check-row-sub">Can the company comfortably manage its debt load?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+      <a class="check-row" href="/learn/free-cash-flow">
+        <span class="check-row-num">8</span>
+        <div class="check-row-info">
+          <span class="check-row-name">Cash Generation (Free Cash Flow)</span>
+          <span class="check-row-sub">Is the company generating positive free cash flow?</span>
+        </div>
+        <span class="check-row-arrow">→</span>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 3. CTA FOOTER -->
+<section class="cta-section">
+  <div class="content-col">
+    <h2>Grade any stock's fundamentals in 30&nbsp;seconds</h2>
+    <a href="/" class="cta-btn">Try StockSense — it's free</a>
+    <p class="cta-disclaimer">StockSense grades fundamentals for educational purposes. It is not investment advice.</p>
+  </div>
+</section>
+
+<!-- 4. SITE FOOTER -->
+<footer class="site-footer">
+  <div class="content-col">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="footer-logo-mark">S</div>
+        <span class="footer-logo-text">StockSense</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Open the app</a>
+        <a href="/learn">All Learn topics</a>
+      </div>
+    </div>
+    <p class="footer-legal">© 2026 StockSense. StockSense grades stock fundamentals for educational purposes only and does not provide investment advice. Do your own research or consult a licensed advisor before investing.</p>
+  </div>
+</footer>
+
+</body>
+</html>

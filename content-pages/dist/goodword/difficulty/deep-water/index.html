@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For the Devoted — The Good Word Game</title>
+<meta name="description" content="Verses that test even lifelong readers of the Word.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin:0; background:#fbf3e2; font-family:Georgia,'Times New Roman',ui-serif,serif; color:#221a12; -webkit-font-smoothing:antialiased; }
+  a { color:#bf8f2e; text-decoration:none; }
+  a:hover { color:#96701f; text-decoration:underline; }
+  .content-col { max-width:640px; margin:0 auto; }
+  .sans { font-family:ui-sans-serif,system-ui,-apple-system,sans-serif; }
+
+  /* ---------- HERO ---------- */
+  .hero { padding:clamp(56px,9vw,92px) 24px clamp(36px,5vw,56px); text-align:center; }
+  .hero .content-col { display:flex; flex-direction:column; gap:18px; align-items:center; }
+  .hero-eyebrow { font-size:12px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#7a6857; }
+  .hero-divider { width:44px; height:2px; background:#bf8f2e; }
+  .hero h1 { margin:0; font-size:clamp(40px,7vw,64px); font-weight:400; letter-spacing:-0.01em; line-height:1.08; }
+  .hero-subtitle { margin:0; font-size:clamp(16px,2.2vw,18.5px); line-height:1.6; color:#7a6857; max-width:520px; text-wrap:pretty; }
+  .hero-count { font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#bf8f2e; }
+
+  /* ---------- BOOK LIST ---------- */
+  .book-list-wrap { padding:0 24px clamp(48px,7vw,72px); }
+  .book-list { display:flex; flex-direction:column; gap:14px; }
+  .book-card { display:flex; align-items:center; gap:18px; background:#fffcf4; border:1px solid #e8d9b8; border-radius:14px; padding:18px 22px; box-shadow:0 2px 10px rgba(34,26,18,0.05); color:#221a12; }
+  .book-card:hover { border-color:#bf8f2e; text-decoration:none; color:#221a12; box-shadow:0 4px 16px rgba(34,26,18,0.09); }
+  .book-card-info { display:flex; flex-direction:column; gap:4px; flex:1; min-width:0; }
+  .book-card-name { font-size:20px; font-weight:700; }
+  .book-card-sub { font-size:14px; line-height:1.5; color:#7a6857; }
+  .book-card-meta { font-size:12px; color:#7a6857; letter-spacing:0.06em; text-transform:uppercase; }
+  .book-card-badge { flex-shrink:0; padding:5px 12px; border-radius:99px; background:#2f6f55; color:#fbf3e2; font-size:12.5px; font-weight:700; white-space:nowrap; }
+  .book-card-arrow { flex-shrink:0; color:#bf8f2e; font-size:18px; }
+
+  /* ---------- CTA ---------- */
+  .cta-section { padding:clamp(48px,7vw,76px) 24px; background:#221a12; color:#fbf3e2; }
+  .cta-section .content-col { display:flex; flex-direction:column; gap:22px; align-items:center; text-align:center; }
+  .cta-section h2 { margin:0; font-size:clamp(28px,4.5vw,38px); font-weight:400; line-height:1.2; }
+  .cta-btn { display:inline-flex; align-items:center; gap:10px; background:#bf8f2e; color:#221a12; font-weight:800; font-size:16.5px; padding:16px 30px; border-radius:12px; }
+  .cta-btn:hover { background:#d4a43f; color:#221a12; text-decoration:none; }
+  .cta-streak { font-size:14px; color:#a4937e; }
+  .sibling-nav { display:flex; flex-direction:column; gap:12px; align-items:center; padding-top:16px; border-top:1px dashed #4a3c2c; width:100%; }
+  .sibling-label { font-size:11.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#7a6857; }
+  .sibling-links { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .sibling-link { padding:8px 18px; border:1px solid #4a3c2c; border-radius:99px; font-size:15px; color:#fbf3e2; }
+  .sibling-link:hover { border-color:#bf8f2e; color:#bf8f2e; text-decoration:none; }
+
+  /* ---------- FOOTER ---------- */
+  .site-footer { background:#1a140d; color:#a4937e; padding:36px 24px; text-align:center; }
+  .site-footer .content-col { display:flex; flex-direction:column; gap:14px; align-items:center; }
+  .footer-title { font-size:20px; font-weight:700; color:#fbf3e2; }
+  .footer-studio { font-size:12.5px; letter-spacing:0.12em; text-transform:uppercase; }
+  .footer-tagline { font-size:15px; font-style:italic; color:#bf8f2e; }
+  .footer-links { display:flex; gap:22px; font-size:13.5px; font-weight:600; }
+  .footer-links a { color:#a4937e; }
+  .footer-links a:hover { color:#fbf3e2; }
+</style>
+</head>
+<body style="background-image:radial-gradient(rgba(191,143,46,0.05) 1px, transparent 1px); background-size:22px 22px;">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="content-col">
+    <span class="hero-eyebrow sans">Groundwork Studios</span>
+    <div class="hero-divider"></div>
+    <h1>For the Devoted</h1>
+    <p class="hero-subtitle sans">Verses that test even lifelong readers of the Word.</p>
+    <span class="hero-count sans">21 books</span>
+  </div>
+</section>
+
+<!-- 2. BOOK LIST -->
+<section class="book-list-wrap">
+  <div class="content-col">
+    <div class="book-list">
+      
+      <a class="book-card" href="/books/leviticus">
+        <div class="book-card-info">
+          <span class="book-card-name">Leviticus</span>
+          <span class="book-card-sub sans">The holiness handbook — offerings, priests, and a God who dwells among His people.</span>
+          <span class="book-card-meta sans">Old Testament · 27 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/numbers">
+        <div class="book-card-info">
+          <span class="book-card-name">Numbers</span>
+          <span class="book-card-sub sans">Forty years in the wilderness — censuses, complaints, and a faithful God anyway.</span>
+          <span class="book-card-meta sans">Old Testament · 36 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/2-samuel">
+        <div class="book-card-info">
+          <span class="book-card-name">2 Samuel</span>
+          <span class="book-card-sub sans">David on the throne — triumph, tragedy, and a covenant that outlasts them both.</span>
+          <span class="book-card-meta sans">Old Testament · 24 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/2-kings">
+        <div class="book-card-info">
+          <span class="book-card-name">2 Kings</span>
+          <span class="book-card-sub sans">Chariots of fire, stubborn kings, and the long slide to exile.</span>
+          <span class="book-card-meta sans">Old Testament · 25 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/nehemiah">
+        <div class="book-card-info">
+          <span class="book-card-name">Nehemiah</span>
+          <span class="book-card-sub sans">A cupbearer with a burden — Jerusalem's walls rebuilt in fifty-two days.</span>
+          <span class="book-card-meta sans">Old Testament · 13 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/song-of-solomon">
+        <div class="book-card-info">
+          <span class="book-card-name">Song of Solomon</span>
+          <span class="book-card-sub sans">The Bible's love song — poetry of devotion, delight, and belonging.</span>
+          <span class="book-card-meta sans">Old Testament · 8 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/jeremiah">
+        <div class="book-card-info">
+          <span class="book-card-name">Jeremiah</span>
+          <span class="book-card-sub sans">The weeping prophet — forty years of warnings, and a promise of a new covenant.</span>
+          <span class="book-card-meta sans">Old Testament · 52 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/lamentations">
+        <div class="book-card-info">
+          <span class="book-card-name">Lamentations</span>
+          <span class="book-card-sub sans">Five funeral songs for a fallen city — grief poured out, hope kept alive.</span>
+          <span class="book-card-meta sans">Old Testament · 5 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/ezekiel">
+        <div class="book-card-info">
+          <span class="book-card-name">Ezekiel</span>
+          <span class="book-card-sub sans">Visions by the river of Babylon — wheels within wheels, and dry bones that live.</span>
+          <span class="book-card-meta sans">Old Testament · 48 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/hosea">
+        <div class="book-card-info">
+          <span class="book-card-name">Hosea</span>
+          <span class="book-card-sub sans">A prophet's broken marriage — and the God who buys His beloved back.</span>
+          <span class="book-card-meta sans">Old Testament · 14 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/joel">
+        <div class="book-card-info">
+          <span class="book-card-name">Joel</span>
+          <span class="book-card-sub sans">Locusts, warning, and promise — the day of the LORD and the outpoured Spirit.</span>
+          <span class="book-card-meta sans">Old Testament · 3 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/amos">
+        <div class="book-card-info">
+          <span class="book-card-name">Amos</span>
+          <span class="book-card-sub sans">A shepherd with a message — justice for the poor, judgment for the comfortable.</span>
+          <span class="book-card-meta sans">Old Testament · 9 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/micah">
+        <div class="book-card-info">
+          <span class="book-card-name">Micah</span>
+          <span class="book-card-sub sans">Courtroom prophecy — what the LORD requires, and where the Ruler will be born.</span>
+          <span class="book-card-meta sans">Old Testament · 7 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/zechariah">
+        <div class="book-card-info">
+          <span class="book-card-name">Zechariah</span>
+          <span class="book-card-sub sans">Visions in the night — a rebuilt temple, and a King riding on a colt.</span>
+          <span class="book-card-meta sans">Old Testament · 14 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/malachi">
+        <div class="book-card-info">
+          <span class="book-card-name">Malachi</span>
+          <span class="book-card-sub sans">The Old Testament's last word — hard questions, open windows, and a coming messenger.</span>
+          <span class="book-card-meta sans">Old Testament · 4 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/2-corinthians">
+        <div class="book-card-info">
+          <span class="book-card-name">2 Corinthians</span>
+          <span class="book-card-sub sans">Paul's most personal letter — treasure in earthen vessels, strength in weakness.</span>
+          <span class="book-card-meta sans">New Testament · 13 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/colossians">
+        <div class="book-card-info">
+          <span class="book-card-name">Colossians</span>
+          <span class="book-card-sub sans">Christ above all — the image of the invisible God, and enough all by Himself.</span>
+          <span class="book-card-meta sans">New Testament · 4 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/1-thessalonians">
+        <div class="book-card-info">
+          <span class="book-card-name">1 Thessalonians</span>
+          <span class="book-card-sub sans">A young church encouraged — holy living, hope for the dead, and the Lord's return.</span>
+          <span class="book-card-meta sans">New Testament · 5 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/1-timothy">
+        <div class="book-card-info">
+          <span class="book-card-name">1 Timothy</span>
+          <span class="book-card-sub sans">A field manual for a young pastor — sound doctrine, godly order, good fights.</span>
+          <span class="book-card-meta sans">New Testament · 6 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/2-timothy">
+        <div class="book-card-info">
+          <span class="book-card-name">2 Timothy</span>
+          <span class="book-card-sub sans">Paul's final letter — a torch passed, a course finished, a crown ahead.</span>
+          <span class="book-card-meta sans">New Testament · 4 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+      <a class="book-card" href="/books/revelation">
+        <div class="book-card-info">
+          <span class="book-card-name">Revelation</span>
+          <span class="book-card-sub sans">The final vision — prophecy, judgment, and the promise of a new heaven and earth.</span>
+          <span class="book-card-meta sans">New Testament · 22 chapters</span>
+        </div>
+        <span class="book-card-badge sans">Deep Water</span>
+        <span class="book-card-arrow">→</span>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 3. CTA FOOTER -->
+<section class="cta-section">
+  <div class="content-col">
+    <h2>Five verses. One chance. <em>Every day.</em></h2>
+    <a href="/play" class="cta-btn sans">Play today's daily</a>
+    <span class="cta-streak sans">🔥 Players are on 12-day streaks right now</span>
+    <div class="sibling-nav">
+      <span class="sibling-label sans">Browse another shelf</span>
+      <div class="sibling-links">
+        
+        <a href="/difficulty/warm-up" class="sibling-link">Start Here</a>
+        
+        <a href="/difficulty/sunday-school" class="sibling-link">Raised on the Word</a>
+        
+        <a href="/difficulty/dont-play-with-me" class="sibling-link">KJV Scholars Only</a>
+        
+        <a href="/testament/old" class="sibling-link">Old Testament Verses</a>
+        
+        <a href="/testament/new" class="sibling-link">New Testament Verses</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SITE FOOTER -->
+<footer class="site-footer">
+  <div class="content-col">
+    <span class="footer-title">The Good Word Game</span>
+    <span class="footer-studio sans">A Groundwork Studios game</span>
+    <span class="footer-tagline">KJV precision. Daily discipline. A little bit of fun.</span>
+    <div class="footer-links sans">
+      <a href="/play">Play the daily</a>
+      <a href="/plus">Good Word Plus</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
