@@ -135,6 +135,7 @@ function siblingBooks(book, books) {
 function buildGoodWord() {
   const tpl = fs.readFileSync(path.join(ROOT, 'goodword', 'template.html'), 'utf8');
   const catTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'category-template.html'), 'utf8');
+  const indexTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'index-template.html'), 'utf8');
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'goodword', 'content-data.json'), 'utf8'));
   const { books, categoryPages } = data;
   const pages = [];
@@ -162,6 +163,18 @@ function buildGoodWord() {
       siblingCategories,
     })));
   }
+  const featuredSlugs = ['genesis', 'psalms', 'matthew', 'john', 'proverbs', 'romans'];
+  const featuredBooks = featuredSlugs
+    .map((s) => books.find((b) => b.slug === s))
+    .filter(Boolean);
+  const difficultyCategories = categoryPages.filter((c) => c.filter === 'difficulty');
+  const testamentCategories = categoryPages.filter((c) => c.filter === 'testament');
+  pages.push(writePage('goodword', render(indexTpl, {
+    bookCount: String(books.length),
+    featuredBooks,
+    difficultyCategories,
+    testamentCategories,
+  })));
   return pages;
 }
 
