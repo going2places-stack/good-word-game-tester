@@ -190,7 +190,11 @@
     </section>
     <section id="game" class="panel"></section>
   </main>
+  <footer style="text-align:center;padding:18px 24px 24px;font:500 13px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--muted)">
+    Something wrong? <a href="mailto:hello@thegoodwordgame.com" style="color:var(--gold)">hello@thegoodwordgame.com</a>
+  </footer>
 <script>
+window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
 const BANK={
   "Cold Open": [
     {
@@ -3416,9 +3420,11 @@ function showResults(){
       <p class="tiny foot">Free to play. No account. Progress saves on this device.</p>
     </div>`;
   swap(html);
+  if(window.va){va('event',{name:'game_complete',data:{score:String(score),rank:rankCopy()[0],day:String(dayNumber)}});}
 }
 
 async function doShare(){
+  if(window.va){va('event',{name:'game_share',data:{score:String(score),day:String(dayNumber)}});}
   const txt=shareText();
   const note=document.getElementById('copied');
   if(navigator.share){try{await navigator.share({text:txt});return;}catch(e){/* fall through to clipboard */}}
