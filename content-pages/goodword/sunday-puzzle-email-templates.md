@@ -1,4 +1,4 @@
-# Good Word Sunday Puzzle — Email Templates
+# Good Word Sunday Word — Email Templates
 
 Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** goes out the following Sunday morning, paired with the new week's challenge.
 
@@ -6,7 +6,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 ## Template 1: Challenge Email
 
-**Subject line:** This Week's Sunday Puzzle (Week {{WEEK_NUMBER}})
+**Subject line:** This Week's Sunday Word (Week {{WEEK_NUMBER}})
 
 **From:** sunday@thegoodwordgame.com
 
@@ -15,7 +15,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 ---
 
 **THE GOOD WORD GAME**
-*Sunday Puzzle*
+*The Sunday Word*
 
 ---
 
@@ -27,7 +27,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
+*The Sunday Word is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
@@ -35,7 +35,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 ## Template 2: Reveal + Winner Email
 
-**Subject line:** Last Week's Answer + A New Puzzle (Week {{WEEK_NUMBER}})
+**Subject line:** Last Week's Answer + This Week's Sunday Word (Week {{WEEK_NUMBER}})
 
 **From:** sunday@thegoodwordgame.com
 
@@ -44,7 +44,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 ---
 
 **THE GOOD WORD GAME**
-*Sunday Puzzle*
+*The Sunday Word*
 
 ---
 
@@ -58,7 +58,7 @@ Congratulations — you knew your Word.
 
 ---
 
-**This Week's Puzzle: {{PUZZLE_TYPE}}**
+**This Week's Challenge: {{PUZZLE_TYPE}}**
 
 {{PUZZLE_PROMPT}}
 
@@ -66,7 +66,7 @@ Congratulations — you knew your Word.
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
+*The Sunday Word is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
@@ -74,7 +74,7 @@ Congratulations — you knew your Word.
 
 ## Template 3: Week 1 Launch Email (first week only — no reveal section)
 
-**Subject line:** Introducing the Sunday Puzzle
+**Subject line:** Introducing The Sunday Word
 
 **From:** sunday@thegoodwordgame.com
 
@@ -83,11 +83,11 @@ Congratulations — you knew your Word.
 ---
 
 **THE GOOD WORD GAME**
-*Sunday Puzzle*
+*The Sunday Word*
 
 ---
 
-**Welcome to the Sunday Puzzle.**
+**Welcome to The Sunday Word.**
 
 Every Sunday, we'll send you one Bible challenge — a riddle, a scramble, a verse to complete, or a question that'll make you reach for your KJV. Reply with your answer. If you get it right, you might be the one we name next week.
 
@@ -105,7 +105,7 @@ Let's start.
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
+*The Sunday Word is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
@@ -117,7 +117,7 @@ Let's start.
 1. Monday–Saturday: Correct replies arrive in the sunday@ inbox
 2. Saturday evening or Sunday morning: Pick one correct reply as the winner
 3. Fill in the winner's name, last initial, church, and city/state in the Reveal template
-4. The reveal paragraph and new puzzle are pre-written in `sunday-puzzle-challenges.json` — just copy and paste
+4. The reveal paragraph and new challenge are pre-written in `sunday-puzzle-challenges.json` — just copy and paste
 5. Send
 
 **Winner selection:**

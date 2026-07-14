@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3e6cf" />
+  <title>Play Today's Daily — The Good Word Game</title>
+  <meta name="description" content="Five KJV verses. One missing word each. One chance to get it right. A new challenge every day at midnight Eastern." />
+  <style>
+    :root{
+      --ink:#221a12;--muted:#7a6857;--faint:#9a8a76;
+      --cream:#fbf3e2;--card:#fffdf8;--card2:#fbf2df;
+      --gold:#bf8f2e;--gold-soft:#e6c878;--green:#2f6f55;--green-deep:#22513e;
+      --red:#a23f30;--blue:#2c4f6b;
+      --line:rgba(94,63,24,.14);
+      --shadow:0 22px 50px -18px rgba(60,38,13,.30);
+      --shadow-sm:0 10px 24px -12px rgba(60,38,13,.30);
+      --ease:cubic-bezier(.22,1,.36,1);
+    }
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      margin:0;color:var(--ink);min-height:100vh;
+      font-family:ui-serif,Georgia,Cambria,'Times New Roman',serif;
+      background:
+        radial-gradient(120% 80% at 50% -10%,#fff6df 0%,#f6e8cf 38%,#eedcc2 72%,#e6d2b6 100%);
+      background-attachment:fixed;
+      -webkit-font-smoothing:antialiased;
+    }
+    body::before{
+      content:'';position:fixed;inset:0;pointer-events:none;opacity:.5;z-index:0;
+      background-image:radial-gradient(rgba(120,84,30,.05) 1px,transparent 1.4px);
+      background-size:5px 5px;mix-blend-mode:multiply;
+    }
+    .app{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 16px calc(40px + env(safe-area-inset-bottom))}
+
+    .homelink{display:inline-flex;align-items:center;gap:.45em;font:700 12.5px ui-sans-serif,system-ui,sans-serif;color:var(--muted);text-decoration:none;letter-spacing:.04em;padding:6px 2px}
+    .homelink:hover{color:var(--gold)}
+
+    .hero{text-align:center;padding:10px 6px 4px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:.55em;
+      letter-spacing:.2em;text-transform:uppercase;color:var(--green);
+      font:700 11px/1 ui-sans-serif,system-ui,sans-serif;
+    }
+    .eyebrow::before,.eyebrow::after{content:'';width:18px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-soft))}
+    .eyebrow::after{transform:scaleX(-1)}
+    .hero h1{font-size:clamp(32px,9vw,52px);line-height:.94;margin:12px 0 8px;letter-spacing:-.01em;font-weight:800}
+    .hero p{margin:0 auto;color:var(--muted);max-width:480px;font:15px/1.5 ui-sans-serif,system-ui,sans-serif}
+    .daily-chip{display:inline-flex;align-items:center;gap:.5em;margin-top:10px;background:rgba(47,111,85,.09);border:1px solid rgba(47,111,85,.18);color:var(--green-deep);border-radius:999px;padding:5px 13px;font:800 12px ui-sans-serif,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+
+    .panel{
+      position:relative;background:var(--card);
+      border:1px solid var(--line);box-shadow:var(--shadow);
+      border-radius:26px;padding:22px 20px;margin-top:18px;overflow:hidden;
+    }
+    .panel::before{content:'';position:absolute;left:22px;right:22px;top:0;height:3px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,transparent,var(--gold-soft),var(--gold),var(--gold-soft),transparent);opacity:.8}
+    .spark{position:absolute;right:18px;bottom:14px;font-size:46px;color:var(--gold);opacity:.12;pointer-events:none;user-select:none}
+
+    .stage{transition:opacity .26s var(--ease),transform .26s var(--ease);will-change:opacity,transform}
+    .stage.out{opacity:0;transform:translateY(-12px) scale(.992)}
+    .stage .reference{animation:rise .5s var(--ease) both}
+    .stage .prompt{animation:rise .54s .07s var(--ease) both}
+    .stage #answerZone{animation:rise .54s .14s var(--ease) both}
+    .stage .topline,.stage .progress{animation:rise .46s var(--ease) both}
+
+    .topline{display:flex;justify-content:space-between;gap:12px;align-items:center;font:700 12px ui-sans-serif,system-ui,sans-serif;color:var(--muted);letter-spacing:.02em}
+    .role-chip{display:inline-flex;align-items:center;gap:.4em;color:var(--green-deep);background:rgba(47,111,85,.09);border:1px solid rgba(47,111,85,.18);padding:4px 10px;border-radius:999px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+    .progress{height:8px;border-radius:99px;background:#ecddc2;overflow:hidden;margin:14px 0 22px;box-shadow:inset 0 1px 2px rgba(94,63,24,.18)}
+    .bar{height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--gold));border-radius:99px;transition:width .55s var(--ease)}
+
+    .reference{display:inline-flex;align-items:center;gap:.5em;font:800 12px ui-sans-serif,system-ui,sans-serif;color:var(--gold);text-transform:uppercase;letter-spacing:.14em}
+    .reference::before{content:'§';font-size:13px;opacity:.7}
+    .prompt{font-size:clamp(23px,6.2vw,34px);line-height:1.32;margin:14px 0 20px;letter-spacing:-.005em}
+
+    .blank{
+      display:inline-block;min-width:3.4em;padding:.06em .55em;margin:0 .05em;
+      border-radius:.42em;vertical-align:baseline;position:relative;
+      color:transparent;font-weight:800;
+      background:linear-gradient(180deg,#fbeecb,#f1d9aa);
+      border:1px solid rgba(191,143,46,.38);
+      box-shadow:inset 0 2px 5px rgba(94,63,24,.20),inset 0 -1px 0 rgba(255,255,255,.55);
+      transition:color .4s var(--ease),background .5s var(--ease),border-color .5s var(--ease),box-shadow .5s var(--ease);
+    }
+    .blank::after{content:'';position:absolute;left:.55em;right:.55em;bottom:.2em;border-bottom:2px dotted rgba(191,143,46,.75)}
+    .blank .sheen{content:'';position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+    .blank .sheen::before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 38%,rgba(255,255,255,.65) 50%,transparent 62%);background-size:240% 100%;animation:shimmer 3s linear infinite}
+    @keyframes shimmer{from{background-position:230% 0}to{background-position:-130% 0}}
+    .blank.reveal{color:var(--green-deep);background:linear-gradient(180deg,#e9f2ec,#d6e7db);border-color:rgba(47,111,85,.42);box-shadow:inset 0 1px 2px rgba(47,111,85,.16);animation:stamp .45s var(--ease) both}
+    .blank.reveal.miss{color:#9a6a14;background:linear-gradient(180deg,#fbecc9,#f1d9a4);border-color:rgba(191,143,46,.6);box-shadow:inset 0 1px 2px rgba(191,143,46,.22)}
+    .blank.reveal::after{opacity:0}
+    .blank.reveal .sheen{display:none}
+    @keyframes stamp{0%{transform:scale(.86);opacity:.2}60%{transform:scale(1.04)}100%{transform:scale(1);opacity:1}}
+
+    .answer-zone{overflow:hidden;transition:max-height .45s var(--ease),opacity .3s ease,transform .4s var(--ease),margin .4s var(--ease);max-height:240px}
+    .answer-zone.collapsed{max-height:0;opacity:0;transform:translateY(-6px);margin-top:0;pointer-events:none}
+    .input-wrap{position:relative}
+    input{
+      width:100%;font:600 21px ui-sans-serif,system-ui,sans-serif;
+      padding:16px 16px;border-radius:16px;border:1.5px solid #d8bd8d;
+      background:#fffef9;color:var(--ink);outline:none;
+      transition:border-color .2s,box-shadow .2s;
+    }
+    input::placeholder{color:var(--faint)}
+    input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(191,143,46,.16)}
+    .actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+    button{
+      appearance:none;border:0;border-radius:14px;padding:14px 18px;
+      font:800 14.5px ui-sans-serif,system-ui,sans-serif;cursor:pointer;
+      transition:transform .12s var(--ease),box-shadow .2s,filter .2s;
+      -webkit-tap-highlight-color:transparent;
+    }
+    button:active{transform:translateY(1px) scale(.985)}
+    .primary{flex:1;min-width:160px;color:#fff;background:linear-gradient(180deg,#3a2c1d,#221a12);box-shadow:var(--shadow-sm),inset 0 1px 0 rgba(255,255,255,.12)}
+    .primary:hover{filter:brightness(1.08)}
+    .secondary{background:#efe1cb;color:var(--ink);border:1px solid var(--line)}
+    .secondary:hover{background:#e8d7bc}
+    .ghost{background:transparent;color:var(--muted);padding:14px 12px}
+
+    .hintline{margin:12px 2px 0;min-height:1.2em;font:600 13.5px ui-sans-serif,system-ui,sans-serif;color:var(--gold);transition:opacity .3s}
+
+    .feedback{margin-top:18px;border-radius:20px;padding:18px 18px 16px;background:linear-gradient(180deg,#fbf2dd,#f6ead0);border:1px solid var(--line);box-shadow:var(--shadow-sm);animation:rise .5s var(--ease) both}
+    .feedback.correct{border-left:5px solid var(--green)}
+    .feedback.close{border-left:5px solid var(--gold)}
+    .feedback.wrong{border-left:5px solid var(--red)}
+    .verdict{display:flex;align-items:center;gap:.55em;font:800 13px ui-sans-serif,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+    .feedback.correct .verdict{color:var(--green)}
+    .feedback.close .verdict{color:#9a6a14}
+    .feedback.wrong .verdict{color:var(--red)}
+    .seal{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:14px;color:#fff;flex:none;animation:pop .5s var(--ease) both}
+    .feedback.correct .seal{background:linear-gradient(180deg,#3a8568,var(--green))}
+    .feedback.close .seal{background:linear-gradient(180deg,#d6ab4e,var(--gold))}
+    .feedback.wrong .seal{background:linear-gradient(180deg,#c05946,var(--red))}
+    .retort{font:600 18px/1.4 ui-sans-serif,system-ui,sans-serif;margin:10px 0 2px;color:var(--ink)}
+    .tier{display:inline-flex;align-items:center;gap:8px;margin:10px 0 6px}
+    .tier-k{font:800 10px ui-sans-serif,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.16em;color:var(--faint)}
+    .label{display:inline-flex;border-radius:999px;background:#fffdf8;color:var(--blue);border:1px solid rgba(44,79,107,.22);padding:4px 10px;font:900 11px ui-sans-serif,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+    .verse{font-style:italic;color:#3b2b1f;font-size:16.5px;line-height:1.5;margin:6px 0;padding-left:12px;border-left:2px solid var(--gold-soft)}
+    .verse b{font-style:normal;color:var(--green-deep)}
+    .note{font:13px/1.45 ui-sans-serif,system-ui,sans-serif;color:var(--faint);margin:8px 0 0}
+    .tiny{font:12px/1.45 ui-sans-serif,system-ui,sans-serif;color:var(--faint)}
+    .spell .you{color:var(--red)}
+    .spell .kjv{color:var(--green-deep)}
+    .spell u.d{text-decoration:none;border-radius:3px;padding:0 1.5px;font-weight:800}
+    .spell .you u.d{background:rgba(162,63,48,.18);color:var(--red)}
+    .spell .kjv u.d{background:rgba(47,111,85,.20);color:var(--green-deep)}
+    .foot{margin:16px 2px 0;text-align:center}
+
+    .result{text-align:center;padding:6px 4px 2px}
+    .medallion{
+      width:118px;height:118px;margin:6px auto 4px;border-radius:50%;
+      display:grid;place-items:center;position:relative;
+      background:radial-gradient(circle at 38% 32%,#fff5d8,#f1d99e 55%,#d9b25c);
+      box-shadow:0 14px 30px -12px rgba(120,84,30,.5),inset 0 2px 6px rgba(255,255,255,.6),inset 0 -6px 14px rgba(150,104,30,.35);
+      animation:pop .6s var(--ease) both;
+    }
+    .medallion::before{content:'';position:absolute;inset:8px;border-radius:50%;border:2px dashed rgba(150,104,30,.45)}
+    .scoreBig{font-size:46px;font-weight:900;line-height:1;color:var(--green-deep)}
+    .scoreBig span{font-size:20px;color:var(--gold)}
+    .rank{font-size:clamp(26px,7vw,34px);font-weight:800;margin:14px 0 4px;letter-spacing:-.01em}
+    .rank-sub{color:var(--muted);font:16px/1.5 ui-sans-serif,system-ui,sans-serif;margin:0 auto 4px;max-width:380px}
+
+    .recap{display:flex;justify-content:center;gap:9px;margin:18px 0 6px}
+    .pip{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font:800 13px ui-sans-serif,system-ui,sans-serif;color:#fff;box-shadow:var(--shadow-sm);animation:pop .5s var(--ease) both}
+    .pip.hit{background:linear-gradient(180deg,#3a8568,var(--green))}
+    .pip.near{background:linear-gradient(180deg,#d6ab4e,var(--gold))}
+    .pip.miss{background:linear-gradient(180deg,#c05946,var(--red))}
+
+    .streakline{display:flex;justify-content:center;gap:26px;margin:14px 0 2px}
+    .streakstat{display:flex;flex-direction:column;gap:2px}
+    .streakstat b{font:800 22px ui-sans-serif,system-ui,sans-serif;color:var(--green-deep)}
+    .streakstat span{font:700 10.5px ui-sans-serif,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--faint)}
+
+    .sharebox{position:relative;white-space:pre-wrap;text-align:left;background:linear-gradient(180deg,#2a2016,#1c150d);color:#f6ecd8;border-radius:18px;padding:18px 16px;font:600 15px/1.5 ui-sans-serif,system-ui,sans-serif;margin:18px 0 0;box-shadow:var(--shadow-sm)}
+    .nextline{font:600 13.5px ui-sans-serif,system-ui,sans-serif;color:var(--muted);margin:16px 0 0}
+
+    @keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <a class="homelink" href="/">← The Good Word Game</a>
+    <section class="hero">
+      <div class="eyebrow">Groundwork Studios</div>
+      <h1>Today's Daily</h1>
+      <p>Five King James verses. One missing word each. One chance to get it right.</p>
+      <div class="daily-chip" id="dailyChip">Daily</div>
+    </section>
+    <section id="game" class="panel"></section>
+  </main>
+<script>
+const BANK=__GWG_BANK__;
+const EPOCH='__GWG_EPOCH__'; // Daily #1 fires on this Eastern-time date
+const ARC=['Cold Open','Recovery Grace','Middle Test','Deep Water','Pulpit Ready'];
+
+// ---- daily selection (America/New_York) ----
+function etToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
+const today=etToday();
+const dayNumber=Math.max(1,Math.round((Date.parse(today+'T00:00:00Z')-Date.parse(EPOCH+'T00:00:00Z'))/864e5)+1);
+const questions=ARC.map(role=>{const pool=BANK[role];return pool[(dayNumber-1)%pool.length];});
+document.getElementById('dailyChip').textContent='Daily #'+dayNumber+' — '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'long',day:'numeric'}).format(new Date());
+
+// ---- persistent state ----
+const SKEY='gwg-daily-state',KKEY='gwg-streak';
+function loadState(){try{const s=JSON.parse(localStorage.getItem(SKEY)||'null');return (s&&s.day===dayNumber)?s:null;}catch(e){return null;}}
+function saveState(){try{localStorage.setItem(SKEY,JSON.stringify({day:dayNumber,i,score,verdicts,done}));}catch(e){}}
+function loadStreak(){try{return JSON.parse(localStorage.getItem(KKEY)||'null')||{streak:0,best:0,lastDay:0};}catch(e){return {streak:0,best:0,lastDay:0};}}
+function bumpStreak(){const k=loadStreak();if(k.lastDay===dayNumber)return k;k.streak=(k.lastDay===dayNumber-1)?k.streak+1:1;k.best=Math.max(k.best,k.streak);k.lastDay=dayNumber;try{localStorage.setItem(KKEY,JSON.stringify(k));}catch(e){}return k;}
+
+const wrongRetorts=[
+ 'Not today — but grace still abounds.',
+ 'Swing and a miss. The Word is patient; come back to it.',
+ 'Close enough for a sermon illustration, not for the scoreboard.',
+ 'Even Peter had a rough night. Keep moving.',
+ 'That answer wandered forty years in the wilderness.',
+ 'Bless your heart — not quite chapter and verse.',
+ 'The scroll says otherwise. Stay in the Word.',
+ 'A noble guess, but the concordance disagrees.',
+ 'Missed it by a cubit.',
+ 'Not the word — but the seeking still counts for something.',
+ 'So close you could see the promised land from there.',
+ 'The spirit was willing; the spelling was weak.'
+];
+const rightRetorts=[
+ 'Correct. They tried to catch you slipping. Didn’t work.',
+ 'Amen. Clean answer.',
+ 'You had that one in the chamber.',
+ 'Word in, word out. Nicely done.',
+ 'Bible Study certified.',
+ 'Sharp as a two-edged sword.',
+ 'You know your scroll. Respect.',
+ 'Letter-perfect. The scribes would nod.',
+ 'Hidden in the heart, recalled on cue.',
+ 'Chapter and verse — you came ready.',
+ 'Studied to shew thyself approved. And you did.',
+ 'That answer walked in like it owned the pew.'
+];
+const closeRetorts=[
+ 'So close the scroll almost counted it.',
+ 'A hair off — Scripture keeps the exact word.',
+ 'Right pew, wrong hymn number.',
+ 'Nearly. The KJV is precise right here.',
+ 'Close enough to feel it, not quite enough to claim it.',
+ 'You knew the verse — the wording slipped by an inch.',
+ 'Warmer than warm. The exact word was just there.'
+];
+
+let i=0,score=0,answered=false,done=false;
+let verdicts=[]; // 'correct' | 'close' | 'wrong' per question
+const game=document.getElementById('game');
+const norm=s=>(s||'').toLowerCase().trim().replace(/[^a-z0-9’']/g,'');
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+// Exact KJV spelling earns credit. Near words and misspellings land in a warm
+// "So close" state with a letter-level diff. Edit distance only sets tone.
+function lev(a,b){const m=a.length,n=b.length,d=Array.from({length:m+1},(_,r)=>[r,...Array(n).fill(0)]);for(let c=0;c<=n;c++)d[0][c]=c;for(let r=1;r<=m;r++)for(let c=1;c<=n;c++){const cost=a[r-1]===b[c-1]?0:1;d[r][c]=Math.min(d[r-1][c]+1,d[r][c-1]+1,d[r-1][c-1]+cost);}return d[m][n];}
+function spellDiff(yourRaw,kjvRaw){
+  const a=yourRaw,b=kjvRaw,m=a.length,n=b.length;
+  const d=Array.from({length:m+1},(_,r)=>[r,...Array(n).fill(0)]);
+  for(let c=0;c<=n;c++)d[0][c]=c;
+  for(let r=1;r<=m;r++)for(let c=1;c<=n;c++){const cost=a[r-1].toLowerCase()===b[c-1].toLowerCase()?0:1;d[r][c]=Math.min(d[r-1][c]+1,d[r][c-1]+1,d[r-1][c-1]+cost);}
+  let r=m,c=n;const ya=[],kb=[];
+  while(r>0||c>0){
+    if(r>0&&c>0&&a[r-1].toLowerCase()===b[c-1].toLowerCase()){ya.unshift(esc(a[r-1]));kb.unshift(esc(b[c-1]));r--;c--;}
+    else if(r>0&&c>0&&d[r][c]===d[r-1][c-1]+1){ya.unshift(`<u class="d">${esc(a[r-1])}</u>`);kb.unshift(`<u class="d">${esc(b[c-1])}</u>`);r--;c--;}
+    else if(r>0&&d[r][c]===d[r-1][c]+1){ya.unshift(`<u class="d">${esc(a[r-1])}</u>`);r--;}
+    else{kb.unshift(`<u class="d">${esc(b[c-1])}</u>`);c--;}
+  }
+  return[ya.join(''),kb.join('')];
+}
+function isCorrect(q,val){const v=norm(val),want=norm(q.missing);if(!v)return false;if(v===want)return true;return (q.accept||[]).some(a=>norm(a)===v);}
+function verdictOf(q,val){if(isCorrect(q,val))return 'correct';const v=norm(val),want=norm(q.missing);if(!v)return 'wrong';if((q.close||[]).some(c=>norm(c)===v))return 'close';return lev(v,want)<=2?'close':'wrong';}
+
+function shuffled(a){const c=a.slice();for(let k=c.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[c[k],c[j]]=[c[j],c[k]];}return c;}
+let wrongBag=[],rightBag=[],closeBag=[];
+function pick(correct){let bag=correct?rightBag:wrongBag,src=correct?rightRetorts:wrongRetorts;if(!bag.length){bag=shuffled(src);if(correct)rightBag=bag;else wrongBag=bag;}return bag.pop();}
+function pickClose(){if(!closeBag.length)closeBag=shuffled(closeRetorts);return closeBag.pop();}
+
+function swap(html,cb){
+  const cur=game.querySelector('.stage');
+  const go=()=>{game.scrollIntoView?.({behavior:'smooth',block:'start'});game.innerHTML=html;cb&&cb();};
+  if(cur){cur.classList.add('out');setTimeout(go,230);}else go();
+}
+
+function render(){
+  const q=questions[i];answered=false;
+  const html=`
+    <div class="spark">✦</div>
+    <div class="stage">
+      <div class="topline"><span>Verse ${i+1} of ${questions.length}</span><span class="role-chip">${q.role}</span></div>
+      <div class="progress"><div class="bar" style="width:${(i/questions.length)*100}%"></div></div>
+      <div class="reference">${q.ref}</div>
+      <div class="prompt">${q.prompt.replace('_____','<span id="blank" class="blank"><span class="sheen"></span></span>')}</div>
+      <div id="answerZone" class="answer-zone">
+        <div class="input-wrap">
+          <input id="answer" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Fill in the missing word" onkeydown="if(event.key==='Enter')submitAnswer()"/>
+        </div>
+        <div class="actions">
+          <button class="primary" onclick="submitAnswer()">Submit answer</button>
+          <button class="secondary" onclick="hint()">Tiny hint</button>
+        </div>
+        <div id="hintline" class="hintline"></div>
+      </div>
+    </div>`;
+  swap(html,()=>{
+    requestAnimationFrame(()=>{const bar=game.querySelector('.bar');if(bar)bar.style.width=`${((i+0.04)/questions.length)*100}%`;});
+    setTimeout(()=>document.getElementById('answer')?.focus(),140);
+  });
+}
+
+function hint(){
+  const q=questions[i];
+  document.getElementById('hintline').textContent=`Hint — ${q.missing.length} letters, begins with “${q.missing[0].toUpperCase()}.”`;
+  document.getElementById('answer')?.focus();
+}
+
+function submitAnswer(){
+  if(answered)return;
+  const q=questions[i],input=document.getElementById('answer'),val=input.value;
+  const v=verdictOf(q,val),ok=v==='correct';
+  if(ok)score++;answered=true;verdicts[i]=v;saveState();
+
+  document.getElementById('answerZone').classList.add('collapsed');
+  const blank=document.getElementById('blank');
+  setTimeout(()=>{blank.textContent=q.missing;blank.classList.add('reveal');if(!ok)blank.classList.add('miss');},150);
+
+  const msg=ok?pick(true):v==='close'?pickClose():pick(false);
+  const head={correct:['✓','Correct'],close:['◐','So close'],wrong:['✦','Revealed']}[v];
+  const yours=val.trim()?val.trim():'—';
+  let yoursHtml=esc(yours),kjvHtml=esc(q.missing);
+  if(v==='close'&&yours!=='—'){const[ya,kb]=spellDiff(yours,q.missing);yoursHtml=ya;kjvHtml=kb;}
+  const verseHtml=q.verse.replace(new RegExp('\\b('+q.missing+')\\b','i'),'<b>$1</b>');
+  const fb=document.createElement('div');
+  fb.className=`feedback ${v}`;
+  fb.innerHTML=`
+    <div class="verdict"><span class="seal">${head[0]}</span>${head[1]}</div>
+    <p class="retort">${msg}</p>
+    <div class="tier"><span class="tier-k">Difficulty</span><span class="label">${q.label}</span></div>
+    ${ok?'':`<p class="tiny spell">You wrote: <b class="you">${yoursHtml}</b> &nbsp;·&nbsp; KJV: <b class="kjv">${kjvHtml}</b></p>`}
+    <p class="verse">${verseHtml}</p>
+    <p class="note">${q.note}</p>
+    <div class="actions" style="margin-top:14px">
+      <button class="primary" onclick="next()">${i===questions.length-1?'See your results':'Next verse →'}</button>
+    </div>`;
+  setTimeout(()=>{game.querySelector('.stage').appendChild(fb);setTimeout(()=>fb.scrollIntoView({behavior:'smooth',block:'nearest'}),60);},340);
+}
+
+function next(){i++;if(i>=questions.length){done=true;saveState();showResults();}else{saveState();render();}}
+
+function rankCopy(){
+  if(score===5)return['Don’t Play With Me','Five for five. You came armed with the Word today.'];
+  if(score===4)return['Bible Study Certified','Nearly spotless — the Word was clearly working in you.'];
+  if(score===3)return['Sunday School Strong','Respectable. You knew just enough to stay dangerous.'];
+  if(score>=1)return['Grace Still Abounds','No shame in the seeking. Run it back tomorrow.'];
+  return['A Rough Night for Peter','Even the rock stumbled. Tomorrow has mercy.'];
+}
+function shareText(){
+  const sq={correct:'🟩',close:'🟨',wrong:'🟥'};
+  const row=verdicts.map(v=>sq[v]||'🟥').join('');
+  const[rank]=rankCopy();
+  return `The Good Word Game — Daily #${dayNumber}\n${row} ${score}/5\n${rank}. 📖\nthegoodwordgame.com/play`;
+}
+
+function showResults(){
+  const k=bumpStreak();
+  const[rank,sub]=rankCopy();
+  const pipCls={correct:'hit',close:'near',wrong:'miss'};
+  const pipMark={correct:'✓',close:'◐',wrong:'·'};
+  const pips=verdicts.map((v,n)=>`<div class="pip ${pipCls[v]||'miss'}" title="V${n+1}">${pipMark[v]||'·'}</div>`).join('');
+  const html=`
+    <div class="spark">✦</div>
+    <div class="stage result">
+      <div class="topline" style="justify-content:center;gap:8px"><span class="role-chip">Daily #${dayNumber} complete</span></div>
+      <div class="medallion"><div class="scoreBig">${score}<span>/5</span></div></div>
+      <div class="rank">${rank}</div>
+      <p class="rank-sub">${sub}</p>
+      <div class="recap">${pips}</div>
+      <div class="streakline">
+        <div class="streakstat"><b>${k.streak}</b><span>Day streak</span></div>
+        <div class="streakstat"><b>${k.best}</b><span>Best streak</span></div>
+      </div>
+      <div class="sharebox" id="share">${esc(shareText())}</div>
+      <div class="actions" style="margin-top:14px">
+        <button class="primary" onclick="doShare()">Share your score</button>
+        <a class="secondary" style="display:inline-flex;align-items:center;text-decoration:none" href="/">Explore the books</a>
+      </div>
+      <p id="copied" class="tiny foot"></p>
+      <p class="nextline">Five new verses tomorrow at midnight Eastern. Come back and keep the streak.</p>
+      <p class="tiny foot">Free to play. No account. Progress saves on this device.</p>
+    </div>`;
+  swap(html);
+}
+
+async function doShare(){
+  const txt=shareText();
+  const note=document.getElementById('copied');
+  if(navigator.share){try{await navigator.share({text:txt});return;}catch(e){/* fall through to clipboard */}}
+  try{await navigator.clipboard.writeText(txt);note.textContent='Copied to clipboard. Go and tell it.';}
+  catch(e){note.textContent='Select the text above to copy.';}
+}
+
+// ---- resume or start ----
+(function(){
+  const s=loadState();
+  if(s){i=s.i;score=s.score;verdicts=s.verdicts||[];done=!!s.done;}
+  // if the page closed after answering but before advancing, skip past answered verses
+  while(!done&&verdicts[i]!==undefined)i++;
+  if(i>=questions.length)done=true;
+  if(done)showResults();else render();
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "$schema_notes": "52 weekly Sunday Puzzle challenges for The Good Word Game. Each entry is one week. 'type' is the puzzle category. 'prompt' is what the subscriber sees. 'answer' is the correct reply. 'reveal' is the paragraph sent in next week's email with the answer and a bit of teaching. 'scripture' is the KJV source, where applicable.",
+  "$schema_notes": "52 weekly Sunday Word challenges for The Good Word Game. Each entry is one week. 'type' is the challenge category. 'prompt' is what the subscriber sees. 'answer' is the correct reply. 'reveal' is the paragraph sent in next week's email with the answer and a bit of teaching. 'scripture' is the KJV source, where applicable.",
   "challenges": [
     {
       "week": 1,

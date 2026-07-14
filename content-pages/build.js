@@ -163,6 +163,7 @@ function buildGoodWord() {
       siblingCategories,
     })));
   }
+
   const featuredSlugs = ['genesis', 'psalms', 'matthew', 'john', 'proverbs', 'romans'];
   const featuredBooks = featuredSlugs
     .map((s) => books.find((b) => b.slug === s))
@@ -175,6 +176,26 @@ function buildGoodWord() {
     difficultyCategories,
     testamentCategories,
   })));
+
+  // /play — the daily game. The bank is injected raw (it's JSON, not HTML), so
+  // this page bypasses render() and its HTML-escaping on purpose.
+  const playTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'play-template.html'), 'utf8');
+  const bank = JSON.parse(fs.readFileSync(path.join(ROOT, 'goodword', 'daily-bank.json'), 'utf8'));
+  const ARC = ['Cold Open', 'Recovery Grace', 'Middle Test', 'Deep Water', 'Pulpit Ready'];
+  for (const role of ARC) {
+    if (!Array.isArray(bank[role]) || bank[role].length < 1) {
+      throw new Error(`daily-bank.json: pool "${role}" is missing or empty`);
+    }
+  }
+  const GWG_EPOCH = '2026-07-14'; // Daily #1, Eastern time
+  pages.push(writePage('goodword/play', playTpl
+    .replace('__GWG_BANK__', JSON.stringify(bank, null, 2))
+    .replace('__GWG_EPOCH__', GWG_EPOCH)));
+
+  // /plus — static coming-soon page
+  const plusTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'plus-template.html'), 'utf8');
+  pages.push(writePage('goodword/plus', plusTpl));
+
   return pages;
 }
 
