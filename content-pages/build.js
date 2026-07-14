@@ -196,6 +196,17 @@ function buildGoodWord() {
   const plusTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'plus-template.html'), 'utf8');
   pages.push(writePage('goodword/plus', plusTpl));
 
+  // /privacy — static policy page
+  const privacyTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'privacy-template.html'), 'utf8');
+  pages.push(writePage('goodword/privacy', privacyTpl));
+
+  // static assets (favicon, touch icon, og image) — dist is wiped every build,
+  // so these must be copied from source or the site loses its icons
+  const assetsDir = path.join(ROOT, 'goodword', 'assets');
+  for (const f of fs.readdirSync(assetsDir)) {
+    fs.copyFileSync(path.join(assetsDir, f), path.join(DIST, 'goodword', f));
+  }
+
   return pages;
 }
 

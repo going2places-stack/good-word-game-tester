@@ -6,6 +6,22 @@
   <meta name="theme-color" content="#f3e6cf" />
   <title>Play Today's Daily — The Good Word Game</title>
   <meta name="description" content="Five KJV verses. One missing word each. One chance to get it right. A new challenge every day at midnight Eastern." />
+  <link rel="canonical" href="https://thegoodwordgame.com/play">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Good Word Game">
+  <meta property="og:title" content="Play Today's Daily — The Good Word Game">
+  <meta property="og:description" content="Five KJV verses. One missing word each. One chance to get it right. A new challenge every day at midnight Eastern.">
+  <meta property="og:url" content="https://thegoodwordgame.com/play">
+  <meta property="og:image" content="https://thegoodwordgame.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Play Today's Daily — The Good Word Game">
+  <meta name="twitter:description" content="Five KJV verses. One missing word each. One chance to get it right. A new challenge every day at midnight Eastern.">
+  <meta name="twitter:image" content="https://thegoodwordgame.com/og-image.jpg">
   <style>
     :root{
       --ink:#221a12;--muted:#7a6857;--faint:#9a8a76;
@@ -117,7 +133,7 @@
     .secondary:hover{background:#e8d7bc}
     .ghost{background:transparent;color:var(--muted);padding:14px 12px}
 
-    .hintline{margin:12px 2px 0;min-height:1.2em;font:600 13.5px ui-sans-serif,system-ui,sans-serif;color:var(--gold);transition:opacity .3s}
+    .hintline{margin:12px 2px 0;min-height:1.2em;font:600 13.5px ui-sans-serif,system-ui,sans-serif;color:#8a671d;transition:opacity .3s}
 
     .feedback{margin-top:18px;border-radius:20px;padding:18px 18px 16px;background:linear-gradient(180deg,#fbf2dd,#f6ead0);border:1px solid var(--line);box-shadow:var(--shadow-sm);animation:rise .5s var(--ease) both}
     .feedback.correct{border-left:5px solid var(--green)}
@@ -191,7 +207,7 @@
     <section id="game" class="panel"></section>
   </main>
   <footer style="text-align:center;padding:18px 24px 24px;font:500 13px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--muted)">
-    Something wrong? <a href="mailto:hello@thegoodwordgame.com" style="color:var(--gold)">hello@thegoodwordgame.com</a>
+    Something wrong? <a href="mailto:hello@thegoodwordgame.com" style="color:#8a671d">hello@thegoodwordgame.com</a> &nbsp;·&nbsp; <a href="/privacy" style="color:#8a671d">Privacy</a>
   </footer>
 <script>
 window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
@@ -299,7 +315,7 @@ function render(){
       <div class="prompt">${q.prompt.replace('_____','<span id="blank" class="blank"><span class="sheen"></span></span>')}</div>
       <div id="answerZone" class="answer-zone">
         <div class="input-wrap">
-          <input id="answer" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Fill in the missing word" onkeydown="if(event.key==='Enter')submitAnswer()"/>
+          <input id="answer" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" maxlength="40" aria-label="Fill in the missing word" placeholder="Fill in the missing word" onkeydown="if(event.key==='Enter')submitAnswer()"/>
         </div>
         <div class="actions">
           <button class="primary" onclick="submitAnswer()">Submit answer</button>
@@ -335,7 +351,7 @@ function submitAnswer(){
   const yours=val.trim()?val.trim():'—';
   let yoursHtml=esc(yours),kjvHtml=esc(q.missing);
   if(v==='close'&&yours!=='—'){const[ya,kb]=spellDiff(yours,q.missing);yoursHtml=ya;kjvHtml=kb;}
-  const verseHtml=q.verse.replace(new RegExp('\\b('+q.missing+')\\b','i'),'<b>$1</b>');
+  const verseHtml=q.verse.replace(new RegExp('\\b('+q.missing.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')\\b','i'),'<b>$1</b>');
   const fb=document.createElement('div');
   fb.className=`feedback ${v}`;
   fb.innerHTML=`
@@ -364,7 +380,7 @@ function shareText(){
   const sq={correct:'🟩',close:'🟨',wrong:'🟥'};
   const row=verdicts.map(v=>sq[v]||'🟥').join('');
   const[rank]=rankCopy();
-  return `The Good Word Game — Daily #${dayNumber}\n${row} ${score}/5\n${rank}. 📖\nthegoodwordgame.com/play`;
+  return `The Good Word Game — Daily #${dayNumber}\n${row} ${score}/5\n${rank}. 📖\nhttps://thegoodwordgame.com/play`;
 }
 
 function showResults(){
@@ -389,6 +405,7 @@ function showResults(){
       <div class="actions" style="margin-top:14px">
         <button class="primary" onclick="doShare()">Share your score</button>
         <a class="secondary" style="display:inline-flex;align-items:center;text-decoration:none" href="/">Explore the books</a>
+        <a class="secondary" style="display:inline-flex;align-items:center;text-decoration:none" href="/plus">Good Word Plus</a>
       </div>
       <p id="copied" class="tiny foot"></p>
       <p class="nextline">Five new verses tomorrow at midnight Eastern. Come back and keep the streak.</p>
