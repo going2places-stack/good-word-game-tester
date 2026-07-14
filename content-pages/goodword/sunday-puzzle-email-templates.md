@@ -8,7 +8,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 **Subject line:** This Week's Sunday Puzzle (Week {{WEEK_NUMBER}})
 
-**From:** sunday@[yourdomain]
+**From:** sunday@thegoodwordgame.com
 
 **Body:**
 
@@ -27,7 +27,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at [link].*
+*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
@@ -37,7 +37,7 @@ Two emails per week. The **Challenge** goes out Sunday morning. The **Reveal** g
 
 **Subject line:** Last Week's Answer + A New Puzzle (Week {{WEEK_NUMBER}})
 
-**From:** sunday@[yourdomain]
+**From:** sunday@thegoodwordgame.com
 
 **Body:**
 
@@ -66,7 +66,7 @@ Congratulations — you knew your Word.
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at [link].*
+*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
@@ -76,7 +76,7 @@ Congratulations — you knew your Word.
 
 **Subject line:** Introducing the Sunday Puzzle
 
-**From:** sunday@[yourdomain]
+**From:** sunday@thegoodwordgame.com
 
 **Body:**
 
@@ -105,7 +105,7 @@ Let's start.
 
 ---
 
-*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at [link].*
+*The Sunday Puzzle is a weekly challenge from The Good Word Game. Five verses, one chance, every day — play the daily at thegoodwordgame.com.*
 
 *Groundwork Studios*
 
