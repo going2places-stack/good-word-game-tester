@@ -104,6 +104,21 @@
   .cta-btn:hover { background:#d4a43f; color:#221a12; text-decoration:none; }
   .cta-streak { font-size:14px; color:#a4937e; }
 
+  /* ---------- FAQ ---------- */
+  .faq-section { padding:0 24px clamp(48px,7vw,72px); background:#fbf3e2; }
+  .faq-section .content-col { display:flex; flex-direction:column; gap:22px; }
+  .faq-section h2 { margin:0; font-size:clamp(28px,4.5vw,38px); font-weight:400; text-align:center; line-height:1.2; }
+  .faq-list { display:flex; flex-direction:column; }
+  .faq-item { border-bottom:1px solid #e8d9b8; }
+  .faq-item:first-child { border-top:1px solid #e8d9b8; }
+  .faq-item summary { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 4px; font-size:17px; font-weight:700; color:#221a12; cursor:pointer; list-style:none; }
+  .faq-item summary::-webkit-details-marker { display:none; }
+  .faq-item summary::marker { display:none; content:''; }
+  .faq-item summary::after { content:'+'; flex-shrink:0; width:28px; height:28px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:400; color:#bf8f2e; border:1.5px solid #e8d9b8; border-radius:99px; }
+  .faq-item[open] summary::after { content:'\2212'; }
+  .faq-answer { padding:0 4px 22px; font-size:16px; line-height:1.65; color:#7a6857; }
+  .faq-answer a { font-weight:600; }
+
   /* ---------- FOOTER ---------- */
   .site-footer { background:#1a140d; color:#a4937e; padding:36px 24px; text-align:center; }
   .site-footer .content-col { display:flex; flex-direction:column; gap:14px; align-items:center; }
@@ -309,7 +324,7 @@
   </div>
 </section>
 
-<!-- 7. CTA FOOTER -->
+<!-- 7. CTA -->
 <section class="cta-section">
   <div class="content-col">
     <h2>Five verses. One chance. <em>Every day.</em></h2>
@@ -318,7 +333,56 @@
   </div>
 </section>
 
-<!-- 8. SITE FOOTER -->
+<!-- 8. FAQ -->
+<section class="faq-section">
+  <div class="content-col">
+    <h2>Common questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is The Good Word Game?</summary>
+        <div class="faq-answer">A daily Bible word game. Each day you get five KJV verses, each with one word missing. Type the missing word — no multiple choice, no hints. Your score is how many you get right out of five.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I play?</summary>
+        <div class="faq-answer">Tap "Play today's daily" to start. You'll see a verse with a blank. Type the word you think belongs there and submit. You get one chance per verse, five verses per game. No going back.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What Bible translation do you use?</summary>
+        <div class="faq-answer">Every verse comes from the King James Version (KJV). Spelling and punctuation follow the KJV text exactly — close enough doesn't count.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How is the daily puzzle chosen?</summary>
+        <div class="faq-answer">Each day's five verses are selected automatically. The difficulty builds across the five rounds — the first verse is approachable, the last one will test you. Everyone gets the same five verses on the same day.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I replay a puzzle I missed?</summary>
+        <div class="faq-answer">The daily puzzle can only be played once. If you miss a day, it's gone. That's the point — show up daily, or miss out. <a href="/plus">Good Word Plus</a> members can play extra practice rounds anytime.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What do the colors mean in my score?</summary>
+        <div class="faq-answer">Green means you got it right. Red means you didn't. When you share your results, your friends see a row of colored squares — green and red — without seeing the actual answers.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a hint system?</summary>
+        <div class="faq-answer">No hints on the daily puzzle. You either know the word or you don't. That's what makes it matter. <a href="/plus">Good Word Plus</a> includes a hint feature for practice rounds.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How does the streak work?</summary>
+        <div class="faq-answer">Play the daily every day to build your streak. Miss a day and it resets to zero. Your streak tracks consecutive days played, not consecutive perfect scores — just showing up counts.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I share my results?</summary>
+        <div class="faq-answer">Yes. After you finish, tap the share button to send your score to friends. It shares your colored-square scorecard and score — not the answers — so they can play without spoilers.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is Good Word Plus?</summary>
+        <div class="faq-answer">Good Word Plus is an optional upgrade that unlocks practice rounds, hints, and deeper study features. The daily puzzle is always free. Plus is for players who want to go deeper. <a href="/plus">Learn more →</a></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. SITE FOOTER -->
 <footer class="site-footer">
   <div class="content-col">
     <span class="footer-title">The Good Word Game</span>
