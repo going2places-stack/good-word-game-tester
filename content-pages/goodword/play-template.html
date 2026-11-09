@@ -212,19 +212,15 @@
   </footer>
 <script>
 window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
-const BANK=__GWG_BANK__;
 const EPOCH='__GWG_EPOCH__'; // Daily #1 fires on this Eastern-time date
-const ARC=['Cold Open','Recovery Grace','Middle Test','Deep Water','Pulpit Ready'];
 
 // ---- daily selection (America/New_York) ----
 function etToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
 const today=etToday();
 const dayNumber=Math.max(1,Math.round((Date.parse(today+'T00:00:00Z')-Date.parse(EPOCH+'T00:00:00Z'))/864e5)+1);
-// From Daily #REBASE.day on, rotation resumes at pool index REBASE.index — so questions
-// appended in a bank top-up play next instead of waiting for the old cycle to wrap.
-const REBASE=__GWG_REBASE__;
-function slot(len){return dayNumber<REBASE.day?(dayNumber-1)%len:(REBASE.index+dayNumber-REBASE.day)%len;}
-const questions=ARC.map(role=>{const pool=BANK[role];return pool[slot(pool.length)];});
+// Today's five verses are fetched from /daily/<n>.json (build.js does the rotation),
+// so the page stays small no matter how big the bank grows.
+let questions=[];
 document.getElementById('dailyChip').textContent='Daily #'+dayNumber+' — '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'long',day:'numeric'}).format(new Date());
 
 // ---- persistent state ----
@@ -430,7 +426,15 @@ async function doShare(){
 }
 
 // ---- resume or start ----
-(function(){
+(async function(){
+  try{
+    const r=await fetch('/daily/'+dayNumber+'.json');
+    if(!r.ok)throw new Error(r.status);
+    questions=await r.json();
+  }catch(e){
+    game.innerHTML='<div class="stage"><p class="retort">Today\u2019s verses didn\u2019t load. Check your connection and refresh \u2014 the Word will wait.</p></div>';
+    return;
+  }
   const s=loadState();
   if(s){i=s.i;score=s.score;verdicts=s.verdicts||[];done=!!s.done;}
   // if the page closed after answering but before advancing, skip past answered verses
