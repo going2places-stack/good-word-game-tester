@@ -132,6 +132,9 @@ function siblingBooks(book, books) {
     .map(({ other }) => other);
 }
 
+// Must match the canonical/og:url host hardcoded in the goodword templates.
+const SITE_URL = 'https://www.thegoodwordgame.com';
+
 function buildGoodWord() {
   const tpl = fs.readFileSync(path.join(ROOT, 'goodword', 'template.html'), 'utf8');
   const catTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'category-template.html'), 'utf8');
@@ -188,9 +191,26 @@ function buildGoodWord() {
     }
   }
   const GWG_EPOCH = '2026-07-14'; // Daily #1, Eastern time
+  // Bank top-up: from this Eastern date on, rotation resumes at pool index
+  // `index` (the first appended question). On each top-up, set date to the day
+  // after the deploy and index to the old pool length. Never set it to today or
+  // earlier — that would swap today's verses mid-day for anyone playing.
+  const GWG_REBASE = { date: '2026-11-10', index: 50 };
+  const dayOf = (iso) => Math.round((Date.parse(iso + 'T00:00:00Z') - Date.parse(GWG_EPOCH + 'T00:00:00Z')) / 864e5) + 1;
+  const rebase = { day: dayOf(GWG_REBASE.date), index: GWG_REBASE.index };
+  const minPool = Math.min(...ARC.map((r) => bank[r].length));
+  if (rebase.index >= minPool) throw new Error(`GWG_REBASE.index ${rebase.index} is past the end of the shortest pool (${minPool})`);
+  // fresh-content runway: days from today until the rotation reaches an already-played slot
+  const todayET = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+  const today = dayOf(todayET);
+  const lastFreshDay = rebase.day + (minPool - rebase.index) - 1;
+  const runway = lastFreshDay - Math.max(today, rebase.day) + 1;
+  console.log(`Daily bank: ${minPool}/pool · today Daily #${today} · fresh verses through Daily #${lastFreshDay}` +
+    (runway < 14 ? ` · ⚠ only ${Math.max(runway, 0)} fresh day(s) left — top up the bank` : ` (${runway} days)`));
   pages.push(writePage('goodword/play', playTpl
     .replace('__GWG_BANK__', JSON.stringify(bank, null, 2))
-    .replace('__GWG_EPOCH__', GWG_EPOCH)));
+    .replace('__GWG_EPOCH__', GWG_EPOCH)
+    .replace('__GWG_REBASE__', JSON.stringify(rebase))));
 
   // /plus — static coming-soon page
   const plusTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'plus-template.html'), 'utf8');
@@ -199,6 +219,18 @@ function buildGoodWord() {
   // /privacy — static policy page
   const privacyTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'privacy-template.html'), 'utf8');
   pages.push(writePage('goodword/privacy', privacyTpl));
+
+  // 404.html — Vercel serves this for unknown paths (not a crawlable page, so not in `pages`)
+  fs.copyFileSync(path.join(ROOT, 'goodword', '404-template.html'), path.join(DIST, 'goodword', '404.html'));
+
+  // robots.txt + sitemap.xml — URLs match each page's <link rel="canonical"> exactly
+  // (no trailing slash except the homepage)
+  const urls = pages.map((p) => SITE_URL + ('/' + p.replace(/^goodword\/?/, '')).replace(/(.)\/$/, '$1'));
+  fs.writeFileSync(path.join(DIST, 'goodword', 'sitemap.xml'),
+    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    urls.map((u) => `  <url><loc>${u}</loc></url>\n`).join('') + '</urlset>\n');
+  fs.writeFileSync(path.join(DIST, 'goodword', 'robots.txt'),
+    `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   // static assets (favicon, touch icon, og image) — dist is wiped every build,
   // so these must be copied from source or the site loses its icons

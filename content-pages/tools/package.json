@@ -1,0 +1,8 @@
+{
+  "name": "goodword-bank-tools",
+  "private": true,
+  "description": "Question-bank verification for The Good Word Game (not part of the site build)",
+  "type": "module",
+  "scripts": { "verify": "node verify-bank.mjs" },
+  "dependencies": { "kjv": "1.0.0" }
+}
