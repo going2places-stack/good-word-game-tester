@@ -120,13 +120,14 @@
     input::placeholder{color:var(--faint)}
     input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(191,143,46,.16)}
     .actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-    button{
+    button,:where(.actions a){
       appearance:none;border:0;border-radius:14px;padding:14px 18px;
+      display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
       font:800 14.5px ui-sans-serif,system-ui,sans-serif;cursor:pointer;
       transition:transform .12s var(--ease),box-shadow .2s,filter .2s;
       -webkit-tap-highlight-color:transparent;
     }
-    button:active{transform:translateY(1px) scale(.985)}
+    button:active,:where(.actions a):active{transform:translateY(1px) scale(.985)}
     .primary{flex:1;min-width:160px;color:#fff;background:linear-gradient(180deg,#3a2c1d,#221a12);box-shadow:var(--shadow-sm),inset 0 1px 0 rgba(255,255,255,.12)}
     .primary:hover{filter:brightness(1.08)}
     .secondary{background:#efe1cb;color:var(--ink);border:1px solid var(--line)}
