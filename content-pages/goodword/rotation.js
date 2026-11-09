@@ -3,7 +3,7 @@
  * Daily rotation for The Good Word Game — shared by build.js and tools/check-runway.mjs.
  *
  * Day numbers count from EPOCH (Daily #1) on the America/New_York calendar.
- * Before REBASE.date, day N plays pool index (N-1) mod len (the launch cycle).
+ * Before REBASE.date, day N plays pool index (N-1) mod 50 (the launch cycle).
  * From REBASE.date on, rotation resumes at pool index REBASE.index, so questions
  * appended in a top-up play next.
  *
@@ -23,8 +23,12 @@ const dateOf = (day) => new Date(Date.parse(EPOCH + 'T00:00:00Z') + (day - 1) * 
 const todayET = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
 const REBASE_DAY = dayOf(REBASE.date);
 
+// Days before REBASE played the launch cycle of 50 questions per pool. Pin that cycle
+// length so growing the bank can never change a past day — or today, before REBASE.
+const LAUNCH_CYCLE = 50;
+
 function slot(day, len) {
-  return day < REBASE_DAY ? (day - 1) % len : (REBASE.index + day - REBASE_DAY) % len;
+  return day < REBASE_DAY ? (day - 1) % LAUNCH_CYCLE : (REBASE.index + day - REBASE_DAY) % len;
 }
 
 /** The five questions for a day, in arc order. */
