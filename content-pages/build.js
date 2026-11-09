@@ -133,7 +133,7 @@ function siblingBooks(book, books) {
 }
 
 // Must match the canonical/og:url host hardcoded in the goodword templates.
-const SITE_URL = 'https://thegoodwordgame.com';
+const SITE_URL = 'https://www.thegoodwordgame.com';
 
 function buildGoodWord() {
   const tpl = fs.readFileSync(path.join(ROOT, 'goodword', 'template.html'), 'utf8');
