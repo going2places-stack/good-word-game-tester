@@ -194,6 +194,7 @@
     @keyframes pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
   </style>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <main class="app">
@@ -219,7 +220,11 @@ const ARC=['Cold Open','Recovery Grace','Middle Test','Deep Water','Pulpit Ready
 function etToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
 const today=etToday();
 const dayNumber=Math.max(1,Math.round((Date.parse(today+'T00:00:00Z')-Date.parse(EPOCH+'T00:00:00Z'))/864e5)+1);
-const questions=ARC.map(role=>{const pool=BANK[role];return pool[(dayNumber-1)%pool.length];});
+// From Daily #REBASE.day on, rotation resumes at pool index REBASE.index — so questions
+// appended in a bank top-up play next instead of waiting for the old cycle to wrap.
+const REBASE=__GWG_REBASE__;
+function slot(len){return dayNumber<REBASE.day?(dayNumber-1)%len:(REBASE.index+dayNumber-REBASE.day)%len;}
+const questions=ARC.map(role=>{const pool=BANK[role];return pool[slot(pool.length)];});
 document.getElementById('dailyChip').textContent='Daily #'+dayNumber+' — '+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'long',day:'numeric'}).format(new Date());
 
 // ---- persistent state ----
