@@ -1,0 +1,45 @@
+# Monthly check: is the Good Word daily bank running low?
+# Opens (or updates) one GitHub issue assigned to the repo owner when fewer than
+# 60 days of never-played verses remain, so GitHub emails a heads-up.
+name: Daily bank runway
+
+on:
+  schedule:
+    - cron: '0 14 1 * *' # 1st of each month, ~9-10am Eastern
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: runway
+        run: node content-pages/tools/check-runway.mjs
+      - name: Open or update the low-bank issue
+        if: ${{ fromJSON(steps.runway.outputs.runway) < 60 }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUNWAY: ${{ steps.runway.outputs.runway }}
+          LAST_FRESH: ${{ steps.runway.outputs.last_fresh }}
+        run: |
+          title="Good Word daily bank: ${RUNWAY} days of fresh verses left"
+          body="The daily game has fresh (never-played) verses through **${LAST_FRESH}** — ${RUNWAY} days from today.
+
+          After that the rotation starts repeating earlier verses. To top up: append verified questions to \`content-pages/goodword/daily-bank.json\` (run \`content-pages/tools/verify-bank.mjs\`), merge, done. See README → Bank top-ups.
+
+          _Posted by the monthly bank-runway check._"
+          gh label create bank-runway --color FBCA04 --description "Daily bank running low" 2>/dev/null || true
+          num=$(gh issue list --label bank-runway --state open --json number --jq '.[0].number')
+          if [ -n "$num" ]; then
+            gh issue edit "$num" --title "$title" --body "$body"
+            gh issue comment "$num" --body "Monthly check: ${RUNWAY} days left (fresh through ${LAST_FRESH})."
+          else
+            gh issue create --title "$title" --body "$body" --label bank-runway --assignee "${{ github.repository_owner }}"
+          fi

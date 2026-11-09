@@ -17,6 +17,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const rotation = require('./goodword/rotation');
+
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
 
@@ -180,37 +182,27 @@ function buildGoodWord() {
     testamentCategories,
   })));
 
-  // /play — the daily game. The bank is injected raw (it's JSON, not HTML), so
-  // this page bypasses render() and its HTML-escaping on purpose.
+  // /play — the daily game. The page itself carries no questions: build.js runs the
+  // rotation (goodword/rotation.js) and writes each day's five verses to
+  // /daily/<n>.json, so the page stays small however big the bank grows.
   const playTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'play-template.html'), 'utf8');
   const bank = JSON.parse(fs.readFileSync(path.join(ROOT, 'goodword', 'daily-bank.json'), 'utf8'));
-  const ARC = ['Cold Open', 'Recovery Grace', 'Middle Test', 'Deep Water', 'Pulpit Ready'];
-  for (const role of ARC) {
-    if (!Array.isArray(bank[role]) || bank[role].length < 1) {
-      throw new Error(`daily-bank.json: pool "${role}" is missing or empty`);
-    }
+  rotation.validate(bank);
+  const today = rotation.dayOf(rotation.todayET());
+  const lastFresh = rotation.lastFreshDay(bank);
+  const runway = lastFresh - today + 1;
+  console.log(`Daily bank: ${rotation.ARC.map((r) => bank[r].length).join('/')} per pool · today Daily #${today} · ` +
+    `fresh verses through Daily #${lastFresh} (${rotation.dateOf(lastFresh)})` +
+    (runway < 60 ? ` · ⚠ only ${Math.max(runway, 0)} fresh day(s) left — top up the bank` : ` · ${runway} days`));
+  // a week back (clock skew) through well past the fresh runway, so the site never
+  // runs out of day files even if nobody deploys for a long while
+  const lastFile = Math.max(lastFresh, today) + 400;
+  const dailyDir = path.join(DIST, 'goodword', 'daily');
+  fs.mkdirSync(dailyDir, { recursive: true });
+  for (let d = Math.max(1, today - 7); d <= lastFile; d++) {
+    fs.writeFileSync(path.join(dailyDir, `${d}.json`), JSON.stringify(rotation.questionsFor(bank, d)));
   }
-  const GWG_EPOCH = '2026-07-14'; // Daily #1, Eastern time
-  // Bank top-up: from this Eastern date on, rotation resumes at pool index
-  // `index` (the first appended question). On each top-up, set date to the day
-  // after the deploy and index to the old pool length. Never set it to today or
-  // earlier — that would swap today's verses mid-day for anyone playing.
-  const GWG_REBASE = { date: '2026-11-10', index: 50 };
-  const dayOf = (iso) => Math.round((Date.parse(iso + 'T00:00:00Z') - Date.parse(GWG_EPOCH + 'T00:00:00Z')) / 864e5) + 1;
-  const rebase = { day: dayOf(GWG_REBASE.date), index: GWG_REBASE.index };
-  const minPool = Math.min(...ARC.map((r) => bank[r].length));
-  if (rebase.index >= minPool) throw new Error(`GWG_REBASE.index ${rebase.index} is past the end of the shortest pool (${minPool})`);
-  // fresh-content runway: days from today until the rotation reaches an already-played slot
-  const todayET = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
-  const today = dayOf(todayET);
-  const lastFreshDay = rebase.day + (minPool - rebase.index) - 1;
-  const runway = lastFreshDay - Math.max(today, rebase.day) + 1;
-  console.log(`Daily bank: ${minPool}/pool · today Daily #${today} · fresh verses through Daily #${lastFreshDay}` +
-    (runway < 14 ? ` · ⚠ only ${Math.max(runway, 0)} fresh day(s) left — top up the bank` : ` (${runway} days)`));
-  pages.push(writePage('goodword/play', playTpl
-    .replace('__GWG_BANK__', JSON.stringify(bank, null, 2))
-    .replace('__GWG_EPOCH__', GWG_EPOCH)
-    .replace('__GWG_REBASE__', JSON.stringify(rebase))));
+  pages.push(writePage('goodword/play', playTpl.replace('__GWG_EPOCH__', rotation.EPOCH)));
 
   // /plus — static coming-soon page
   const plusTpl = fs.readFileSync(path.join(ROOT, 'goodword', 'plus-template.html'), 'utf8');
